@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
-
+import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 

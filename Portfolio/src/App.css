@@ -20,7 +20,3 @@ body{
   transition: 0.75s ease-in-out;
 
 }
-
-.main{
-  filter:blur(1px);
-}

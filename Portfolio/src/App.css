@@ -14,6 +14,7 @@ body{
 }
 
 .HeroText:hover{
-  color:black
-  
+  color:black;
+  transition: 0.75s ease;
+
 }

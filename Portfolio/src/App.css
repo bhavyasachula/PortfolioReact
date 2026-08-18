@@ -12,3 +12,8 @@ body{
   font-family:fantasy;
   text-Shadow:1px 2px 40px rgba(183, 119, 242, 0.8)
 }
+
+.HeroText:hover{
+  color:black
+  
+}

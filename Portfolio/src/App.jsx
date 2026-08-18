@@ -2,11 +2,14 @@ import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
 import './App.css'
 function App() {
-  
+
+  function onHeroClick(){
+    console.log("Clicked");
+  }
 
   return (
    <>
-    <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+    <div className="main" style={{ width: '100%', height: '600px', position: 'relative' , }}>
   <LightTunnel
     cableColor="#A855F7"
     pulseColor="#A855F7"
@@ -37,8 +40,7 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
-
- <div className='HeroText' >Explore</div> 
+ <div className='HeroText' onClick={onHeroClick}>Hi, I am Bhavya</div> 
     </div>
  </>
   )

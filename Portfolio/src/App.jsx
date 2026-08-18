@@ -2,7 +2,7 @@ import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
 import './App.css'
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
    <>
@@ -37,6 +37,7 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
+    <div></div>  
     </div>
  </>
   )

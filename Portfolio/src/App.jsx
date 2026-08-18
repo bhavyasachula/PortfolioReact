@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+   
     <div style={{ width: '100%', height: '600px', position: 'relative' }}>
   <LightTunnel
     cableColor="#A855F7"
@@ -38,7 +38,7 @@ function App() {
     mouseStrength={0.1}
   />
 </div>
-    </>
+ 
   )
 }
 

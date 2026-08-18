@@ -1,3 +1,10 @@
 body{
   background-color: black;
 }
+.HeroText{
+  font-size:70px;
+  position:absolute;
+  color:white;
+  top:50%;
+  
+}

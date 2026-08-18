@@ -37,7 +37,7 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
-    <div></div>  
+    <div className='HeroText'>Bhavya</div>  
     </div>
  </>
   )

@@ -38,7 +38,7 @@ function App() {
     mouseStrength={0.1}
   />
 
-    <div className='HeroText'><button>Explore</button></div>  
+    <div className='HeroText'>Explore</div>  
     </div>
  </>
   )

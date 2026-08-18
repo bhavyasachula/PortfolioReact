@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
+import GradientWaves from './components/GradientWaves.jsx'
 import './App.css'
 function App() {
 

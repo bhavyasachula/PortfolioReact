@@ -20,3 +20,8 @@ body{
   transition: 0.75s ease-in-out;
 
 }
+
+nav{
+  position:absolute;
+  color: white;
+}

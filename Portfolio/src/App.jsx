@@ -13,10 +13,10 @@ function App() {
     <div className="main" style={{ width: '100%', height: '600px', position: 'relative' , }}>
       <nav className='navbar'>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+               <a href=""><li>Home</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Projects</li></a>
+                <a href=""><li>Contact</li></a>
               </ul>
       </nav>
   <LightTunnel

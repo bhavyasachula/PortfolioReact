@@ -11,7 +11,7 @@ function App() {
   return (
    <>
     <div className="main" style={{ width: '100%', height: '600px', position: 'relative' , }}>
-      <nav className='navbar '>
+      <nav className='navbar'>
               <ul>
                 <li>Home</li>
                 <li>About</li>

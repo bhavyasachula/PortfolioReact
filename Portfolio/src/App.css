@@ -24,11 +24,13 @@ body{
 
 nav{
   border-radius: 20px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.26);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   position:absolute;
   width:100%;
   color: white;
-  filter: blur(1px);
+  
 }
 nav ul li{
   list-style-type: none;
@@ -38,6 +40,7 @@ a{
   color: rgb(205, 43, 226);
   text-decoration: none;
 }
+
 nav ul{
   display: flex;
   justify-content: space-around;

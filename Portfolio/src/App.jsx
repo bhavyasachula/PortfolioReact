@@ -1,18 +1,22 @@
 import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
-import GradientWaves from './components/GradientWaves.jsx'
-import Navbar from './components/Navbar.jsx'
 import './App.css'
 function App() {
 
   function onHeroClick(){
     console.log("Clicked");
   }
-
   return (
    <>
     <div className="main" style={{ width: '100%', height: '600px', position: 'relative'  }}>
-    <Navbar></Navbar>
+  <nav className='navbar'>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
  <LightTunnel
     cableColor="#A855F7"
     pulseColor="#A855F7"

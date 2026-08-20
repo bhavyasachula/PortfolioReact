@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
 import GradientWaves from './components/GradientWaves.jsx'
+import Scanner from './components/Scanner.jsx'
 import './App.css'
 function App() {
 
@@ -19,37 +20,35 @@ function App() {
                 <a href=""><li>Contact</li></a>
               </ul>
       </nav>
-  <LightTunnel
-    cableColor="#A855F7"
-    pulseColor="#A855F7"
-    tunnelColor="#5227FF"
-    tunnelOpacity={0}
-    speed={0.1}
-    flowDirection="outward"
-    pulseSpeed={2}
-    pulseLength={0.28}
-    pulseBlend={1}
-    pulseWidth={1}
-    cableCount={20}
-    thickness={0.35}
-    rimWidth={0.15}
-    waviness={0.3}
-    sway={0.5}
-    size={1}
-    centerX={0}
-    centerY={0}
-    glow={1}
-    fadeNear={0.5}
-    fadeFar={2}
+  <Scanner
+    color1="#5227FF"
+    color2="#FF9FFC"
+    color3="#FFFFFF"
+    speed={0.5}
+    sweepSpeed={0.25}
+    sweepWidth={1.6}
+    sweepFalloff={6}
+    scale={1.5}
+    frequency={2}
+    ripple={0.22}
+    bandDensity={11}
+    lineSharpness={5.5}
+    glow={0.22}
+    scanDirection="vertical"
+    colorSpread={0.7}
     brightness={1}
-    colorVariance
+    contrast={1.15}
+    softness={1.4}
+    vignette={0.45}
+    scanline
     grain
     grainIntensity={0.05}
     opacity={1}
     mouseInteraction
-    mouseStrength={0.1}
+    mouseRadius={0.5}
+    mouseStrength={0.5}
   />
- <div className='HeroText' onClick={onHeroClick}>Hi, I am Bhavya</div> 
+ <div className='HeroText' onClick={onHeroClick}>Hi, I m Bhavya</div> 
     </div>
  </>
   )

@@ -18,26 +18,25 @@ body{
   
 }
 
-.HeroText:hover{
-  color: #A855F7;
-}
+
 
 nav{
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.26);
+  background:rgba(20, 10, 30, 0.4);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   position:absolute;
   width:100%;
   color: white;
-  
+  border-bottom: 1px solid rgba(168, 85, 247, 0.25);
+  box-shadow: 0 1px 20px rgba(168, 85, 247, 0.35);
 }
 nav ul li{
   list-style-type: none;
 }
 
 a{
-  color: rgb(205, 43, 226);
+  color: #E0D4FF;
   text-decoration: none;
 }
 

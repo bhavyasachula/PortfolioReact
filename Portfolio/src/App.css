@@ -1,6 +1,8 @@
 *{
-   font-family:fantasy;
-}
+ 
+  font-family:fantasy;
+  box-sizing: border-box;
+  }
 body{
   background-color: black;
 
@@ -20,7 +22,7 @@ body{
 
 
 nav{
-  border-radius: 20px;
+  
   background:rgba(20, 10, 30, 0.4);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);

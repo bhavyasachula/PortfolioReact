@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
 import GradientWaves from './components/GradientWaves.jsx'
-
+import Navbar from './components/Navbar.jsx'
 import './App.css'
 function App() {
 
@@ -12,14 +12,7 @@ function App() {
   return (
    <>
     <div className="main" style={{ width: '100%', height: '600px', position: 'relative'  }}>
-      <nav className='navbar'>
-              <ul>
-               <a href=""><li>Home</li></a>
-                <a href=""><li>About</li></a>
-                <a href=""><li>Projects</li></a>
-                <a href=""><li>Contact</li></a>
-              </ul>
-      </nav>
+    <Navbar></Navbar>
  <LightTunnel
     cableColor="#A855F7"
     pulseColor="#A855F7"
@@ -50,8 +43,8 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
- <div className='HeroText' onClick={onHeroClick}>Hi, I am Bhavya</div> 
-    </div>
+ <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA</div> 
+  </div>
  </>
   )
 }

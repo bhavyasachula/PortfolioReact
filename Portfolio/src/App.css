@@ -9,13 +9,16 @@ body {
 }
 
 nav {
-
+  margin-top:5px;
+  display: flex;
+  justify-content: space-between;
   border-radius: 20px;
   background: rgba(20, 10, 30, 0.4);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   position: absolute;
-  width: 100%;
+  width: 70%;
+  transform: translateX(20%);
   color: white;
   border-bottom: 1px solid rgba(168, 85, 247, 0.25);
   box-shadow: 0 1px 20px rgba(168, 85, 247, 0.35);
@@ -28,10 +31,8 @@ nav ul li {
   list-style-type: none;
 }
 
-
 nav ul {
   display: flex;
-  justify-content: flex-end;
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -50,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-  background: rgba(224, 64, 251, 0.15);
+  background: rgba(202, 11, 236, 0.15);
   color: #fff;
 }
 

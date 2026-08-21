@@ -50,9 +50,11 @@ nav a {
   transition: all 0.25s ease;
 }
 
+
 nav a:hover {
   background: rgba(202, 11, 236, 0.15);
   color: #fff;
+  
 }
 
 .HeroText {

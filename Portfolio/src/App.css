@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-  margin-top:5px;
+  margin-top:10px;
   display: flex;
   justify-content: space-between;
   border-radius: 20px;

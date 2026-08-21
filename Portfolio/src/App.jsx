@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
+import Caraousal from './components/Caraousal.jsx';
 import './App.css'
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
   />
  <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA</div> 
   </div>
+  <Caraousal></Caraousal>
  </>
   )
 }

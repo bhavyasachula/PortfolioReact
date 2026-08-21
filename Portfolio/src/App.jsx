@@ -9,7 +9,7 @@ function App() {
   return (
    <>
   
-    <div className="main" style={{ width: '100%', height: '600px', position: 'relative'  }}>
+  <div className="main" style={{ width: '100%', height: '750px', position: 'relative'  }}>
 
   <nav className='navbar'>
     <div className="nav-logo">BHAVYA</div>

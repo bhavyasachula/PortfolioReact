@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
 import Caraousal from './components/Caraousal.jsx';
+import Navbar from './components/Navbar.jsx';
 import './App.css'
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
   
   <div className="main" style={{ width: '100%', height: '750px', position: 'relative'  }}>
 
-<Navbar></Navbar>
+  <Navbar></Navbar>
  <LightTunnel
     cableColor="#A855F7"
     pulseColor="#A855F7"

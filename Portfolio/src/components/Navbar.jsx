@@ -1,4 +1,4 @@
-import '../App.css'
+
 function Navbar(){
   return(<nav className='navbar'>
     <div className="nav-logo">BHAVYA</div>

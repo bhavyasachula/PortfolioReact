@@ -44,7 +44,8 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
- <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA</div> 
+ <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA
+  <p className="hero-sub">I build things at the intersection of AI and web.</p></div> 
   </div>
   <Caraousal></Caraousal>
  </>

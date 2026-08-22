@@ -69,4 +69,12 @@ nav a:hover {
   transform: translate(-50%, -50%);
   text-shadow: 0 2px 40px rgba(183, 119, 242, 0.8);
   white-space: wrap;
+
+}
+.hero-sub {
+  font-family: 'Manrope', sans-serif;
+  font-size:40px;
+  color: #B8A8D9;
+  font-weight: 400;
+  margin: 0;
 }

@@ -45,7 +45,7 @@ function App() {
     mouseStrength={0.1}
   />
  <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA
-  <p className="hero-sub">I build things at the intersection of AI and web.</p></div> 
+</div> 
   </div>
   <div className='TechStack'>
     Tech Stack
@@ -55,4 +55,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

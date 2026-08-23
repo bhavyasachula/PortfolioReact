@@ -19,8 +19,8 @@ function Caraousal() {
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ABNB.webp" alt="" /></div>
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/NVDA.webp" alt="" /></div>
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/SPCX.webp" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/TSLA.webp" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/TCS.NS.webp" alt="" /></div>
+            <div className="card"><img src="https://cdn.prod.website-files.com/66754aa69a5d872183713f9c/672dfc530eff071e52a2ed44_PostgreSQL-Logo.wine.png" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
             
         </div>
          <div className='Group'>
@@ -37,9 +37,8 @@ function Caraousal() {
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/SPOT.webp" alt="" /></div>
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ABNB.webp" alt="" /></div>
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/NVDA.webp" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/SPCX.webp" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/TSLA.webp" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/TCS.NS.webp" alt="" /></div>
+            <div className="card"><img src="https://cdn.prod.website-files.com/66754aa69a5d872183713f9c/672dfc530eff071e52a2ed44_PostgreSQL-Logo.wine.png" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
       
         </div>
     </div>  

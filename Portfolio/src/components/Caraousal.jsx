@@ -10,7 +10,7 @@ function Caraousal() {
             <div className="card"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqrOXX6aDLQETYHcaJWSdReybJBEgLNN3NPwWx8P0iRGnfKkwP" alt="" /></div>
             <div className="card"><img src="https://storage.googleapis.com/chilipiper-cloud-static/workspace-logos/langchain.com/bd2bda48-ec1b-480c-8468-98e43909e079-93ca5a37-84a1-4aec-ab4e-86c54a01d315.png" alt="" /></div>
             <div className="card"><img src="../src/assets/nodejslogo.png" alt="" /></div>
-            <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png" alt="" /></div>
+            <div className="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8cxgwkzgZl9Z7OFj04lWIEZJCD3QeGH_YhdVcjcRAoA&s=10" alt="" /></div>
             <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/6124/6124992.png" alt="" /></div>
             <div className='card'><img src="https://cdn-icons-png.flaticon.com/512/152/152752.png" alt="" /></div>
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ORCL.webp" alt="" /></div>
@@ -29,7 +29,7 @@ function Caraousal() {
             <div className="card"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqrOXX6aDLQETYHcaJWSdReybJBEgLNN3NPwWx8P0iRGnfKkwP" alt="" /></div>
             <div className="card"><img src="https://storage.googleapis.com/chilipiper-cloud-static/workspace-logos/langchain.com/bd2bda48-ec1b-480c-8468-98e43909e079-93ca5a37-84a1-4aec-ab4e-86c54a01d315.png" alt="" /></div>
             <div className="card"><img src="../src/assets/nodejslogo.png" alt="" /></div>
-            <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png" alt="" /></div>
+            <div className="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8cxgwkzgZl9Z7OFj04lWIEZJCD3QeGH_YhdVcjcRAoA&s=10" alt="" /></div>
             <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/6124/6124992.png" alt="" /></div>
             <div className='card'><img src="https://cdn-icons-png.flaticon.com/512/152/152752.png" alt="" /></div>
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ORCL.webp" alt="" /></div>

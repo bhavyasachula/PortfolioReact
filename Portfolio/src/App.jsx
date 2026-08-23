@@ -47,6 +47,9 @@ function App() {
  <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA
   <p className="hero-sub">I build things at the intersection of AI and web.</p></div> 
   </div>
+  <div className='TechStack'>
+    Tech Stack
+  </div>
   <Caraousal></Caraousal>
  </>
   )

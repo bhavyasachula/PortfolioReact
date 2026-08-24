@@ -15,8 +15,8 @@ function Caraousal() {
             <div className='card'><img src="https://avatars.githubusercontent.com/u/18133?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/langgraph-color.png" alt="" /></div>
             <div className="card"><img src="../src/assets/pytorchlog.png" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/SPOT.webp" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ABNB.webp" alt="" /></div>
+            <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
+            <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/3840px-Claude_AI_symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
             <div className="card"><img src="../src/assets/langsmithlogo.png" alt="" /></div>
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>
@@ -34,8 +34,8 @@ function Caraousal() {
             <div className='card'><img src="https://avatars.githubusercontent.com/u/18133?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/langgraph-color.png" alt="" /></div>
             <div className="card"><img src="../src/assets/pytorchlog.png" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/SPOT.webp" alt="" /></div>
-            <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ABNB.webp" alt="" /></div>
+            <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
+            <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/3840px-Claude_AI_symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
             <div className="card"><img src="../src/assets/langsmithlogo.png" alt="" /></div>
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>

@@ -19,7 +19,7 @@ function Caraousal() {
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ABNB.webp" alt="" /></div>
             <div className="card"><img src="../src/assets/langsmithlogo.png" alt="" /></div>
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
-            <div className="card"><img src="https://www.altnix.com/_next/static/media/postgreSQL.857496f6.png" alt="" /></div>
+            <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
             
         </div>
@@ -38,7 +38,7 @@ function Caraousal() {
             <div className="card"><img src="https://companiesmarketcap.com/img/company-logos/64/ABNB.webp" alt="" /></div>
             <div className="card"><img src="../src/assets/langsmithlogo.png" alt="" /></div>
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
-            <div className="card"><img src="https://www.altnix.com/_next/static/media/postgreSQL.857496f6.png" alt="" /></div>
+            <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
       
         </div>

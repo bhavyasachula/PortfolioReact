@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.jsx';
 import './App.css'
 function App() {
 
+  
   function onHeroClick(){
     console.log("Clicked");
   }
@@ -47,9 +48,10 @@ function App() {
  <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA
 </div> 
   </div>
-  <div className='TechStack'>
-    Tech Stack
-  </div>
+  <div className="section-header">
+    
+  <span className="section-tag">Skills & Tools</span>
+</div>
   <Caraousal></Caraousal>
  </>
   )

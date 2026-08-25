@@ -12,7 +12,7 @@ function App() {
   return (
    <>
   
-  <div className="main" style={{ width: '100%', height: '750px', position: 'relative'  }}>
+  <div className="main" style={{ width: '100%', height: '800px', position: 'relative'  }}>
 
   <Navbar></Navbar>
  <LightTunnel
@@ -45,12 +45,11 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
- <div className='HeroText' onClick={onHeroClick}>Hi,I m BHAVYA
+ <div className='HeroText' onClick={onHeroClick}>HI,I m BHAVYA
 </div> 
   </div>
   <div className="section-header">
-    
-  <span className="section-tag">Skills & Tools</span>
+  <span className="section-tag">SKills & Tools</span>
 </div>
   <Caraousal></Caraousal>
  </>

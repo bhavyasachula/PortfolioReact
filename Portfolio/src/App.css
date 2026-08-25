@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 
 body {
@@ -41,11 +45,10 @@ nav ul {
 }
 
 nav a {
-  font-family: 'Manrope', sans-serif;
   color: #E0D4FF;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.2px;
   padding: 10px 20px;
   border-radius: 999px;
@@ -59,7 +62,6 @@ nav a:hover {
 }
 
 .HeroText {
-  font-family: 'Clash Display', sans-serif;
   font-size: 78px;
   font-weight: 700;
   letter-spacing: -2px;
@@ -73,7 +75,6 @@ nav a:hover {
 
 }
 .hero-sub {
-  font-family: 'Manrope', sans-serif;
   font-size:40px;
   color: #B8A8D9;
   font-weight: 400;
@@ -98,12 +99,11 @@ nav a:hover {
   align-items: center;
   gap: 12px;
   text-align: center;
-  padding: 60px 0 30px;
+  padding: 60px 0 10px;
 }
 
 .section-tag {
-  font-family: 'Manrope', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -115,7 +115,6 @@ nav a:hover {
 }
 
 .section-title {
-  font-family: 'Clash Display', sans-serif;
   font-size: 48px;
   font-weight: 700;
   margin: 0;

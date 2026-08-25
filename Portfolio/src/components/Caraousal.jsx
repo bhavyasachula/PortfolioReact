@@ -1,5 +1,6 @@
 import React from 'react'
 import './caraousal.css'
+
 function Caraousal() {
   return (
     <>

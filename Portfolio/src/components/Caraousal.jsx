@@ -27,6 +27,8 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
             <div className="card"><img src="https://images.opencollective.com/pandas/6e5c060/logo/256.png" alt="" /></div>
             <div className="card"><img src="https://media.licdn.com/dms/image/v2/D5612AQFSTglfKdI9eg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708971797430?e=2147483647&v=beta&t=iZKe_LBwW0NSHcz1V9_LsKskeje_BYusBCoctWYnWJ0" alt="" /></div> 
+            <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></div>
+            <div className="card"><img src="https://i0.wp.com/ahex.co/wp-content/uploads/2022/06/d3.png?fit=400%2C400&ssl=1" alt="" /></div>
             <div className="card"><img src="" alt="" /></div> 
             
         </div>
@@ -53,7 +55,9 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
             <div className="card"><img src="https://images.opencollective.com/pandas/6e5c060/logo/256.png" alt="" /></div> 
             <div className="card"><img src="https://media.licdn.com/dms/image/v2/D5612AQFSTglfKdI9eg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708971797430?e=2147483647&v=beta&t=iZKe_LBwW0NSHcz1V9_LsKskeje_BYusBCoctWYnWJ0" alt="" /></div> 
-            <div className="card"><img src="" alt="" /></div> 
+            <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></div> 
+            <div className="card"><img src="https://i0.wp.com/ahex.co/wp-content/uploads/2022/06/d3.png?fit=400%2C400&ssl=1" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
       
         </div>
     </div>  

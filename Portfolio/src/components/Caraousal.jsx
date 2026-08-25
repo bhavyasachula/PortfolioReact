@@ -15,7 +15,7 @@ function Caraousal() {
             <div className='card'><img src="https://avatars.githubusercontent.com/u/18133?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/langgraph-color.png" alt="" /></div>
             <div className="card"><img src="../src/assets/pytorchlog.png" alt="" /></div>
-            <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
+            <div className="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYb9oNbyVvb5J10zWtdj_46nNAfUIko14n8Cb6RudWKxefkunJMyB6zzig&s=10" alt="" /></div>
             <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/3840px-Claude_AI_symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
              <div className="card"><img src="https://static.vecteezy.com/system/resources/previews/055/687/065/non_2x/gemini-google-icon-symbol-logo-free-png.png" alt="" /></div>
             <div className="card"><img src="../src/assets/langsmithlogo.png" alt="" /></div>
@@ -27,13 +27,9 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
             <div className="card"><img src="https://images.opencollective.com/pandas/6e5c060/logo/256.png" alt="" /></div>
             <div className="card"><img src="https://media.licdn.com/dms/image/v2/D5612AQFSTglfKdI9eg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708971797430?e=2147483647&v=beta&t=iZKe_LBwW0NSHcz1V9_LsKskeje_BYusBCoctWYnWJ0" alt="" /></div> 
-            <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></div>
+            <div className="card"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png" alt="" /></div>
             <div className="card"><img src="https://i0.wp.com/ahex.co/wp-content/uploads/2022/06/d3.png?fit=400%2C400&ssl=1" alt="" /></div>
-            {/* <div className="card"><img src="https://miro.medium.com/1*oUH0ByyW-KOtLe1jAL2GqA.png" alt="" /></div>  */}
              <div className="card"><img src="https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png" alt="" /></div>
-              {/* <div className="card"><img src="" alt="" /></div>
-               <div className="card"><img src="" alt="" /></div> */}
-              
             
         </div>
          <div className='Group'>
@@ -47,7 +43,7 @@ function Caraousal() {
             <div className='card'><img src="https://avatars.githubusercontent.com/u/18133?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/langgraph-color.png" alt="" /></div>
             <div className="card"><img src="../src/assets/pytorchlog.png" alt="" /></div>
-            <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/960px-ChatGPT-Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
+            <div className="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYb9oNbyVvb5J10zWtdj_46nNAfUIko14n8Cb6RudWKxefkunJMyB6zzig&s=10" alt="" /></div>
             <div className="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/3840px-Claude_AI_symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="" /></div>
             <div className="card"><img src="https://static.vecteezy.com/system/resources/previews/055/687/065/non_2x/gemini-google-icon-symbol-logo-free-png.png" alt="" /></div>
             <div className="card"><img src="../src/assets/langsmithlogo.png" alt="" /></div>
@@ -59,11 +55,9 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
             <div className="card"><img src="https://images.opencollective.com/pandas/6e5c060/logo/256.png" alt="" /></div> 
             <div className="card"><img src="https://media.licdn.com/dms/image/v2/D5612AQFSTglfKdI9eg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708971797430?e=2147483647&v=beta&t=iZKe_LBwW0NSHcz1V9_LsKskeje_BYusBCoctWYnWJ0" alt="" /></div> 
-            <div className="card"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></div> 
-            {/* <div className="card"><img src="https://miro.medium.com/1*oUH0ByyW-KOtLe1jAL2GqA.png" alt="" /></div> */}
+            <div className="card"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png" alt="" /></div> 
+            <div className="card"><img src="https://i0.wp.com/ahex.co/wp-content/uploads/2022/06/d3.png?fit=400%2C400&ssl=1" alt="" /></div>
             <div className="card"><img src="https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png" alt="" /></div>
-             {/* <div className="card"><img src="" alt="" /></div>
-              <div className="card"><img src="" alt="" /></div> */}
       
         </div>
     </div>  

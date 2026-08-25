@@ -25,7 +25,9 @@ function Caraousal() {
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
             <div className="card"><img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxvHMT0riO5Ze2r4kAINc_2QgRT1de06pviP2kjjyzFLpCTZZEk1s5nN1tTMNrZUQs52mBPXbxUYT04uiFQgRxAc-&format=source" alt="" /></div>
             <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
-            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="https://images.opencollective.com/pandas/6e5c060/logo/256.png" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div> 
+            <div className="card"><img src="" alt="" /></div> 
             
         </div>
          <div className='Group'>
@@ -49,7 +51,9 @@ function Caraousal() {
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
             <div className="card"><img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxvHMT0riO5Ze2r4kAINc_2QgRT1de06pviP2kjjyzFLpCTZZEk1s5nN1tTMNrZUQs52mBPXbxUYT04uiFQgRxAc-&format=source" alt="" /></div>
             <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
-            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="https://images.opencollective.com/pandas/6e5c060/logo/256.png" alt="" /></div> 
+            <div className="card"><img src="" alt="" /></div> 
+            <div className="card"><img src="" alt="" /></div> 
       
         </div>
     </div>  

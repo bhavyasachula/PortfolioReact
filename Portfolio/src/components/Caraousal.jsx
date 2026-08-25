@@ -23,6 +23,9 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
             
         </div>
          <div className='Group'>
@@ -44,6 +47,9 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="" alt="" /></div>
       
         </div>
     </div>  

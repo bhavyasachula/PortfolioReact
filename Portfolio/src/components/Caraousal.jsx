@@ -23,8 +23,8 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
-            <div className="card"><img src="" alt="" /></div>
-            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxvHMT0riO5Ze2r4kAINc_2QgRT1de06pviP2kjjyzFLpCTZZEk1s5nN1tTMNrZUQs52mBPXbxUYT04uiFQgRxAc-&format=source" alt="" /></div>
+            <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
             <div className="card"><img src="" alt="" /></div>
             
         </div>
@@ -47,8 +47,8 @@ function Caraousal() {
             <div className="card"><img src="https://avatars.githubusercontent.com/u/156354296?s=280&v=4" alt="" /></div>
             <div className="card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-icon-svg-download-png-1175119.png?f=webp&w=128" alt="" /></div>
             <div className="card"><img src="https://assets.codeguru.com/uploads/2003/02/C-tutorials.jpg?f=jpeg" alt="" /></div>
-            <div className="card"><img src="" alt="" /></div>
-            <div className="card"><img src="" alt="" /></div>
+            <div className="card"><img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxvHMT0riO5Ze2r4kAINc_2QgRT1de06pviP2kjjyzFLpCTZZEk1s5nN1tTMNrZUQs52mBPXbxUYT04uiFQgRxAc-&format=source" alt="" /></div>
+            <div className="card"><img src="https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png" alt="" /></div>
             <div className="card"><img src="" alt="" /></div>
       
         </div>

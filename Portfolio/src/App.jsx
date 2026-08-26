@@ -5,10 +5,6 @@ import Navbar from './components/Navbar.jsx';
 import './App.css'
 function App() {
 
-  
-  function onHeroClick(){
-    console.log("Clicked");
-  }
   return (
    <>
   
@@ -45,7 +41,8 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
- <div className='HeroText' onClick={onHeroClick}>HI,I m BHAVYA
+ <div className='HeroText'>
+  HI,I m BHAVYA
 </div> 
   </div>
   <div className="section-header">

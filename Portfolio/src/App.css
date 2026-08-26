@@ -113,6 +113,9 @@ nav li:hover{
   text-align: center;
 }
 
+.section-about-description{
+  text-wrap:;
+}
 .section-tag {
   font-size: 16px;
   font-weight: 600;

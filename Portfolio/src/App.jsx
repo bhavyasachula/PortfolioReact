@@ -47,7 +47,10 @@ function App() {
   <div className="about">
   <span className="section-tag" style={{fontSize:'30px'}}>About</span>
   <div className="section-about-description">
-    <p style={{fontFamily:"Sans serif", color:"white"}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eligendi ut pariatur ad tempore harum omnis quod corporis, molestias, in minus earum assumenda? Velit ipsa impedit nostrum ullam magni! Omnis, minima recusandae.</p>  
+    <p style={{fontFamily:"Cursive", color:"white"}}>
+    Computer Engineering Graduate targeting GenAI Developer and Full Stack Developer roles, with hands-on
+experience building agentic AI systems, RAG workflows, and full-stack applications. Proficient in full-stack
+development, backend systems, API integrations, and database management.</p>  
   </div>
 </div>
 

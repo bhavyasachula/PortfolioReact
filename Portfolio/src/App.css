@@ -59,8 +59,12 @@ nav a {
 nav a:hover {
   background: rgba(202, 11, 236, 0.15);
   color: #fff;
+  
 }
 
+nav li:hover{
+  transform: scale(1.1);
+}
 .HeroText {
   font-size: 78px;
   font-weight: 700;
@@ -74,6 +78,7 @@ nav a:hover {
   white-space: wrap;
 
 }
+
 .hero-sub {
   font-size:40px;
   color: #B8A8D9;

@@ -1,8 +1,8 @@
 import React from 'react'
-import reactlogo from "../src/assets/reactjslogo.png";
-import nodejslogo from "../src/assets/nodejslogo.png";
-import pytorchlogo from "../src/assets/pytorchlog.png";
-import langsmithlogo from "../src/assets/pytorchlog.png";
+import reactlogo from "../assets/reactjslogo.png";
+import nodejslogo from "../assets/nodejslogo.png";
+import pytorchlogo from "../assets/pytorchlog.png";
+import langsmithlogo from "../assets/pytorchlog.png";
 import './caraousal.css'
 
 const imageLinks = [
@@ -39,16 +39,16 @@ function Caraousal() {
     <div className='Caraousal'>
         <div className='Group'>
           {
-            imageLinks.map((link,i)=>{
+            imageLinks.map((link,i)=>(
               <div className="card" key={i}><img src={link} alt="" /></div>
-            })
+            ))
           }
         </div>
          <div className='Group'>
           {
-            imageLinks.map((link,i)=>{
+            imageLinks.map((link,i)=>(
               <div className="card" key={`dup-${i}`}><img src={link} alt="" /></div>
-            })
+            ))
           }
           </div>
     </div>  

@@ -7,7 +7,6 @@ function App() {
 
   return (
    <>
-  
   <div className="main" style={{ width: '100%', height: '800px', position: 'relative'  }}>
 
   <Navbar></Navbar>
@@ -45,6 +44,12 @@ function App() {
   HI,I m BHAVYA
 </div> 
   </div>
+   <div className="section-title-About">
+  <span className="section-tag" style={{fontSize:'30px'}}>About</span>
+</div>
+<div className="section-about">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eligendi ut pariatur ad tempore harum omnis quod corporis, molestias, in minus earum assumenda? Velit ipsa impedit nostrum ullam magni! Omnis, minima recusandae.</p>  
+</div>
   <div className="section-header">
   <span className="section-tag">SKills & Tools</span>
 </div>

@@ -47,7 +47,7 @@ function App() {
   <div className="about">
   <span className="section-tag" style={{fontSize:'30px'}}>About</span>
   <div className="section-about-description">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eligendi ut pariatur ad tempore harum omnis quod corporis, molestias, in minus earum assumenda? Velit ipsa impedit nostrum ullam magni! Omnis, minima recusandae.</p>  
+    <p style={{fontFamily:"Sans serif", color:"white"}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eligendi ut pariatur ad tempore harum omnis quod corporis, molestias, in minus earum assumenda? Velit ipsa impedit nostrum ullam magni! Omnis, minima recusandae.</p>  
   </div>
 </div>
 

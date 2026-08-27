@@ -54,7 +54,7 @@ function App() {
       <span className="terminal-title">bhavya.exe</span>
     </div>
     <div className="terminal-body">
-      <p>
+      <p className='terminalp'>
         <span className="prompt text-white">$whoami</span> 
         <br />
         <span className="output">

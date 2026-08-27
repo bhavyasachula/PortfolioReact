@@ -116,7 +116,7 @@ nav li:hover{
 }
 .section-tag {
   font-family: "Nabla", system-ui;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -137,7 +137,8 @@ nav li:hover{
   -webkit-text-fill-color: transparent;
 }
 .about {
-  padding: 80px 40px;
+  font-size: 50px;
+  padding: 45px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,17 +190,18 @@ nav li:hover{
 }
 
 .prompt {
-  color: #E040FB;
+  color: #0bed22;
   font-weight: 700;
 }
 
 .output {
-  color: #D4C5F0;
+  color: #3af619;
 }
 
 .highlight {
+  font-family: 'Nabla',system-ui;
   color: #fff;
-  background: rgba(224, 64, 251, 0.15);
+  background: rgba(9, 3, 10, 0.15);
   padding: 1px 6px;
   border-radius: 4px;
 }

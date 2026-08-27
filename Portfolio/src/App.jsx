@@ -44,19 +44,41 @@ function App() {
   HI,I m BHAVYA
 </div> 
   </div>
-  <div className="about">
-  <span className="section-tag" style={{fontSize:'30px'}}>About</span>
-  <div className="section-about-description">
-    <p style={{fontFamily:"Cursive", color:"white"}}>
-    Computer Engineering Graduate targeting GenAI Developer and Full Stack Developer roles, with hands-on
-experience building agentic AI systems, RAG workflows, and full-stack applications. Proficient in full-stack
-development, backend systems, API integrations, and database management.</p>  
+<div className="about" style={{fontFamily:"Cursive"}}>
+  <span className="section-tag">About</span>
+  <div className="terminal-frame">
+    <div className="terminal-header">
+      <span className="dot red"></span>
+      <span className="dot yellow"></span>
+      <span className="dot green"></span>
+      <span className="terminal-title">bhavya.exe</span>
+    </div>
+    <div className="terminal-body">
+      <p>
+        <span className="prompt text-white">$whoami</span> 
+        <br />
+        <span className="output">
+          Computer Engineering Graduate targeting{' '}
+          <span className="highlight">GenAI Developer</span> and{' '}
+          <span className="highlight">Full Stack Developer</span> roles.
+        </span>
+        <br /><br />
+        <span className="prompt">$skills --list</span>
+        <br />
+        <span className="output">
+          Building <span className="highlight">agentic AI systems</span>,{' '}
+          <span className="highlight">RAG workflows</span>, and full-stack
+          apps. Backend systems, API integrations, database management.
+        </span>
+        <span className="cursor">|</span>
+      </p>
+    </div>
   </div>
 </div>
-
   <div className="section-header">
   <span className="section-tag">SKills & Tools</span>
 </div>
+
   <Caraousal></Caraousal>
  </>
   )

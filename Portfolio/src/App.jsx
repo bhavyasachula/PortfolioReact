@@ -1,9 +1,30 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import LightTunnel from './components/LightTunnel.jsx'; 
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
+
 function App() {
+  const frameRef = useRef(null);
+
+  function handleMouseMove(e) {
+    const el = frameRef.current;
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * -6;
+    const rotateY = ((x - centerX) / centerX) * 6;
+
+    el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  }
+
+  function handleMouseLeave() {
+    frameRef.current.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+  }
 
   return (
    <>
@@ -22,7 +43,7 @@ function App() {
     pulseBlend={1}
     pulseWidth={1}
     cableCount={20}
-    thickness={0.35}
+    thickness={0.45}
     rimWidth={0.15}
     waviness={0.3}
     sway={0.5}
@@ -32,9 +53,8 @@ function App() {
     glow={1}
     fadeNear={0.5}
     fadeFar={2}
-    brightness={1}
+    brightness={1.2}
     colorVariance
-    grain
     grainIntensity={0.05}
     opacity={1}
     mouseInteraction
@@ -46,7 +66,12 @@ function App() {
   </div>
 <div className="about">
   <span className="section-tag">About</span>
-  <div className="terminal-frame">
+  <div
+    className="terminal-frame"
+    ref={frameRef}
+    onMouseMove={handleMouseMove}
+    onMouseLeave={handleMouseLeave}
+  >
     <div className="terminal-header">
       <span className="dot red"></span>
       <span className="dot yellow"></span>

@@ -152,7 +152,7 @@ nav li:hover{
   -webkit-backdrop-filter: blur(16px);
   /* border: 1px solid rgba(7, 1, 14, 0.3); */
   border-radius: 14px;
-  box-shadow: 0 0 40px rgba(213, 215, 213, 0.229);
+  box-shadow: 0 0 40px rgba(213, 215, 213, 0.195);
   overflow: hidden;
   margin-top: 30px;
 }
@@ -228,15 +228,19 @@ nav li:hover{
   pointer-events: none;
 }
 .terminal-frame {
-  position: relative; /* needed for ::before to sit correctly */
+  position: relative; 
+    transition: transform 0.15s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .cmdtext{
   font-family: "VT323", monospace;
   font-weight: 400;
   font-size: 22px;
-
 }
+
+
 @keyframes blink {
   50% { opacity: 0; }
 }

@@ -55,15 +55,15 @@ function App() {
     </div>
     <div className="terminal-body">
       <p className='terminalp'>
-        <span className="prompt text-white">$whoami</span> 
+        <span className="prompt text-white">bhavya$:whoami</span> 
         <br />
         <span className="output">
           Computer Engineering Graduate targeting{' '}
-          <span className="highlight">GenAI Developer</span> and{' '}
+          <span className="highlight">GenAI Developer</span>,
           <span className="highlight">Full Stack Developer</span> roles.
         </span>
         <br /><br />
-        <span className="prompt">$skills --list</span>
+        <span className="prompt">bhavya$:skills --list</span>
         <br />
         <span className="output">
           Building <span className="highlight">agentic AI systems</span>,{' '}

@@ -207,7 +207,7 @@ nav li:hover{
 }
 
 .cursor {
-  color: #E040FB;
+  color: #f3f5f3;
   animation: blink 1s step-start infinite;
 }
 

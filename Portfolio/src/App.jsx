@@ -55,7 +55,7 @@ function App() {
     </div>
     <div className="terminal-body">
       <p className='terminalp'>
-        <span className="prompt text-white">bhavya$:whoami</span> 
+        <span className="prompt text-white">bhavya@portfolio~$:whoami</span> 
         <br />
         <span className="output">
           Computer Engineering Graduate targeting{' '}

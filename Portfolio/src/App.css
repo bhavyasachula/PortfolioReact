@@ -145,13 +145,11 @@ nav li:hover{
 }
 
 .terminal-frame {
-  width: 100%;
-  max-width: 700px;
+  max-width: 60%;
   background: rgba(15, 8, 24, 0.6);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  border-radius: 14px;
+  /* border: 1px solid rgba(7, 1, 14, 0.3); */
   box-shadow: 0 0 40px rgba(168, 85, 247, 0.25);
   overflow: hidden;
   margin-top: 30px;
@@ -209,6 +207,23 @@ nav li:hover{
 .cursor {
   color: #f3f5f3;
   animation: blink 1s step-start infinite;
+}
+
+.terminal-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+}
+.terminal-frame {
+  position: relative; /* needed for ::before to sit correctly */
 }
 
 @keyframes blink {

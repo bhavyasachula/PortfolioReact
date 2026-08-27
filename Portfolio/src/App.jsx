@@ -63,7 +63,7 @@ function App() {
           <span className="highlight">Full Stack Developer</span> roles.
         </span>
         <br /><br />
-        <span className="prompt">bhavya$:skills --list</span>
+        <span className="prompt">bhavya@portfolio~$:skills --list</span>
         <br />
         <span className="output">
           Building <span className="highlight">agentic AI systems</span>,{' '}

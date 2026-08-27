@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Nabla", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -8,11 +7,13 @@
 }
 
 body {
+  font-family: cursive;
   background-color: black;
   margin: 0;
 }
 
 nav {
+  font-family: "Nabla", system-ui;
   margin-top:10px;
   display: flex;
   justify-content: space-between;
@@ -66,6 +67,7 @@ nav li:hover{
   transform: scale(1.1);
 }
 .HeroText {
+  font-family: "Nabla", system-ui;
   font-size: 78px;
   font-weight: 700;
   letter-spacing: -2px;
@@ -107,16 +109,13 @@ nav li:hover{
   padding: 60px 0 10px;
 }
 
-.about{
-  padding: 60px 0 20px;
-  width: 100%;
-  text-align: center;
-}
 
-.section-about-description{
-  text-wrap:;
+.section-about-description {
+    
+  text-wrap:initial;
 }
 .section-tag {
+  font-family: "Nabla", system-ui;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -136,4 +135,80 @@ nav li:hover{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.about {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terminal-frame {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(15, 8, 24, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 14px;
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.25);
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: rgba(168, 85, 247, 0.08);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-title {
+  margin-left: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  color: #B8A8D9;
+}
+
+.terminal-body {
+  padding: 28px 30px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.prompt {
+  color: #E040FB;
+  font-weight: 700;
+}
+
+.output {
+  color: #D4C5F0;
+}
+
+.highlight {
+  color: #fff;
+  background: rgba(224, 64, 251, 0.15);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.cursor {
+  color: #E040FB;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }

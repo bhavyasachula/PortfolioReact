@@ -3,6 +3,7 @@ import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
+import About from './components/About.jsx';
 
 function App() {
   const frameRef = useRef(null);
@@ -64,8 +65,7 @@ function App() {
   HI,I m BHAVYA
 </div> 
   </div>
-
-
+  <About></About>
   <Caraousal></Caraousal>
  </>
   )

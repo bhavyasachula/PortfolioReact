@@ -28,7 +28,7 @@ function App() {
 
   return (
    <>
-  <div className="main" style={{ width: '100%', height: '770px', position: 'relative'  }}>
+  <div className="main" style={{ width: '100%', height: '870px', position: 'relative'  }}>
 
   <Navbar></Navbar>
  <LightTunnel

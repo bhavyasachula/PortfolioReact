@@ -114,6 +114,7 @@ nav li:hover{
     
   text-wrap:initial;
 }
+
 .section-tag {
   font-family: "Nabla", system-ui;
   font-size: 20px;
@@ -159,6 +160,7 @@ nav li:hover{
 
 .terminal-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 8px;
   padding: 12px 16px;
@@ -166,6 +168,9 @@ nav li:hover{
   /* border-bottom: 1px solid rgba(168, 85, 247, 0.2); */
 }
 
+.resume{
+  font-size: 13px;
+}
 .dot {
   width: 11px;
   height: 11px;
@@ -179,7 +184,7 @@ nav li:hover{
   margin-left: 8px;
   font-family: 'VT323', sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #05000f;
 }
 
@@ -214,32 +219,38 @@ nav li:hover{
   animation: blink 1s step-start infinite;
 }
 
-.terminal-frame::before {
+.terminal-body::before {
   content: '';
   position: absolute;
   inset: 0;
   background: repeating-linear-gradient(
     0deg,
     rgba(255,255,255,0.07) 0px,
-    rgba(255,255,255,0.07) 1px,
+    rgba(19, 19, 19, 0.399) 1px,
     transparent 1px,
-    transparent 3px
+    transparent 2px
   );
   pointer-events: none;
 }
+
 .terminal-frame {
   position: relative; 
-    transition: transform 0.15s ease-out;
+  transition: transform 0.15s ease-out;
   transform-style: preserve-3d;
   will-change: transform;
 }
 
 .cmdtext{
+  color: #3af619db;
   font-family: "VT323", monospace;
   font-weight: 400;
   font-size: 22px;
 }
-
+.inner-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 @keyframes blink {
   50% { opacity: 0; }

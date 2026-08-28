@@ -92,8 +92,8 @@ function App() {
         <span className="prompt">bhavya@portfolio~$:</span><span className='cmdtext'>{' '}whoami</span> 
         <br />
         <span className="output">
-          Computer Engineering Graduate targeting{' '}
-          <span className="highlight">GenAI Developer</span>,
+          Computer Science Graduate targeting{' '}
+          <span className="highlight">AI Developer</span>,
           <span className="highlight">Full Stack Developer</span> roles.
         </span>
         <br /><br />

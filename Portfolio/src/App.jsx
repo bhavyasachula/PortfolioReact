@@ -73,14 +73,23 @@ function App() {
     onMouseLeave={handleMouseLeave}
   >
     <div className="terminal-header">
+      <div className='inner-header'>
       <span className="dot red"></span>
       <span className="dot yellow"></span>
       <span className="dot green"></span>
       <span className="terminal-title ">bhavya.exe</span>
     </div>
+    <div className='resume'>
+      <a href="/resumeSB.pdf"
+            rel="noopener noreferrer"
+            className="nav-resume">
+            Resume
+          </a>
+    </div>
+    </div>
     <div className="terminal-body">
       <p className='terminalp'>
-        <span className="prompt">bhavya@portfolio~$:</span><span className='cmdtext text-green-500'>{''}whoami</span> 
+        <span className="prompt">bhavya@portfolio~$:</span><span className='cmdtext'>{' '}whoami</span> 
         <br />
         <span className="output">
           Computer Engineering Graduate targeting{' '}
@@ -88,14 +97,22 @@ function App() {
           <span className="highlight">Full Stack Developer</span> roles.
         </span>
         <br /><br />
-        <span className="prompt">bhavya@portfolio~$:</span><span className='cmdtext text-green-500'>skills --list</span>
+        <span className="prompt">bhavya@portfolio~$:</span><span className='cmdtext'>{" "}skills --list</span>
         <br />
         <span className="output">
           Building <span className="highlight">agentic AI systems</span>,{' '}
           <span className="highlight">RAG workflows</span>, and full-stack
           apps. Backend systems, API integrations, database management.
         </span>
-        <span className="cursor">|</span>
+        <br/>
+        <br/>
+        <span className="prompt">bhavya@portfolio~$:</span>
+        <span className="cmdtext">{" "}open resume.pdf</span>
+        <br />
+        <span className="output">
+          → <a href="/resumeSB.pdf" target="_blank" className="resume-link">Click here to download</a>
+        </span>
+        <span className="cursor"> ▍</span>
       </p>
     </div>
   </div>

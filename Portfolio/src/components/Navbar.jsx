@@ -6,6 +6,7 @@ function Navbar() {
     { href: "#about", label: "About" },
     { href: "#TechStack", label: "Tech Stack" },
     { href: "#projects", label: "Work" },
+    {href:"#contact",label:"Let's Talk"}
   ];
 
   return (
@@ -25,11 +26,7 @@ function Navbar() {
             </a>
           </li>
         ))}
-        <li>
-          <a href="#contact" style={{ background: "rgba(212, 4, 249, 0.267)" }}>
-            Let's Talk
-          </a>
-        </li>
+        
       </ul>
     </nav>
   );

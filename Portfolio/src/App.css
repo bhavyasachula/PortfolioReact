@@ -64,6 +64,10 @@ nav a {
   border-radius: 999px;
   transition: background 0.3s ease;
 }
+nav a.reel-link {
+  overflow: hidden !important;
+  height: 1.4em !important;
+}
 
 .reel-link:hover {
   background: rgba(224, 64, 251, 0.15);
@@ -192,7 +196,7 @@ nav a {
   align-items: center;
   gap: 8px;
   padding: 12px 16px;
-  background: #37b34986;
+  background: #fffffc;
   /* border-bottom: 1px solid rgba(168, 85, 247, 0.2); */
 }
 

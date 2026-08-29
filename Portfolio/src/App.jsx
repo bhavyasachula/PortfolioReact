@@ -3,7 +3,6 @@ import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
-import About from './components/About.jsx';
 
 function App() {
   const frameRef = useRef(null);
@@ -113,7 +112,7 @@ function App() {
         <span className="output">
           → <a href="/resumeSB.pdf" target="_blank" className="resume-link">Click here to download</a>
         </span>
-        <span className="cursor"> ▍</span>
+        <span className="cursor">||▍</span>
       </p>
     </div>
   </div>

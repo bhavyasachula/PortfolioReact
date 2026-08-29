@@ -1,5 +1,4 @@
-// import galaxyStar from "../assets/galaxyStar.png"
-import galaxyStar from "../assets/galaxyStar.png"; 
+import galaxyStar from "../assets/galaxyStar.png"
 
 function Navbar() {
   const navLinks = [

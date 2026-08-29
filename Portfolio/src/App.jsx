@@ -112,7 +112,7 @@ function App() {
         <span className="output">
           → <a href="/resumeSB.pdf" target="_blank" className="resume-link">Click here to download</a>
         </span>
-        <span className="cursor">||▍</span>
+        <span className="cursor">▍</span>
       </p>
     </div>
   </div>

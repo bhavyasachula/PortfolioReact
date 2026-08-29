@@ -6,7 +6,7 @@ function Navbar() {
     { href: "#about", label: "About" },
     { href: "#TechStack", label: "Tech Stack" },
     { href: "#projects", label: "Work" },
-    {href:"#contact",label:"Let's Talk"}
+    {href:"#contact", label:"Let's Talk"}
   ];
 
   return (

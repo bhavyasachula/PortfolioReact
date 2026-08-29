@@ -22,7 +22,6 @@ nav {
   background: rgba(20, 10, 30, 0.4);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  position: absolute;
   position: fixed;
   width: 70%;
   transform: translateX(20%);
@@ -33,6 +32,17 @@ nav {
   z-index: 10;
 }
 
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo img {
+  display: block; /* removes inline baseline gap */
+  height: 40px;
+  width: auto;
+}
 
 nav ul li {
   list-style-type: none;
@@ -49,7 +59,7 @@ nav a {
   color: #E0D4FF;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.2px;
   padding: 10px 20px;
   border-radius: 999px;
@@ -57,16 +67,13 @@ nav a {
 }
 
 .reel-link {
-  display: inline-block;
+  display: block;
+  align-items: center;
   overflow: hidden;
-  height: 1.4em;
-  padding: 10px 20px;
+  height: 40px;
+  padding: 0 20px;
   border-radius: 999px;
-  transition: background 0.3s ease;
-}
-nav a.reel-link {
-  overflow: hidden !important;
-  height: 1.4em !important;
+  transition: background 0.35s ease;
 }
 
 .reel-link:hover {
@@ -80,13 +87,13 @@ nav a.reel-link {
 }
 
 .reel-link:hover .reel-inner {
-  transform: translateY(-1.4em);
+  transform: translateY(-40px);
 }
 
 .reel-text {
   display: block;
-  height: 1.4em;
-  line-height: 1.4em;
+  height: 40px;
+  line-height: 40px;
   color: #E0D4FF;
   font-weight: 500;
   font-size: 16px;

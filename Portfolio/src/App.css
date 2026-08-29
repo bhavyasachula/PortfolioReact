@@ -39,7 +39,7 @@ nav {
 }
 
 .nav-logo img {
-  display: block; /* removes inline baseline gap */
+  display: block; 
   height: 40px;
   width: auto;
 }

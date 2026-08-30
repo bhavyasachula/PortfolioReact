@@ -111,12 +111,7 @@ function App() {
         <br />
         <span className="output">
           → <a href="/resumeSB.pdf" target="_blank" className="resume-link">Click here to download </a>
-         
-<span style="background-color: #E53935; color: #FFFFFF; font-family: Arial, sans-serif; font-weight: bold; font-size: 12px; padding: 3px 6px; border-radius: 4px; letter-spacing: 0.5px; display: inline-block;">PDF</span>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#E53935">
-  <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .8-.7 1.5-1.5 1.5H9v2H7.5V7H10c.8 0 1.5.7 1.5 1.5v1zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V7H15c.8 0 1.5.7 1.5 1.5v3zm4-3.5H19v1h1.5V10H19v3h-1.5V7H20.5v1.5zM9 9.5h-.5v-1H9c.3 0 .5.2.5.5s-.2.5-.5.5zm5.5 2h-1v-3h1c.3 0 .5.2.5.5v2c0 .3-.2.5-.5.5zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"/>
-</svg>
+          
         </span>
         <span className="cursor">▍</span>
       </p>
@@ -127,6 +122,9 @@ function App() {
   <span className="section-tag">SKills & Tools</span>
 </div>
   <Caraousal></Caraousal>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="#35e54c" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .8-.7 1.5-1.5 1.5H9v2H7.5V7H10c.8 0 1.5.7 1.5 1.5v1zm5 2c0 .8-.7 1.5-1.5 1.5h-2.5V7H15c.8 0 1.5.7 1.5 1.5v3zm4-3.5H19v1h1.5V10H19v3h-1.5V7H20.5v1.5zM9 9.5h-.5v-1H9c.3 0 .5.2.5.5s-.2.5-.5.5zm5.5 2h-1v-3h1c.3 0 .5.2.5.5v2c0 .3-.2.5-.5.5zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"/>
+</svg>
  </>
   )
 }

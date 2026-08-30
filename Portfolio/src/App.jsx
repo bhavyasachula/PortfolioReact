@@ -3,6 +3,8 @@ import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
+import { FileTerminal } from 'lucide-react';
+
 
 function App() {
   const frameRef = useRef(null);
@@ -110,7 +112,7 @@ function App() {
         <span className="cmdtext">{" "}open resume.pdf</span>
         <br />
         <span className="output">
-          → <a href="/resumeSB.pdf" target="_blank" className="resume-link">Click here to download </a>
+          → <a href="/resumeSB.pdf" target="_blank" className="resume-link">Click here to download <FileTerminal className="inline-block text-[#00FF66] w-4 h-4 ml-1 align-middle" /></a>
           
         </span>
         <span className="cursor">▍</span>

@@ -122,31 +122,7 @@ function App() {
   <span className="section-tag">SKills & Tools</span>
 </div>
   <Caraousal></Caraousal>
-<div style="background-color: #0d1117; color: #00FF66; font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 14px; padding: 6px 12px; border: 1px solid #00FF66; border-radius: 4px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 0 8px rgba(0, 255, 102, 0.2);">
-  <span style="opacity: 0.7;">&gt;_</span>
-  <span>[PDF]</span>
-</div>
 
-
-<div style="background-color: #0d1117; color: #00FF66; font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 14px; padding: 6px 12px; border: 1px solid #00FF66; border-radius: 4px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 0 8px rgba(0, 255, 102, 0.2);">
-  <span style="opacity: 0.7;">&gt;_</span>
-  <span>[PDF]</span>
-</div>
-
-
-<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-
-  <rect x="26" y="0" width="204" height="256" rx="16" ry="16" fill="#0D1117" stroke="#00FF66" stroke-width="6"/>
-
-
-  <path d="M166 0 L230 64 H182 C173.2 64 166 56.8 166 48 Z" fill="#00FF66" opacity="0.3"/>
-  <path d="M166 0 L230 64" stroke="#00FF66" stroke-width="6" fill="none"/>
-
-  <text x="50" y="90" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="45" fill="#00FF66">&gt;_</text>
-
- 
-  <text x="128" y="185" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="60" fill="#00FF66" text-anchor="middle" letter-spacing="4">PDF</text>
-</svg>
 
  </>
   )

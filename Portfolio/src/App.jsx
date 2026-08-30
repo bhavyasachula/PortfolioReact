@@ -122,13 +122,7 @@ function App() {
   <span className="section-tag">SKills & Tools</span>
 </div>
   <Caraousal></Caraousal>
-<svg width="25" height="25" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
 
-  <rect x="26" y="0" width="204" height="256" rx="24" ry="24" fill="#4CAF50"/>
-  <path d="M166 0 L230 64 H190 C176.7 64 166 53.3 166 40 Z" fill="#388E3C"/>
-  <path d="M75 0 C150 50 166 200 230 200 V232 C230 245.3 219.3 256 206 256 H175 C120 180 80 80 75 0 Z" fill="#2E7D32" opacity="0.3"/>
-  <text x="128" y="180" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="70" fill="#FFFFFF" text-anchor="middle">PDF</text>
-</svg>
  </>
   )
 }

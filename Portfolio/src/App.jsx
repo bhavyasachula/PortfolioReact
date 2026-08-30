@@ -85,7 +85,7 @@ function App() {
       <a href="/resumeSB.pdf"
             rel="noopener noreferrer"
             className="nav-resume">
-            Resume
+            <FileTerminal className="inline-block text-[#000000] w-4 h-4 ml-1 align-middle" />
           </a>
     </div>
     </div>

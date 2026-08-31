@@ -36,7 +36,7 @@ function Caraousal() {
   
   return (
     <>
-    <div className='Caraousal'>
+    <div className='Caraousal' id='TechStack'>
         <div className='Group'>
           {
             imageLinks.map((link,i)=>(

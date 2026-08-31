@@ -104,7 +104,7 @@ function App() {
         <span className="output">
           Building <span className="highlight">agentic AI systems</span>,{' '}
           <span className="highlight">RAG workflows</span>, and full-stack
-          apps ,Backend systems, API integrations,database management.
+          apps ,Backend systems, API integrations,  database management.
         </span>
 
         <br/>

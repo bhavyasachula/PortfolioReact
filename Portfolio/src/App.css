@@ -8,6 +8,10 @@
 html{
     scroll-behavior: smooth;
 }
+#home,#about, #TechStack {
+  
+  scroll-margin-top: 100px; /* adjust to your nav's height + gap */
+}
 
 body {
   font-family: cursive;

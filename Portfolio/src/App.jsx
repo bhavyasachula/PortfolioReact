@@ -4,7 +4,7 @@ import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
 import { FileTerminal } from 'lucide-react';
-
+import { Link } from 'react-scroll';
 
 function App() {
   const frameRef = useRef(null);
@@ -30,6 +30,7 @@ function App() {
 
   return (
    <>
+   <Link></Link>
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
 
   <Navbar></Navbar>

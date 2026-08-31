@@ -36,6 +36,7 @@ function Caraousal() {
   
   return (
     <>
+    <Link to="about" smooth={true} duration={1200} offset={-100}>
     <div className='Caraousal' id='TechStack'>
         <div className='Group'>
           {
@@ -52,6 +53,7 @@ function Caraousal() {
           }
           </div>
     </div>  
+    </Link>
     </>
   )
 }

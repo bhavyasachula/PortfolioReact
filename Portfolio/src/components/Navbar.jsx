@@ -1,12 +1,13 @@
+import { Link } from 'react-scroll';
 import galaxyStar from "../assets/galaxyStar.png"
 
 function Navbar() {
   const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#TechStack", label: "Tech Stack" },
-    { href: "#projects", label: "Work" },
-    {href:"#contact", label:"Let's Talk"}
+    { to: "home", label: "Home" },
+    { to: "about", label: "About" },
+    { to: "TechStack", label: "Tech Stack" },
+    { to: "projects", label: "Work" },
+    { to: "contact", label: "Let's Talk" }
   ];
 
   return (
@@ -17,16 +18,21 @@ function Navbar() {
 
       <ul>
         {navLinks.map((link) => (
-          <li key={link.href}>
-            <a href={link.href} className="reel-link">
+          <li key={link.to}>
+            <Link
+              to={link.to}
+              smooth={true}
+              duration={1200}
+              offset={-100}
+              className="reel-link"
+            >
               <span className="reel-inner">
                 <span className="reel-text">{link.label}</span>
                 <span className="reel-text">{link.label}</span>
               </span>
-            </a>
+            </Link>
           </li>
         ))}
-        
       </ul>
     </nav>
   );

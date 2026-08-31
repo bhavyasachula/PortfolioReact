@@ -30,7 +30,7 @@ function App() {
 
   return (
    <>
-   <Link></Link>
+   
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
 
   <Navbar></Navbar>

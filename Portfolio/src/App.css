@@ -23,6 +23,7 @@ nav {
   font-family: "Nabla", system-ui;
   margin-top:10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;

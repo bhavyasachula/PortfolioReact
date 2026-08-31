@@ -66,7 +66,7 @@ function App() {
   HI,I m BHAVYA
 </div> 
   </div>
-  <div className="about">
+  <div className="about" id="about">
   <span className="section-tag">About</span>
   <div
     className="terminal-frame"

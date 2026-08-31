@@ -30,7 +30,7 @@ function App() {
 
   return (
    <>
-  <div className="main" style={{ width: '100%', height: '870px', position: 'relative'  }}>
+  <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
 
   <Navbar></Navbar>
  <LightTunnel
@@ -62,7 +62,7 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
- <div className='HeroText' id="home">
+ <div className='HeroText' >
   HI,I m BHAVYA
 </div> 
   </div>
@@ -80,13 +80,6 @@ function App() {
       <span className="dot yellow"></span>
       <span className="dot green"></span>
       <span className="terminal-title ">bhavya.exe</span>
-    </div>
-    <div className='resume'>
-      <a href="/resumeSB.pdf"
-            rel="noopener noreferrer"
-            className="nav-resume">
-            <FileTerminal className="inline-block text-[#000000] w-4 h-4 ml-1 align-middle" />
-          </a>
     </div>
     </div>
     <div className="terminal-body">

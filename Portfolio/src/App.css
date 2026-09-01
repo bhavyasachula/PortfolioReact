@@ -300,6 +300,7 @@ nav a {
   justify-content: space-around;
 }
 
+
 @keyframes blink {
   50% { opacity: 0; }
 }

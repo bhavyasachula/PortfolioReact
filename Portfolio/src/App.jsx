@@ -67,8 +67,8 @@ function App() {
   <CRTWarp
     color="#c755f7"
     backgroundColor="#05010a"
-    speed={0.5}
-    curvature={0.25}
+    speed={0.1}
+    curvature={0.30}
     scanlineStrength={0.25}
     scanlineFrequency={200}
     waveAmplitude={0.3}

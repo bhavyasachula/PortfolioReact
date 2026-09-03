@@ -35,7 +35,7 @@ function App() {
 
   <Navbar></Navbar>
  <LightTunnel
-    cableColor="#A855F7"
+    cableColor="#da0dfe"
     pulseColor="#A855F7"
     tunnelColor="#5227FF"
     tunnelOpacity={0}

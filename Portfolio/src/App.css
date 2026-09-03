@@ -77,7 +77,7 @@ nav a {
 }
 
 .reel-link {
-  /* border: 1px solid rgb(138, 6, 136); */
+  border: 0.4px solid rgb(233, 11, 237);
   display: block;
   /* background: #ad08a0; */
   align-items: center;

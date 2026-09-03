@@ -77,18 +77,33 @@ nav a {
 }
 
 .reel-link {
+  border: 1px solid rgb(138, 6, 136);
   display: block;
+  background: #ad08a0;
   align-items: center;
   overflow: hidden;
   height: 40px;
   padding: 0 20px;
   border-radius: 999px;
-  box-shadow: 10px 10px;
+  box-shadow: 2px 4px purple;
+  transition: background 0.35s ease;
+}
+
+reel-link:nth-child(4){
+  border: 1px solid rgb(138, 6, 136);
+  display: block;
+  background: #ad08a0;
+  align-items: center;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 999px;
+  box-shadow: 2px 4px purple;
   transition: background 0.35s ease;
 }
 
 .reel-link:hover {
-  background: rgba(224, 64, 251, 0.15);
+  /* background: rgba(224, 64, 251, 0.15); */
 }
 
 .reel-inner {

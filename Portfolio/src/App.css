@@ -425,6 +425,11 @@ nav a {
   }
 }
 
+Contact{
+  height: 700px;
+  width: 100%;
+  background-color:#f1ecf3;
+}
 @keyframes blink {
   50% { opacity: 0; }
 }

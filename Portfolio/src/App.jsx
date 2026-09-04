@@ -116,6 +116,18 @@ function App() {
           <span className="highlight">Full Stack Developer</span> roles.
         </span>
         <br /><br />
+
+        <span className="prompt">bhavya@portfolio~$:</span>
+        <span className="cmdtext">{" "}cat education.log</span>
+        <br />
+       <span className="output">
+       <span className="highlight">B.Tech in Computer Science</span> — New LJ Institute of Engineering, 2026 (CGPA 8.26)
+       <br />
+       <span className="highlight">Diploma in Computer Engineering</span> — Government Polytechnic Gandhinagar (CGPA 9.24)
+      </span>
+      <br/>
+      <br/>
+        
         <span className="prompt">bhavya@portfolio~$:</span><span className='cmdtext'>{" "}skills --list</span>
         <br />
         <span className="output">

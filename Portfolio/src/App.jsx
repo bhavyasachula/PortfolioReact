@@ -104,16 +104,17 @@ function App() {
       <span className="dot yellow"></span>
       <span className="dot green"></span>
       <span className="terminal-title ">bhavya.exe</span>
-    </div>
+    </div> 
     </div>
     <div className="terminal-body">
       <p className='terminalp'>
         <span className="prompt">bhavya@portfolio~$:</span><span className='cmdtext'>{' '}whoami</span> 
         <br />
         <span className="output">
-          Computer Science Graduate targeting{' '}
-          <span className="highlight">AI Developer</span>,
-          <span className="highlight">Full Stack Developer</span> roles.
+          CS Grad → 
+          <span className="highlight"> AI Developer</span>|
+          <span className="highlight">Full Stack Developer</span>| roles.
+        Building agentic AI systems and Full stack Apps workflows
         </span>
         <br /><br />
 

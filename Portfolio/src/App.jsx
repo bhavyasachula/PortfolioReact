@@ -155,7 +155,7 @@ function App() {
   <span className="section-tag">SKills & Tools</span>
 </div>
   <Caraousal></Caraousal>
-
+  <Contact></Contact>
  </>
   )
 }

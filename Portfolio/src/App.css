@@ -424,9 +424,8 @@ nav a {
     padding: 14px 20px;
   }
 }
-
-contact{
-  border: 1px solid white;
+getinTouch{
+  background-color: #ad08a0;
 }
 
 @keyframes blink {

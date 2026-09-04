@@ -1,0 +1,13 @@
+.getinTouch{
+    border: 1px solid white;
+    font-size:60px ;
+}
+.getinDesc{
+    border: 1px solid white;
+    text-wrap: wrap;
+    padding: 10px;
+}   
+.getinLoc{
+    border: 1px solid white;
+    padding: 20px ;
+}

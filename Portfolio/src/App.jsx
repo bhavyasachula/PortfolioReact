@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
-// import LightTunnel from './components/LightTunnel.jsx';
-import CRTWarp from './components/CRTwrap.jsx'; 
+import LightTunnel from './components/LightTunnel.jsx';
+// import CRTWarp from './components/CRTwrap.jsx'; 
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'
@@ -20,9 +20,9 @@ function App() {
     const centerY = rect.height / 2;
 
     const rotateX = ((y - centerY) / centerY) * -6;
-    const rotateY = ((x - centerX) / centerX) * 6;
+    const rotateY = ((x - centerX) / centerX) * -6;
 
-    el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    el.style.transform = `scale(1.06) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   }
 
   function handleMouseLeave() {
@@ -35,7 +35,7 @@ function App() {
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
 
   <Navbar></Navbar>
- {/* <LightTunnel
+ <LightTunnel
     cableColor="#da0dfe"
     pulseColor="#A855F7"
     tunnelColor="#5227FF"
@@ -63,8 +63,8 @@ function App() {
     opacity={1}
     mouseInteraction
     mouseStrength={0.1}
-  /> */}
-  <CRTWarp
+  />
+  {/* <CRTWarp
     color="#c755f7"
     backgroundColor="#05010a"
     speed={0.1}
@@ -85,7 +85,7 @@ function App() {
     dpr={1}
     fps={30}
     paused={false}
-/>
+/> */}
  <div className='HeroText' >
   HI,I m BHAVYA
 </div> 

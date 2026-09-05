@@ -1,26 +1,62 @@
-.fontApplied{
+.contact-inner{
     font-family:'VT323',system-ui;
 }
 .getinTouch{
+    padding: 4px;
     font-family: "Nabla";
     border: 1px solid white;
     font-size:70px ;
 }
 .getinDesc{
+    height: 120px;
     border: 1px solid white;
     text-wrap: wrap;
-    font-size: 20px;
+    font-size: 22px;
     padding: 10px;
 }   
+label{
+    font-size: 20px;
+}
 .getinLoc{
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
     font-size: 15px;
     border: 1px solid white;
     padding: 5px;
 }
+.getcard{
+    height: 120px;
+    padding: 10px;
+    border-radius: 6px;
+}
 .title{
-    font-size: 15px;
+    font-size: 21px;
     color: rgba(195, 202, 210, 0.72);
 }
-.getinLoc .text{
+.EmailComponent{
+    border-radius:10px ;
+    font-size: 22px;
+    padding: 10px;
+    justify-content:space-between;
+    align-items: center;
+}
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.socials .socialcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border: 1px solid;
+    height: 100px;
+    width: 100%;
+    font-size: 25px;
+    border-radius:10px ;
+}
 
+.socials .socialcard svg:hover{
+    transform: rotate(-20deg);
 }

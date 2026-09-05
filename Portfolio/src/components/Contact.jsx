@@ -1,5 +1,8 @@
 import React from 'react';
 import './contact.css'
+function handleCopy(){
+  
+}
 function Contact() {
   return (
     <>
@@ -10,7 +13,7 @@ function Contact() {
             <label htmlFor="" >Email</label>
             <div className='EmailComponent flex border-1 border-white'>
               <div className='emailText'>bhavyasachula07@gmail.com</div>
-              <button className='text-white border-1 border-white rounded-md'>Copy</button>
+              <button className='text-white border-1 border-white rounded-md' onClick={handleCopy}>Copy</button>
             </div>
           <div className='getinDesc'>Intersted in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
           <div className='getinLoc grid gap-1 border-1 border-white w-[100%]'> 

@@ -9,5 +9,11 @@
 }   
 .getinLoc{
     border: 1px solid white;
-    padding: 20px ;
+    padding: 5px ;
+}
+.title{
+    color: rgba(195, 202, 210, 0.72);
+}
+.getinLoc .text{
+    font-family:'VT323',system-ui;
 }

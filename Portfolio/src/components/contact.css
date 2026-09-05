@@ -1,20 +1,26 @@
+.fontApplied{
+    font-family:'VT323',system-ui;
+}
 .getinTouch{
-    font-family: "Nabla",system-ui;
+    font-family: "Nabla";
     border: 1px solid white;
-    font-size:60px ;
+    font-size:70px ;
 }
 .getinDesc{
     border: 1px solid white;
     text-wrap: wrap;
+    font-size: 20px;
     padding: 10px;
 }   
 .getinLoc{
+    font-size: 15px;
     border: 1px solid white;
-    padding: 5px ;
+    padding: 5px;
 }
 .title{
+    font-size: 15px;
     color: rgba(195, 202, 210, 0.72);
 }
 .getinLoc .text{
-    font-family:'VT323',system-ui;
+
 }

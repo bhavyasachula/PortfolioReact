@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css'
-function handleCopy(){
-  
+async function handleCopy(){
+ await navigator.clipboard.writeText("bhavyasachula07@gmail.com")
+ setCopied(true)
+ setTimeout(()=> setCopied(false) ,2000)
 }
 function Contact() {
+  const [copied,setCopied] = useState(false);
   return (
     <>
     <div className='flex contact h-[800px] w-[100%] p-1 border-1 border-white text-white justify-center items-center'>

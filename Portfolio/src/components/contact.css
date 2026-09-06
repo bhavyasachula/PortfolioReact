@@ -58,6 +58,6 @@ label{
 }
 
 .socials .socialcard svg:hover{
-    transform: rotate(-15deg);
-    transition: 0.25s ease-in;
+    transform: rotate(45deg);
+    transition: 0.45s ease-in-out;
 }

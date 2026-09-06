@@ -4,12 +4,12 @@
 .getinTouch{
     padding: 4px;
     font-family: "Nabla";
-    border: 1px solid white;
+  
     font-size:70px ;
 }
 .getinDesc{
     height: 120px;
-    border: 1px solid white;
+   
     text-wrap: wrap;
     font-size: 22px;
     padding: 10px;
@@ -21,7 +21,7 @@ label{
     width: 100%;
     grid-template-columns: 1fr 1fr;
     font-size: 15px;
-    border: 1px solid white;
+    
     padding: 5px;
 }
 .getcard{

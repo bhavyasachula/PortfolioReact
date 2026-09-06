@@ -32,7 +32,7 @@ function Contact() {
             <div className='title'>Open to select projects</div>
           </div>
           </div>
-          <div className='socials mt-10 Hello hello'>
+          <div className='socials mt-10 '>
             <div className="socialcard">
               <div>Github</div>
               <div>

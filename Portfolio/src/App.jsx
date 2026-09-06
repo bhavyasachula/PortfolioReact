@@ -91,7 +91,7 @@ function App() {
         <span className="output">
           CS Grad → 
           <span className="highlight"> AI Developer</span>|
-          <span className="highlight">Full Stack Developer</span>| roles.
+          <span className="highlight">Full Stack Developer</span>|
         Building agentic AI systems and Full stack Apps workflows
         </span>
         <br /><br />

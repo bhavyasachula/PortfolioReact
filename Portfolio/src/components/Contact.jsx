@@ -10,15 +10,15 @@ function Contact() {
   const [copied,setCopied] = useState(false);
   return (
     <>
-    <div className='flex contact h-[800px] w-[100%] p-1 border-1 border-white text-white justify-center items-center'>
-      <div className='contact-inner flex flex-col flex-wrap h-[700px] w-[50%] border-1 border-white text-white '>
+    <div className='contact flex h-[800px] w-[100%] p-1 border-1 border-white text-white justify-center items-center'>
+      <div className='contact-inner flex flex-col flex-wrap h-[700px] w-[60%] border-1 border-white text-white '>
           <div className='getinTouch'>Get in Touch</div>
          
             <label htmlFor="" >Email</label>
             <div className='EmailComponent flex border-1 border-white'>
               <div className='emailText'>bhavyasachula07@gmail.com</div>
               <button className='text-white border-1 border-white rounded-md' onClick={handleCopy}>Copy</button>
-            </div>
+            </div> 
           <div className='getinDesc'>Intersted in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
           <div className='getinLoc grid gap-1 border-1 border-white w-[100%]'> 
           <div className='getcard border-1 border '>

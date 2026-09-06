@@ -59,7 +59,7 @@ label{
     border-radius:10px ;
 }
 
-.socials .socialcard svg:hover{
+.socials .socialcard:hover svg{
     transform: rotate(45deg);
     transition: 0.45s ease-in-out;
 }

@@ -33,7 +33,6 @@ function App() {
    <>
    
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
-
   <Navbar></Navbar>
  <LightTunnel
     cableColor="#da0dfe"
@@ -64,28 +63,7 @@ function App() {
     mouseInteraction
     mouseStrength={0.1}
   />
-  {/* <CRTWarp
-    color="#c755f7"
-    backgroundColor="#05010a"
-    speed={0.1}
-    curvature={0.30}
-    scanlineStrength={0.25}
-    scanlineFrequency={200}
-    waveAmplitude={0.3}
-    waveFrequency={2.5}
-    bloom={1.5}
-    bloomRadius={1}
-    noise={0.1}
-    vignette={0}
-    brightness={1.25}
-    pixelation={1}
-    rgbShift={0.015}
-    mouseReact
-    mouseStrength={0.5}
-    dpr={1}
-    fps={30}
-    paused={false}
-/> */}
+  
  <div className='HeroText' >
   HI,I m BHAVYA
 </div> 

@@ -25,6 +25,7 @@ label{
     padding: 5px;
 }
 .getcard{
+  
     height: 120px;
     padding: 10px;
     border-radius: 6px;
@@ -43,7 +44,8 @@ label{
 .socials{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    width: 100%;
+    gap: 1px;
 }
 .socials .socialcard{
     display: flex;

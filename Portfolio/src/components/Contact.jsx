@@ -10,23 +10,23 @@ function Contact() {
   const [copied,setCopied] = useState(false);
   return (
     <>
-    <div className='contact flex h-[800px] w-[100%] p-1 border-1 border-white text-white justify-center items-center'>
-        <div className='contact-inner flex flex-col h-[700px] w-[60%] border-1 border-white text-white overflow-y-auto'>
+    <div className='contact flex h-[800px] w-[100%] p-1 text-white justify-center items-center'>
+        <div className='contact-inner flex flex-col h-[700px] w-[50%]  text-white overflow-y-auto'>
           <div className='getinTouch'>Get in Touch</div>
          
             <label htmlFor="" >Email</label>
             <div className='EmailComponent flex border-1 border-white'>
               <div className='emailText'>bhavyasachula07@gmail.com</div>
-              <button className='text-white border-1 border-white rounded-md' onClick={handleCopy}>Copy</button>
+              <button className='text-white  border-1 border-white rounded-md' onClick={handleCopy}>Copy</button>
             </div> 
           <div className='getinDesc '>Intersted in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
-          <div className='getinLoc grid gap-1 border-1 border-white w-[100%]'> 
-          <div className='getcard border-1 border '>
+          <div className='getinLoc grid gap-1  w-[100%]'> 
+          <div className='getcard  '>
             <div className='title'>Location</div>
             <div className='text text-[25px]'>Ahmedabad,Gujarat</div>
             <div className='title'>IST (UTC +05:30)</div>
           </div>
-          <div className='getcard border-1 border '>
+          <div className='getcard  '>
             <div className='title'>Availablity</div>
             <div className='text text-[25px]'>Full time & Advisory</div>
             <div className='title'>Open to select projects</div>

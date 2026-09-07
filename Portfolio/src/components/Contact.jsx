@@ -12,7 +12,7 @@ function Contact() {
     <>
     <div className='contact flex h-[800px] w-[100%] p-1 text-white justify-center items-center'>
         <div className='contact-inner flex flex-col h-[700px] w-[50%]  text-white overflow-y-auto'>
-          <div className='getinTouch'>Get in Touch</div>
+          <div className='getinTouch'>Get in Touch.</div>
          
             <label htmlFor="" >EMAIL</label>
             <div className='EmailComponent flex border-1 border-white'>

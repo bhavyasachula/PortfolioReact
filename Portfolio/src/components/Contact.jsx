@@ -19,8 +19,8 @@ function Contact() {
               <div className='emailText'>bhavyasachula07@gmail.com</div>
               <button className='text-white rounded-md' onClick={handleCopy}>Copy</button>
             </div> 
-          <div className='getinDesc '>Interested in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
-          <div className='getinLoc grid gap-1  w-[100%]'> 
+          <div className='getinDesc flex flex-wrap'>Interested in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
+          <div className='getinLoc flex flex-wrap gap-1  w-[100%]'> 
           <div className='getcard'>
             <div className='title'>LOCATION</div>
             <div className='text text-[25px]'>Ahmedabad,Gujarat</div>

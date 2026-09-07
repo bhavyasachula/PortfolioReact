@@ -50,14 +50,14 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: 5px;
+    gap: 15px;
 }
 .socials .socialcard{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:10px;
-    height: 100px;
+    
     width: 100%;
     font-size: 25px;
     border-radius:10px ;
@@ -73,6 +73,6 @@ button{
 }
 
 .socialcard{
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.501);
     background-color: rgba(26, 26, 27, 0.528);
 }

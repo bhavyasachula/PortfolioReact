@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import './contact.css'
-async function handleCopy(){
+function Contact(){
   return (
     <>
     <div className='contact flex h-[800px] w-[100%] p-1 text-white justify-center items-center'>
         <div className='contact-inner flex flex-col h-[700px] w-[50%]  text-white overflow-y-auto'>
           <div className='getinTouch'>Get in Touch.</div>
          
-            <label htmlFor="" >EMAIL</label>
+            <label htmlFor="" className='mt-7'>EMAIL</label>
             <div className='EmailComponent flex border-1 border-white'>
               <div className='emailText'>bhavyasachula07@gmail.com</div>
-              <button className='text-white rounded-md' onClick={handleCopy}>Copy</button>
+              <button className='text-white rounded-md'>Copy</button>
             </div> 
           <div className='getinDesc flex flex-wrap'>Interested in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
           <div className='getinLoc flex flex-wrap gap-1  w-[100%]'> 
@@ -25,7 +25,8 @@ async function handleCopy(){
             <div className='title'>Open to select projects</div>
           </div>
           </div>
-          <div className='socials mt-10 '>
+          <h3 className='mt-10'>ONLINE</h3>
+          <div className='socials'>
             <a href="https://github.com/bhavyasachula" target='_blank' className="socialcard">
               <div>Github</div>
               <div >

@@ -36,7 +36,7 @@ function Contact() {
           </div>
           </div>
           <div className='socials mt-10 '>
-            <a className="socialcard">
+            <a href="https://github.com/bhavyasachula" target='_blank' className="socialcard">
               <div>Github</div>
               <div >
                 <svg width="22px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

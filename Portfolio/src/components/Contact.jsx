@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css'
 async function handleCopy(){
- await navigator.clipboard.writeText("bhavyasachula07@gmail.com")
- setCopied(true)
- setTimeout(()=> setCopied(false) ,2000)
-}
-
-function Contact() {
-  function githubDirect(){
-    window.open("https://www/github.com/bhavyasachula");
-  }
-  const [copied,setCopied] = useState(false);
   return (
     <>
     <div className='contact flex h-[800px] w-[100%] p-1 text-white justify-center items-center'>

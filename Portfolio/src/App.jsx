@@ -7,6 +7,7 @@ import './App.css'
 import { FileTerminal } from 'lucide-react';
 import { Link } from 'react-scroll';
 import Contact from './components/Contact.jsx';
+import Project from './components/Project.jsx';
 function App() {
   const frameRef = useRef(null);
 
@@ -133,6 +134,7 @@ function App() {
   <span className="section-tag">SKills & Tools</span>
 </div>
   <Caraousal></Caraousal>
+    <Project></Project>
   <Contact></Contact>
  </>
   )

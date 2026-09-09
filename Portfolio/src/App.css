@@ -107,14 +107,13 @@ nav a {
 }
 .desktop-links li:last-child .reel-link:hover .reel-inner {
   transform: translateY(0);
+  
 }
-
-
 
 .reel-inner {
   display: flex;
   flex-direction: column;
-  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .reel-link:hover .reel-inner {
@@ -317,12 +316,12 @@ nav a {
   align-items: center;
   justify-content: space-around;
 }
-button{
+.EmailComponent button{
   padding: 4px;
   border: 1px solid grey;
   box-shadow: inset -3px -4px 0px black;
 }
-button:hover{
+.EmailComponent button:hover{
 
   transform: scale(1.05);
   

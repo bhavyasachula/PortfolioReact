@@ -314,7 +314,16 @@ nav a {
   align-items: center;
   justify-content: space-around;
 }
+button{
+  padding: 4px;
+  border: 1px solid grey;
+  box-shadow: inset -3px -4px 0px black;
+}
+button:hover{
 
+  transform: scale(1.03);
+  
+}
 /* Hamburger button — hidden on desktop */
 .hamburger {
   display: none;

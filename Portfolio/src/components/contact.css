@@ -54,6 +54,7 @@ button {
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: inset 0px -4px 0px black;
 }
 
 .emailText {
@@ -77,6 +78,7 @@ button {
     width: 100%;
     font-size: 25px;
     border-radius: 10px;
+    box-shadow: inset 0px -4px 0px black;
 }
 
 .socials .socialcard svg {

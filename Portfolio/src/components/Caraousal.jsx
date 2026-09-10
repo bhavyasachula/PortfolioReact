@@ -27,11 +27,12 @@ const imageLinks = [
   "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxvHMT0riO5Ze2r4kAINc_2QgRT1de06pviP2kjjyzFLpCTZZEk1s5nN1tTMNrZUQs52mBPXbxUYT04uiFQgRxAc-&format=source",
   "https://avatars.slack-edge.com/2021-07-28/2335856319233_b1f6442290972bfa5498_512.png",
   "https://images.seeklogo.com/logo-png/45/1/pandas-logo-png_seeklogo-459105.png",
+  "https://explore-feed.github.com/topics/nextjs/nextjs.png",
   "https://media.licdn.com/dms/image/v2/D5612AQFSTglfKdI9eg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708971797430?e=2147483647&v=beta&t=iZKe_LBwW0NSHcz1V9_LsKskeje_BYusBCoctWYnWJ0",
   "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png",
   "https://i0.wp.com/ahex.co/wp-content/uploads/2022/06/d3.png?fit=400%2C400&ssl=1",
   "https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png",
-  "https://karankrishnani.com/images/vercel-logo.webp"
+  "https://karankrishnani.com/images/vercel-logo.webp",
 ];
 function Caraousal() {
   

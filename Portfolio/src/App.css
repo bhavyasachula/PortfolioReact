@@ -103,7 +103,9 @@ nav a {
   box-shadow: inset 1px -3px rgb(77, 7, 77);
   transition: none
 }
-
+.desktop-links li:last-child .reel-link:hover{
+  transform: scale(1.03)
+}
 .desktop-links li:last-child .reel-link:hover .reel-inner {
   transform: translateY(0);
 }

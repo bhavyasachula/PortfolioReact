@@ -34,7 +34,7 @@ nav {
   transform: translateX(14%);
   color: white;
   border-bottom: 1px solid rgba(168, 85, 247, 0.25);
-  box-shadow: inset 0 1px 20px rgba(168, 85, 247, 0.35);
+  box-shadow:  0 1px 20px rgba(168, 85, 247, 0.35);
   padding: 14px 15px;
   z-index: 10;
 }
@@ -106,7 +106,6 @@ nav a {
 
 .desktop-links li:last-child .reel-link:hover .reel-inner {
   transform: translateY(0);
-  
 }
 
 .reel-inner {
@@ -315,16 +314,7 @@ nav a {
   align-items: center;
   justify-content: space-around;
 }
-.EmailComponent button{
-  padding: 4px;
-  border: 1px solid grey;
-  box-shadow: inset -3px -4px 0px black;
-}
-.EmailComponent button:hover{
 
-  transform: scale(1.05);
-  
-}
 /* Hamburger button — hidden on desktop */
 .hamburger {
   display: none;

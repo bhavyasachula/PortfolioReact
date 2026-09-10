@@ -3,7 +3,7 @@ import "./Project.css"
 function Project() {
   return (
     <>
-    <div className='project text-white'>Project</div>
+    <div className='h-[500px] w-[100%] text-white'>Project</div>
     </>
   )
 }

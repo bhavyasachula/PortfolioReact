@@ -57,6 +57,17 @@ button {
     box-shadow: inset -3px -4px 0px black;
 }
 
+.EmailComponent button{
+  padding: 4px;
+  border: 1px solid grey;
+  box-shadow: inset -3px -4px 0px black;
+}
+.EmailComponent button:hover{
+  
+  transform: scale(1.05);
+  
+}
+
 .emailText {
     overflow: hidden;
     text-overflow: ellipsis;

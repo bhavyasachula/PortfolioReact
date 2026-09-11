@@ -25,7 +25,7 @@ function Contact(){
             <div className='title'>Open to select projects</div>
           </div>
           </div>
-          <h3 className='mt-10'>ONLINE</h3>
+          <label className='mt-10'>ONLINE</label>
           <div className='socials'>
             <a href="https://github.com/bhavyasachula" target='_blank' className="socialcard">
               <div>Github</div>

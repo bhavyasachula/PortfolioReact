@@ -23,7 +23,7 @@ function App() {
     const rotateX = ((y - centerY) / centerY) * -6;
     const rotateY = ((x - centerX) / centerX) * -6;
 
-    el.style.transform = `scale(1.06) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.06)`;
   }
 
   function handleMouseLeave() {

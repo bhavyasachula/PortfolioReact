@@ -78,7 +78,10 @@ nav a {
   transition: all 0.25s ease;
  
 }
-
+.proHeading{
+  font-family: "Nabla";
+  font-size: 60px;
+}
 .reel-link {
   /* border: 0.4px solid rgb(233, 11, 237); */
   display: block;
@@ -433,6 +436,7 @@ nav a {
 getinTouch{
   background-color: #ad08a0;
 }
+
 
 @keyframes blink {
   50% { opacity: 0; }

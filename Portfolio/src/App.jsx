@@ -65,7 +65,7 @@ function App() {
     mouseStrength={0.1}
   />
   
- <div className='HeroText' >
+ <div className='HeroText select-none' >
   HI,I m BHAVYA
 </div> 
   </div>

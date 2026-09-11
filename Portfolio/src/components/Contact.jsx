@@ -7,7 +7,7 @@ function Contact(){
         <div className='contact-inner flex flex-col h-[700px] w-[50%]  text-white overflow-y-auto'>
           <div className='getinTouch'>Get in Touch.</div>
          
-            <label htmlFor="" className='mt-7'>EMAIL</label>
+            <label htmlFor="" className='mt-7 mb-2'>EMAIL</label>
             <div className='EmailComponent flex border-1 border-white'>
               <div className='emailText'>bhavyasachula07@gmail.com</div>
               <button className='text-white rounded-md '>Copy</button>
@@ -25,7 +25,7 @@ function Contact(){
             <div className='title'>Open to select projects</div>
           </div>
           </div>
-          <label className='mt-10'>ONLINE</label>
+          <label className='mt-8'>ONLINE</label>
           <div className='socials'>
             <a href="https://github.com/bhavyasachula" target='_blank' className="socialcard">
               <div>Github</div>

@@ -62,3 +62,7 @@
     transition: 0.25;
     transform: rotate(45deg);
 }
+
+.executionSteps{
+    border-radius: 10px;
+}

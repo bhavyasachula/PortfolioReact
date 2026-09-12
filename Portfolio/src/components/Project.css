@@ -2,7 +2,36 @@
     padding: 5px;
     font-family: "VT323",system-ui;
 }
-.projdesc{
+.projDesc{
     text-wrap: wrap;
     overflow: none;
+}
+.statscard{
+    padding: 5px;
+    border:1px solid white;
+    height: 200px;
+    width: 200px;
+}
+.statsCtitle{
+    font-size: 33px;
+    color: rgba(184, 188, 183, 0.836);
+}
+.statsvalue{
+    color: rgba(17, 245, 13, 0.878);
+    font-size: 60px;
+}
+.projTechstack{
+    display: flex;
+    border: 1px solid white;
+    width: 100%;
+}
+.projTechstacklang{
+    color: white;
+    border: 1px solid white;
+    box-shadow: 6px 1px rgb(255, 255, 255);
+    background-color: rgba(18, 173, 18, 0.59);
+    border-radius: 20px;
+    padding:8px;
+    margin:10px;
+    font-size: 29px;
 }

@@ -46,7 +46,7 @@ function Project() {
 
           </div>
       </div>
-      <div className="projSection2  h-[100%] w-[50%] p-[10px]">
+      <div className="projSection2 h-[100%] w-[50%] p-[10px]">
       <div className="innerSection2 flex flex-col justify-evenly h-[100%] p-[10px] border-1">
         <div className="executionSteps text-[35px] flex justify-around items-center h-[100px] w-[100%] border-1">
         <div className="content p-[10px]">01</div>

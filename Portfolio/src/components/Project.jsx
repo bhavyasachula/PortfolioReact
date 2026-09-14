@@ -7,7 +7,7 @@ function Project() {
       <div className="projSection1  h-[100%] w-[50%] p-[15px]" id="projects">
 
         <div className="projTitle text-[60px]">Invoice Dispatcher Agent</div>
-        <div className="projDesc text-[25px]">AgenticInvoiceDispatcher — a LangGraph single-agent system that automates invoice routing and dispatch. It uses LLM-based natural language routing (replacing brittle keyword matching) to classify incoming invoices, Tesseract OCR to extract data from them, and SMTP to send them to the right recipient/department automatically.</div>
+        <div className="projDesc text-[25px]">AgenticInvoiceDispatcher — a agent system that automates invoice routing and dispatch. It uses LLM-based natural language routing (replacing brittle keyword matching) to classify incoming invoices, Tesseract OCR to extract data from them, and SMTP to send them to the right recipient/department automatically.</div>
         <div className='projStats flex flex-wrap justify-around border-1 p-[10px] m-[10px]'>
           <div className="statscard">
             <div className="statsCtitle">EXTRACTION</div>

@@ -30,8 +30,8 @@ nav {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   position: fixed;
-  width: 80%;
-  transform: translateX(14%);
+  width: 50%;
+  transform: translateX(50%);
   color: white;
   border-bottom: 1px solid rgba(168, 85, 247, 0.25);
   box-shadow:
@@ -110,9 +110,6 @@ nav a {
   transition: none;
 }
 
-.desktop-links li:last-child .reel-link:hover{
-  transform: translate(2px,-2px);
-}
 .desktop-links li:last-child .reel-link:hover .reel-inner {
   transform: translateY(0);
 }

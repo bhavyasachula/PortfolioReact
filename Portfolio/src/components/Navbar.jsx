@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import galaxyStar from "../assets/galaxyStar.png"
+import sacredlogo from "../assets/sacredlogo.jpg"
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 

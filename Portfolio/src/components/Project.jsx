@@ -3,7 +3,7 @@ import "./Project.css"
 function Project() {
   return (
     <>
-    <div className='projMaster flex flex-wrap flex-col h-[770px] w-[100%] mt-[15px] text-white border-1  '>
+    <div className='projMaster flex flex-wrap flex-col h-[800px] w-[100%] mt-[15px] text-white border-1  '>
       <div className="projSection1  h-[100%] w-[50%] p-[15px]" id="projects">
 
         <div className="projTitle text-[60px]">Invoice Dispatcher Agent</div>

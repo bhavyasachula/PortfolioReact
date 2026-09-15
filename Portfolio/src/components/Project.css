@@ -37,6 +37,8 @@
     font-size: 23px;
 }
 .liveDemo{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-top :7%;
     font-size: 35px;

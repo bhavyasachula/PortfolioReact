@@ -22,8 +22,8 @@ function App() {
   demoLink: "http://flowchat.streamlit.app/",
   steps: [
     { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
-    { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
-    { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
+    { id: "02", label: "LLM Natural-Language Routing", time: "900ms" },
+    { id: "03", label: "SMTP Dispatch to Department", time: "700ms" },
   ],
 }
 

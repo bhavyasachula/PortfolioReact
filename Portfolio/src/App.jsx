@@ -9,6 +9,22 @@ import { Link } from 'react-scroll';
 import Contact from './components/Contact.jsx';
 import Project from './components/Project.jsx';
 function App() {
+  const invoiceDispatcherData = {
+  title: "Invoice Dispatcher Agent",
+  desc: "AgenticInvoiceDispatcher — an agent system that automates invoice routing and dispatch. It uses LLM-based natural language routing (replacing brittle keyword matching) to classify incoming invoices, Tesseract OCR to extract data from them, and SMTP to send them to the right recipient/department automatically.",
+  stats: [
+    { label: "EXTRACTION", value: "91.9%", sub: "FIELD ACCURACY" },
+    { label: "LATENCY", value: "<1.8s", sub: "CYCLE DURATION" },
+    { label: "DISPATCH", value: "0.0 min", sub: "ZERO-TOUCH OP" },
+  ],
+  techstack: ["PYTHON", "LANGGRAPH", "LANGCHAIN", "STREAMLIT"],
+  repoLink: "https://github.com/bhavyasachula/agentic-billbot-pro",
+  demoLink: "http://flowchat.streamlit.app/",
+  steps: [
+    { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
+  ],
+}
+
   const frameRef = useRef(null);
 
   function handleMouseMove(e) {
@@ -137,7 +153,8 @@ function App() {
     <div className='proheadOuter w-[100%] flex justify-center items-center' >
       <div className='proHeading text-white w-[50%]'>Projects</div>
     </div>
-      <Project></Project>
+    
+  <Project data={invoiceDispatcherData} />
   <Contact></Contact>
  </>
   )

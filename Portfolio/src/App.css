@@ -423,16 +423,23 @@ nav a {
   .desktop-links {
     display: none;
   }
-
   .hamburger {
     display: flex;
   }
-
   nav {
-    width: 78%;
+    width: 92%;
     padding: 14px 20px;
   }
 }
+
+@media (max-width: 640px) {
+  .HeroText { font-size: 38px; }
+  .hero-sub { font-size: 22px; }
+  .TechStack { font-size: 30px; }
+  .about { font-size: 24px; padding: 30px 16px; }
+  
+}
+
 getinTouch{
   background-color: #ad08a0;
 }

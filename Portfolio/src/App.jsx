@@ -22,6 +22,8 @@ function App() {
   demoLink: "http://flowchat.streamlit.app/",
   steps: [
     { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
+    { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
+    { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
   ],
 }
 

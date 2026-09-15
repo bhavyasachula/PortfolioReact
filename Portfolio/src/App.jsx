@@ -21,9 +21,12 @@ function App() {
   repoLink: "https://github.com/bhavyasachula/agentic-billbot-pro",
   demoLink: "http://flowchat.streamlit.app/",
   steps: [
-    { id: "01", label: "Ingestion & OCR Triage", time: "200ms" },
-    { id: "02", label: "LLM Natural-Language Routing", time: "900ms" },
-    { id: "03", label: "SMTP Dispatch to Department", time: "700ms" },
+    { id: "01", label: "Document Ingestion", time: "150ms" },
+    { id: "02", label: "Tesseract OCR Extraction", time: "600ms" },
+    { id: "03", label: "Field Parsing & Validation", time: "200ms" },
+    { id: "04", label: "LLM Natural-Language Routing", time: "500ms" },
+    { id: "05", label: "Recipient Resolution", time: "150ms" },
+    { id: "06", label: "SMTP Dispatch", time: "200ms" },
   ],
 }
 

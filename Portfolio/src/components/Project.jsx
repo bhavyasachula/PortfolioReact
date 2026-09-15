@@ -4,13 +4,12 @@ function Project({ data }) {
   const { title, desc, stats, techstack, repoLink, demoLink, steps } = data
 
   return (
-    <>
-    <div className='projMaster flex justify-evenly flex-wrap flex-col h-[800px] w-[100%] mt-[15px] text-white border-1' id="projects">
-      <div className="projSection1 h-[100%] w-[50%] p-[15px]">
-        <div className="projTitle text-[50px]">{title}</div>
-        <div className="projDesc text-[25px]">{desc}</div>
+    <div className='projMaster flex flex-col lg:flex-row flex-wrap justify-evenly min-h-[600px] lg:h-[800px] w-full mt-[15px] text-white border-1' id="projects">
+      <div className="projSection1 w-full lg:w-[50%] p-[15px]">
+        <div className="projTitle text-[28px] sm:text-[36px] lg:text-[50px]">{title}</div>
+        <div className="projDesc text-[16px] sm:text-[20px] lg:text-[25px]">{desc}</div>
 
-        <div className='projStats flex flex-wrap justify-around border-1 p-[10px] m-[10px]'>
+        <div className='projStats flex flex-wrap justify-around lg:justify-around border-1 p-[10px] m-[10px] gap-[10px]'>
           {stats.map((s) => (
             <div className="statscard" key={s.label}>
               <div className="statsCtitle">{s.label}</div>
@@ -20,15 +19,15 @@ function Project({ data }) {
           ))}
         </div>
 
-        <div className='projTechstack'>
+        <div className='projTechstack flex-wrap'>
           {techstack.map((t) => (
             <div className="projTechstacklang" key={t}>--{t}</div>
           ))}
         </div>
 
-        <div className="liveDemo flex w-[100%] p-[10px] h-[90px]">
+        <div className="liveDemo flex flex-col sm:flex-row w-full p-[10px] gap-[10px] h-auto sm:h-[90px]">
           <a className="liveDemoButton" href={repoLink} target='_blank' rel="noreferrer">
-            <div className="content">View Repository</div>
+            <div className="content">Repository</div>
             <div className="content"><ArrowIcon /></div>
           </a>
           <a className="liveDemoButton" href={demoLink} target='_blank' rel="noreferrer">
@@ -38,10 +37,10 @@ function Project({ data }) {
         </div>
       </div>
 
-      <div className="projSection2 h-[100%] w-[50%] p-[10px]">
-        <div className="innerSection2 flex flex-col justify-evenly h-[100%] p-[10px] border-1">
+      <div className="projSection2 w-full lg:w-[50%] p-[10px]">
+        <div className="innerSection2 flex flex-col justify-evenly h-full p-[10px] border-1 gap-[10px]">
           {steps.map((step) => (
-            <div className="executionSteps text-[35px] flex justify-around items-center h-[100px] w-[100%] border-1" key={step.id}>
+            <div className="executionSteps text-[18px] sm:text-[24px] lg:text-[35px] flex flex-wrap justify-around items-center min-h-[100px] w-full border-1" key={step.id}>
               <div className="content p-[10px]">{step.id}</div>
               <div className="content p-[10px]">{step.label}</div>
               <div className="content p-[10px]">{step.time}</div>
@@ -50,9 +49,7 @@ function Project({ data }) {
         </div>
       </div>
     </div>
-  </>
   )
-
 }
 
 function ArrowIcon() {

@@ -433,7 +433,7 @@ nav a {
 }
 
 @media (max-width: 640px) {
-  .HeroText { font-size: 60px; }
+  .HeroText { font-size: 66px; }
   .hero-sub { font-size: 22px; }
   .TechStack { font-size: 30px; }
   .about { font-size: 24px; padding: 30px 16px; }

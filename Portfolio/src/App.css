@@ -339,6 +339,7 @@ nav a {
 }
 
 .hamburger span {
+  font-family: "VT323",system-ui;
   display: block;
   height: 2px;
   width: 100%;

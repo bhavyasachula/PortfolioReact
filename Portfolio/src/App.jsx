@@ -56,7 +56,7 @@ function App() {
    
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
   <Navbar></Navbar>
- <LightTunnel /*try a new component*/ 
+ <LightTunnel /*try a new component called*/ 
     cableColor="#da0dfe"
     pulseColor="#A855F7"
     tunnelColor="#5227FF"

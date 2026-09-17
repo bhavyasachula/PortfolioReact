@@ -91,7 +91,7 @@ function App() {
 </div> 
   </div>
   <div className="about flex justify-center w-[100%]" id="about">    
-  <div className="section-tag w-[55%]">{'(About)'}</div>
+  <div className="section-tag w-[55%]">{'{About}'}</div>
   <div
     className="terminal-frame"
     ref={frameRef}
@@ -151,12 +151,12 @@ function App() {
     </div>
   </div>
 </div>
-  <div className="section-header flex justify-center w-[100]">
-  <span className="section-tag w-[55%]">{'(Skills & tools)'}</span>
+  <div className="section-header flex justify-center items-center w-[100]">
+  <span className="section-tag w-[55%]">{'{Skills & tools}'}</span>
 </div>
   <Caraousal></Caraousal>
     <div className='proheadOuter w-[100%] flex justify-center items-center' >
-      <div className='proHeading text-white w-[52%]'>{'(Projects)'}</div>
+      <div className='proHeading text-white w-[50%]'>{'{Projects}'}</div>
     </div>
     
   <Project data={invoiceDispatcherData} />

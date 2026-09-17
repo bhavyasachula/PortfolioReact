@@ -44,7 +44,7 @@ function App() {
     const rotateX = ((y - centerY) / centerY) * -6;
     const rotateY = ((x - centerX) / centerX) * -6;
 
-    el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.06)`;
+    el.style.transform = `perspective(1000px) rotateY(${rotateY}deg) rotateX(${rotateX}deg) scale(1.06)`;
   }
 
   function handleMouseLeave() {
@@ -91,7 +91,7 @@ function App() {
 </div> 
   </div>
   <div className="about" id="about">
-  <span className="section-tag">About</span>
+  <div className="section-tag ">About</div>
   <div
     className="terminal-frame"
     ref={frameRef}

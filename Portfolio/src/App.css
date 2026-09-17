@@ -187,16 +187,15 @@ nav a {
 }
 
 .section-tag {
+  
   font-family: "Nabla", system-ui;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #E0D4FF;
   padding: 6px 16px;
-  border: 1px solid rgba(168, 85, 247, 0.4);
-  border-radius: 999px;
-  background: rgba(168, 85, 247, 0.08);
+  
 }
 
 .section-title {

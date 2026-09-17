@@ -152,7 +152,7 @@ function App() {
   </div>
 </div>
   <div className="section-header flex justify-center items-center w-[100]">
-  <span className="section-tag w-[55%]">{'{Skills & tools}'}</span>
+  <span className="section-tag w-[52%]">{'{Skills & tools}'}</span>
 </div>
   <Caraousal></Caraousal>
     <div className='proheadOuter w-[100%] flex justify-center items-center' >

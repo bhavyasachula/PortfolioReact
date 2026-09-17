@@ -152,11 +152,11 @@ function App() {
   </div>
 </div>
   <div className="section-header flex justify-center w-[100]">
-  <span className="section-tag w-[40%]">SKills & Tools</span>
+  <span className="section-tag w-[55%]">{'(Skills & tools)'}</span>
 </div>
   <Caraousal></Caraousal>
     <div className='proheadOuter w-[100%] flex justify-center items-center' >
-      <div className='proHeading text-white w-[50%]'>Projects</div>
+      <div className='proHeading text-white w-[52%]'>{'(Projects)'}</div>
     </div>
     
   <Project data={invoiceDispatcherData} />

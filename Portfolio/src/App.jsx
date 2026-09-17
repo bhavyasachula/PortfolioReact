@@ -41,8 +41,8 @@ function App() {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = ((y - centerY) / centerY) * -6;
-    const rotateY = ((x - centerX) / centerX) * -6;
+    const rotateX = ((y - centerY) / centerY) * -17;
+    const rotateY = ((x - centerX) / centerX) * -17;
 
     el.style.transform = `perspective(1000px) rotateY(${rotateY}deg) rotateX(${rotateX}deg) scale(1.06)`;
   }

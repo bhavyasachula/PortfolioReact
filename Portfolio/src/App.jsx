@@ -90,8 +90,8 @@ function App() {
   HI,I m BHAVYA
 </div> 
   </div>
-  <div className="about" id="about">
-  <div className="section-tag ">About</div>
+  <div className="about flex justify-center w-[100%]" id="about">    
+  <div className="section-tag w-[55%]">{'(About)'}</div>
   <div
     className="terminal-frame"
     ref={frameRef}
@@ -151,8 +151,8 @@ function App() {
     </div>
   </div>
 </div>
-  <div className="section-header">
-  <span className="section-tag">SKills & Tools</span>
+  <div className="section-header flex justify-center w-[100]">
+  <span className="section-tag w-[40%]">SKills & Tools</span>
 </div>
   <Caraousal></Caraousal>
     <div className='proheadOuter w-[100%] flex justify-center items-center' >

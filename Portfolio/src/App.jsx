@@ -16,7 +16,7 @@ function App() {
     { label: "LATENCY", value: "<1.8s", sub: "CYCLE DURATION" },
     { label: "DISPATCH", value: "0.0 min", sub: "ZERO-TOUCH OP" },
   ],
-  techstack: ["PYTHON", "LANGGRAPH", "LANGCHAIN", "STREAMLIT"],
+  techstack: ["$ python dispatcher.py" , "PYTHON", "LANGGRAPH", "LANGCHAIN", "STREAMLIT"],
   repoLink: "https://github.com/bhavyasachula/agentic-billbot-pro",
   demoLink: "http://flowchat.streamlit.app/",
   steps: [

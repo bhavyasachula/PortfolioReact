@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import LightTunnel from './components/LightTunnel.jsx';
-// import CRTWarp from './components/CRTwrap.jsx'; 
+import CRTWarp from './components/CRTwrap.jsx'; 
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import './App.css'

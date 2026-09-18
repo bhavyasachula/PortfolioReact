@@ -41,9 +41,9 @@ function Project({ data }) {
         <div className="innerSection2 flex flex-col justify-evenly h-full p-[10px] border-1 gap-[10px]">
           {steps.map((step) => (
             <div className="executionSteps text-[18px] sm:text-[24px] lg:text-[35px] flex flex-wrap justify-around items-center min-h-[100px] w-full border-1" key={step.id}>
-              <div className="content p-[10px]">{step.id}</div>
-              <div className="content p-[10px]">{step.label}</div>
-              <div className="content p-[10px]">{step.time}</div>
+              <div className="content p-[]">{step.id}</div>
+              <div className="content p-[]">{step.label}</div>
+              <div className="content p-[]">{step.time}</div>
             </div>
           ))}
         </div>
@@ -54,7 +54,7 @@ function Project({ data }) {
 
 function ArrowIcon() {
   return (
-    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M6 18L18 6M18 6H10M18 6V14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )

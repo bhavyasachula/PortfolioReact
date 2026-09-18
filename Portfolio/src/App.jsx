@@ -159,7 +159,7 @@ function App() {
     </div>
     
   <Project data={invoiceDispatcherData} />
-  <Project data={invoiceDispatcherData} />
+
   
   <Contact></Contact>
  </>

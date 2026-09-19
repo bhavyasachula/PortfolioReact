@@ -67,8 +67,6 @@
 }
 
 .executionSteps{
-    color: black;
-    background-image:url('../assets/whorl.png');
     object-fit: cover;
     object-position: center;
     border-radius: 10px;

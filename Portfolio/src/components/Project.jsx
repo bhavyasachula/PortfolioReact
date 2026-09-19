@@ -40,7 +40,7 @@ function Project({ data }) {
           ))}
 
         </div>
-
+          <div className='Pipeline'>PDF ──▶ OCR ──▶ ROUTE ──▶ DISPATCH </div>
         <div className="liveDemo flex flex-col sm:flex-row w-full p-[10px] gap-[10px] h-auto sm:h-[90px]">
 
           <a className="liveDemoButton" href={repoLink} target='_blank' rel="noreferrer">

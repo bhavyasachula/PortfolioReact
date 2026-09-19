@@ -200,7 +200,7 @@ nav a {
   -webkit-text-fill-color: transparent;
 }
 .about {
-
+  background: url('./assets/StrandsGreen.png');
   font-size: 50px;
   padding: 45px 40px;
   display: flex;

@@ -441,3 +441,19 @@ getinTouch{
   50% { opacity: 0; }
 }
 
+.transition::before{
+   content: "";
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+
+  width: 110%;
+  height: 200px;
+  background: url('./assets/StrandsGreen.png');
+  clip-path: polygon(
+    100% 0,
+    0 100%,
+    0  0
+  );
+  z-index: 4;
+}

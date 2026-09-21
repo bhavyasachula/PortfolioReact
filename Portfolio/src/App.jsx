@@ -150,7 +150,7 @@ function App() {
     </div>
   </div>
 </div>
-<div className="transition h-[100px] border-1 border-white"></div>
+<div className="transition relative h-[200px] border-1 border-white"> </div>
   <div className="section-header flex justify-center items-center w-[100]">
   <span className="section-tag w-[52%]">{'{Skills & tools}'}</span>
 </div>

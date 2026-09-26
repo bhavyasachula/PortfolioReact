@@ -154,7 +154,9 @@ function App() {
   <div className="section-header flex justify-center items-center w-[100]">
   <span className="section-tag w-[52%] mt-5">{'{Skills & tools}'}</span>
 </div>
-  
+  <div className="transition">
+    
+  </div>
   <Caraousal></Caraousal>
     <div className='proheadOuter w-[100%] flex justify-center items-center' >
       <div className='proHeading text-white w-[50%]'>{'{PROJECTS}'}</div>

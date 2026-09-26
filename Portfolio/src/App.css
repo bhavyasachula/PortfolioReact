@@ -199,13 +199,25 @@ nav a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about {
+.about ,.wave-section{
   background: url('./assets/strandPurple.png');
   font-size: 50px;
   padding: 45px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-size: cover;
+  background-position: center;   
+  background-attachment: fixed; 
+}
+.wave-section {
+  width: 100%;
+  height: 200px; 
+  clip-path: url(#waveClip);
+  background-image: url('./assets/strandPurple.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .terminal-frame {
@@ -448,4 +460,4 @@ getinTouch{
   width: 100%;
   height: 200px;
 }
-/*figure this out*/
+

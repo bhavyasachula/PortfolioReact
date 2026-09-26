@@ -442,19 +442,10 @@ getinTouch{
   50% { opacity: 0; }
 }
 
-.transition::before{
-  content: "";
-  position: absolute;
+.transition{
+
   bottom: 1px;
   width: 100%;
   height: 200px;
-  background-image: url('./assets/strandPurple.png');
-  background-position: -180% 58%;
-  clip-path: polygon(
-    100% 0,
-    0 100%,
-    0  0
-  );
-  z-index: 2;
 }
 /*figure this out*/

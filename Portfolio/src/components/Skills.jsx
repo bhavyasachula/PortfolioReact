@@ -1,5 +1,7 @@
 import React from 'react'
 import './Skills.css'
+
+
 function Skills() {
     const imageLinks = [
       "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",

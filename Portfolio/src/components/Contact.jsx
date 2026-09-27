@@ -20,10 +20,10 @@ function handleCopy(){
             <label htmlFor="" className='mt-7 mb-2'>EMAIL</label>
             <div className='EmailComponent flex border-1 border-white'>
               <div className='emailText'>bhavyasachula07@gmail.com</div>
-              <button className='text-white rounded-md ' onClick={handleCopy}>{copy}</button>
+              <button className='text-white rounded-md' onClick={handleCopy}>{copy}</button>
             </div> 
           <div className='getinDesc flex flex-wrap'>Interested in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
-          <div className='getinLoc flex flex-wrap gap-1  w-[100%]'> 
+          <div className='getinLoc flex flex-wrap gap-1 w-[100%]'> 
           <div className='getcard'>
             <div className='title'>LOCATION</div>
             <div className='text text-[25px]'>Ahmedabad,Gujarat</div>

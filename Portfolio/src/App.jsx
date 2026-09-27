@@ -198,9 +198,9 @@ const imageLinks = [
   <span className="section-tag w-[52%]">{'{Skills & tools}'}</span>
 </div>
   
-  {/* <Caraousal></Caraousal> */}
+  <Caraousal></Caraousal>
  {/*new grid skills  */}
-<Skills></Skills>
+{/* <Skills></Skills> */}
 
  {/* end grid skills */}
     <div className='proheadOuter w-[100%] flex justify-center items-center' >

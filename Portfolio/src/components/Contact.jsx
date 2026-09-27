@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import './contact.css'
+
 function Contact(){
+const [copy,hndlcopy] = useState("Copy");
+function handleCopy(){
+  hndlcopy("Copied!")
+  setTimeout(()=>{
+    hndlcopy("Copy");
+  },3000)
+  navigator.clipboard.writeText("bhavyasachula07@gmail.com");
+}
+
   return (
     <>
     <div className='contact flex h-[800px] w-[100%] p-1 text-white justify-center items-center'>
@@ -10,7 +20,7 @@ function Contact(){
             <label htmlFor="" className='mt-7 mb-2'>EMAIL</label>
             <div className='EmailComponent flex border-1 border-white'>
               <div className='emailText'>bhavyasachula07@gmail.com</div>
-              <button className='text-white rounded-md '>Copy</button>
+              <button className='text-white rounded-md ' onClick={handleCopy}>{copy}</button>
             </div> 
           <div className='getinDesc flex flex-wrap'>Interested in collaborating in a project, discussing an engineering role, or just want to say hi? Send a note or reach out directly</div>
           <div className='getinLoc flex flex-wrap gap-1  w-[100%]'> 

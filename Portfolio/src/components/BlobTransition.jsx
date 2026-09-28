@@ -171,7 +171,7 @@ export function useBlobTransition() {
 
     tlRef.current = gsap
       .timeline({ onComplete: () => (canvas.style.display = "none") })
-      .to(state, { p: 1, duration: 2.2, ease: "power1.inOut", onUpdate: draw })
+      .to(state, { p: 1, duration: 2.0, ease: "power1.inOut", onUpdate: draw })
       .call(() => onCovered?.()) // fully covered — switch section now
       .to(state, { p: 0, duration: 1.6, ease: "power1.inOut", onUpdate: draw }, "+=0.15");
   }, []);

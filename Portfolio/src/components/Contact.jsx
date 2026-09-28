@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './contact.css'
-const [copy,hndlcopy] = useState("Copy");
 function Contact(){
+const [copy,hndlcopy] = useState("Copy");
 
 function handleCopy(){
   hndlcopy("Copied!")

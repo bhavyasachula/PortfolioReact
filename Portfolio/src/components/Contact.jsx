@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './contact.css'
-
-function Contact(){
 const [copy,hndlcopy] = useState("Copy");
+function Contact(){
+
 function handleCopy(){
   hndlcopy("Copied!")
   setTimeout(()=>{

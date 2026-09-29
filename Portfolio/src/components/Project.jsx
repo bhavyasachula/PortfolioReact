@@ -21,9 +21,7 @@ function Project({ data }) {
           {stats.map((s) => (
             <div className="statscard" key={s.label}>
               <div className="statsCtitle">{s.label}</div>
-
               <div className="statsvalue">{s.value}</div>
-
               <div className="statsCtitle">{s.sub}</div>
             </div>
           ))}
@@ -36,8 +34,8 @@ function Project({ data }) {
             </div>
           ))}
         </div>
-        <div className="Pipeline">PDF ──▶ OCR ──▶ ROUTE ──▶ DISPATCH </div>
-        <div className="liveDemo flex flex-col sm:flex-row w-full p-[10px] gap-[10px] h-auto sm:h-[90px]">
+        {/* <div className="Pipeline">PDF ──▶ OCR ──▶ ROUTE ──▶ DISPATCH </div> */}
+        <div className="liveDemo flex flex-col sm:flex-row w-full p-[10px] gap-[10px] h-auto sm:h-[90px] mt-15">
           <a
             className="liveDemoButton"
             href={repoLink}

@@ -2,13 +2,13 @@ import { useState, useRef } from 'react'
 import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
-import Skills from './components/skills.jsx';
+// import Skills from './components/skills.jsx';
 import strandspurple from './assets/svgpurplee.png'
 import reactlogo from "./assets/reactjslogo.png";
 import nodejslogo from "./assets/nodejslogo.png";
 import pytorchlogo from "./assets/pytorchlog.png";
 import langsmithlogo from "./assets/pytorchlog.png";
-
+// import MicroSlats from './components/MicroSlats.jsx';
 import './App.css'
 import { FileTerminal } from 'lucide-react';
 import { Link } from 'react-scroll';
@@ -91,7 +91,7 @@ const imageLinks = [
    
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
   <Navbar></Navbar>
- <LightTunnel /*CRTwrap here*/ 
+ <LightTunnel 
     cableColor="#da0dfe"
     pulseColor="#A855F7"
     tunnelColor="#5227FF"
@@ -121,6 +121,35 @@ const imageLinks = [
     mouseStrength={0.1}
   />
   
+   {/* <MicroSlats
+    preset="tide"
+    color="#A855F7"
+    glintColor="#ffffff"
+    backgroundColor="#120f17"
+    slatWidth={15}
+    slatHeight={35}
+    gap={3}
+    roundness={0.75}
+    interactive
+    cursorStrength={1}
+    cursorSize={40}
+    swirl={0}
+    trail={1.4}
+    lean={0}
+    intro
+    scale={1.3}
+    speed={0.5}
+    direction={262}
+    chop={0.2}
+    stretch={0.12}
+    glint={0.45}
+    contrast={1.1}
+    perspective={0.5}
+    fog={0.4}
+    introDuration={1.5}
+    paused={false}
+/> */}
+
  <div className='HeroText select-none' >
   HI,I m BHAVYA
 </div> 

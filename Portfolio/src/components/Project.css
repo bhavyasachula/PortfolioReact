@@ -11,6 +11,8 @@
     border:1px solid white;
     height: 200px;
     width: 200px;
+    align-items: center;
+    justify-content: center;
 }
 .statsCtitle{
     font-size: 33px;

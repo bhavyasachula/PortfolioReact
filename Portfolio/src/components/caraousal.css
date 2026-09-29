@@ -8,6 +8,7 @@ html{
 }
 
 .Caraousal {
+  
   mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);

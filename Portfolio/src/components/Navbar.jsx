@@ -1,24 +1,39 @@
-import { useState } from 'react';
-import { Link } from 'react-scroll';
-import galaxyStar from "../assets/galaxyStar.png"
-import sacredlogo from "../assets/sacredlogo.jpg"
+import { useState } from "react";
+import { scroller } from "react-scroll";
+
+import { useBlobTransition, BlobOverlay } from "./BlobTransition";
+
+import galaxyStar from "../assets/galaxyStar.png";
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const { canvasRef, play: playBlob } = useBlobTransition();
 
   const navLinks = [
     { to: "home", label: "Home" },
     { to: "about", label: "About" },
     { to: "TechStack", label: "Tech Stack" },
     { to: "projects", label: "Work" },
-    { to: "contact", label: "Let's Talk" }
+    { to: "contact", label: "Let's Talk" },
   ];
 
-  function handleLinkClick() {
+  function goTo(id) {
     setMenuOpen(false);
+
+    playBlob(() => {
+      scroller.scrollTo(id, {
+        smooth: false,
+        duration: 0,
+        offset: -100,
+      });
+    });
   }
 
   return (
     <>
+      <BlobOverlay canvasRef={canvasRef} />
+
       <nav className="navbar">
         <div className="nav-logo">
           <img src={galaxyStar} alt="Galaxy Star" />
@@ -27,53 +42,59 @@ function Navbar() {
         <ul className="desktop-links">
           {navLinks.map((link) => (
             <li key={link.to}>
-              <Link to={link.to} smooth={true} duration={1200} offset={-100} className="reel-link">
+              <span
+                className="reel-link"
+                onClick={() => goTo(link.to)}
+                style={{ cursor: "pointer" }}
+              >
                 <span className="reel-inner">
                   <span className="reel-text">{link.label}</span>
+
                   <span className="reel-text">{link.label}</span>
                 </span>
-              </Link>
+              </span>
             </li>
           ))}
         </ul>
 
         <button
-          className={`hamburger ${menuOpen ? 'open' : ''}`}
+          className={`hamburger ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
-        >
+
+          
+        ><span></span>
+        <span></span>
+        <span></span>
         </button>
+
+        
       </nav>
 
-      <div className={`mobile-menu-overlay ${menuOpen ? 'active' : ''}`}>
+      <div className={`mobile-menu-overlay ${menuOpen ? "active" : ""}`}>
         <div className="mobile-menu-row">
           {navLinks.slice(0, 3).map((link) => (
-            <Link
+            <span
               key={link.to}
-              to={link.to}
-              smooth={true}
-              duration={1200}
-              offset={-100}
               className="mobile-pill"
-              onClick={handleLinkClick}
+              onClick={() => goTo(link.to)}
+              style={{ cursor: "pointer" }}
             >
               {link.label}
-            </Link>
+            </span>
           ))}
         </div>
+
         <div className="mobile-menu-row">
           {navLinks.slice(3).map((link) => (
-            <Link
+            <span
               key={link.to}
-              to={link.to}
-              smooth={true}
-              duration={1200}
-              offset={-100}
               className="mobile-pill"
-              onClick={handleLinkClick}
+              onClick={() => goTo(link.to)}
+              style={{ cursor: "pointer" }}
             >
               {link.label}
-            </Link>
+            </span>
           ))}
         </div>
       </div>

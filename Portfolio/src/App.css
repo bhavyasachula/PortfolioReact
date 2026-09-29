@@ -114,7 +114,6 @@ nav a {
   transform: scale(1.1);  
 }
 .desktop-links li:last-child .reel-link:hover{
-  
   transform: scale(1.05);
 }
 

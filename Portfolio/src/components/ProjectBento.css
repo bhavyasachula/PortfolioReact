@@ -5,6 +5,11 @@
   --accent-dim:  rgba(126, 224, 138, 0.10);   /* green at 10% — the tint */
   --border:      rgba(120, 220, 140, 0.14);   /* faint green hairline */
 }
+.b-title {
+  background: linear-gradient(150deg, var(--accent-dim), var(--surface) 60%);
+  border: 1px solid var(--border);
+
+}
 
 .Container{
     font-family: "VT323",system-ui;
@@ -20,17 +25,30 @@
     grid-template-columns: repeat(4,1fr);
     
 }
+.metrix{
+    font-size: 60px;
+    color:#7ee08a;
+}
+.gridcard span{
+    font-size: 30px;
+    color: rgb(167, 164, 164);
+}
 .innerTetle label{
     font-size: 55px;
 }
 .innerTetle p{
-    font-size: 22px;
+    font-size: 21.5px;
     text-wrap: wrap;
-    color:rgb(161, 158, 158);
+    color:rgb(161, 158, 158);   
 }
 .gridcard{
     border-radius: 1px;
-    border:1px solid #da0dfe;
+    border: 1px solid var(--border);
+    background: rgba(126, 224, 138, 0.06); 
+    padding: 20px;
+}
+.LiveLinks button{
+  border: 1px solid var(--border);
 }
 .tetle{
     grid-area:tetle;

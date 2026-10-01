@@ -12,8 +12,13 @@
 }
 
 .Container{
+    
+    background:
+    radial-gradient(ellipse 70% 120% at 10% 10%, rgba(126, 224, 138, 0.12), transparent 70%),
+    var(--surface);
+    
     font-family: "VT323",system-ui;
-    grid-auto-rows: minmax(200px, auto);
+    grid-auto-rows: minmax(190px, auto);
     grid-template-areas:
   "tetle tetle c1     c2"
   "tetle tetle metric metric"

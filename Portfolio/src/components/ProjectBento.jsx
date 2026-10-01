@@ -12,7 +12,7 @@ function ProjetBento() {
               <p>Agentic invoice routing — OCR extraction, LLM <br></br> classification, SMTP dispatch. Zero manual touch</p>
               </div>
               <div className='LiveLinks flex gap-5 text-[30px]'>
-                <button className='bg-green-400 '><a href="" className=''>Repository</a></button>
+                <button className='bg-green-400 text-black'><a href="" className=''>Repository</a></button>
                 <button><a href="" className=''>live Demo</a></button>
               </div>
               </div>

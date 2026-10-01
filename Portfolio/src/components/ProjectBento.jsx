@@ -5,16 +5,22 @@ function ProjetBento() {
    <>
     <div className=''>
         <div className='Container w-full text-white'>
-            <div className="gridcard tetle">
-              <div className='innerTetle w-full p-[20px]'>
-               <label className="" htmlFor="">Agentic Invoice Dispatcher</label>
+            <div className="gridcard tetle b-title">
+              <div className='flex flex-col justify-between h-full w-full p-[20px]'>
+              <div className='innerTetle'>
+               <label className="" htmlFor="">Invoice Dispatcher Agent</label>
               <p>Agentic invoice routing — OCR extraction, LLM <br></br> classification, SMTP dispatch. Zero manual touch</p>
               </div>
+              <div className='LiveLinks flex gap-5 text-[30px]'>
+                <button className='bg-green-400 '><a href="" className=''>Repository</a></button>
+                <button><a href="" className=''>live Demo</a></button>
               </div>
-            <div className="gridcard c1">91.9% <span>field accuracy</span></div>
-            <div className="gridcard c2">{'<1.8s'}<span>cycle time</span></div>
-            <div className="gridcard m1">0.0 <span>touch minutes</span></div>
-            <div className="gridcard m2">6 <span>Pipeline stages</span></div>
+              </div>
+              </div>
+            <div className="gridcard c1"> <div className='metrix'>91.9%</div> <span>field accuracy</span></div>
+            <div className="gridcard c2"><div className='metrix'>{'<1.8s'}</div><span>cycle time</span></div>
+            <div className="gridcard m1"><div className='metrix'>0.0</div><span>touch minutes</span></div>
+            <div className="gridcard m2"><div className='metrix'>6</div> <span>Pipeline stages</span></div>
             <div className="gridcard metric">
               <div className='StatusContainer'>
                  <div className='innerStats'>

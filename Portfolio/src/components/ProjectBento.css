@@ -1,3 +1,11 @@
+:root {
+  --bg:          #0a0d0b;                     /* page background */
+  --surface:     #10140f;                     /* card background */
+  --accent:      #7ee08a;                     /* the green */
+  --accent-dim:  rgba(126, 224, 138, 0.10);   /* green at 10% — the tint */
+  --border:      rgba(120, 220, 140, 0.14);   /* faint green hairline */
+}
+
 .Container{
     font-family: "VT323",system-ui;
     grid-auto-rows: minmax(200px, auto);
@@ -13,13 +21,12 @@
     
 }
 .innerTetle label{
-    font-size: 60px;
+    font-size: 55px;
 }
 .innerTetle p{
-    font-size: 25px;
-    font-weight: 100;
+    font-size: 22px;
     text-wrap: wrap;
-    color:gray;
+    color:rgb(161, 158, 158);
 }
 .gridcard{
     border-radius: 1px;

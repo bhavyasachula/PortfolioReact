@@ -12,7 +12,6 @@
 }
 
 .Container{
-    
     background:
     radial-gradient(ellipse 70% 120% at 10% 10%, rgba(223, 84, 221, 0.222), transparent 70%),
     var(--surface);

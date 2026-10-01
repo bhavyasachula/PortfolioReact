@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
+import ProjetBento from './components/ProjectBento.jsx';
 // import Skills from './components/skills.jsx';
 import strandspurple from './assets/svgpurplee.png'
 import reactlogo from "./assets/reactjslogo.png";
@@ -235,10 +236,7 @@ const imageLinks = [
     <div className='proheadOuter w-[100%] flex justify-center items-center' >
       <div className='proHeading text-white w-[50%]'>{'{PROJECTS}'}</div>
     </div>
-    
-  <Project data={invoiceDispatcherData} />
-
-  
+<ProjetBento></ProjetBento>
   <Contact></Contact>
  </>
   )

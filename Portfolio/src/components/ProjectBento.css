@@ -1,0 +1,52 @@
+.Container{
+    font-family: "VT323",system-ui;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas:
+  "tetle tetle c1     c2"
+  "tetle tetle metric metric"
+  "m1    m2    metric metric"
+  "flow  flow  stack  proc";
+    padding: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.innerTetle label{
+    font-size: 60px;
+}
+.innerTetle p{
+    font-size: 25px;
+    font-weight: 100;
+    text-wrap: wrap;
+    color:gray;
+}
+.gridcard{
+    border-radius: 1px;
+    border:1px solid #da0dfe;
+}
+.tetle{
+    grid-area:tetle;
+}
+.metric{
+    grid-area:metric; 
+}
+
+.c1{
+    grid-area:c1;
+}
+.c2{
+    grid-area:c2;
+}
+.m1{
+    grid-area: m1;
+}
+.m2{
+    grid-area: m2;
+}
+.flow{
+    grid-area: flow;
+}
+.m5{
+    grid-area: m5;
+}

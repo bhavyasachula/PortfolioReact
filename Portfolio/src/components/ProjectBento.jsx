@@ -7,36 +7,60 @@ function ProjetBento() {
         <div className='Container w-full text-white'>
             <div className="gridcard tetle b-title">
               <div className='flex flex-col justify-between h-full w-full p-[20px]'>
-              <div className='innerTetle'>
+              <div className='innerTetle flex flex-col items-start'>
+                <span className='text-white bg-black p-1 self-start text-[25px]'>Featured Project</span>
                <label className="" htmlFor="">Invoice Dispatcher Agent</label>
               <p>Agentic invoice routing — OCR extraction, LLM <br></br> classification, SMTP dispatch. Zero manual touch</p>
               </div>
-              <div className='LiveLinks flex gap-5 text-[30px]'>
-                <button className='bg-green-400 text-black'><a href="" className=''>Repository</a></button>
-                <button><a href="" className=''>live Demo</a></button>
+              <div className='LiveLinks flex gap-5'>
+                <a href="" className=''>Repository</a>
+                <a href="" className=''>live Demo</a>
               </div>
               </div>
+           </div>
+            <div className="gridcard c1 flex flex-col justify-end flex-end"> 
+              <div className='metrix'>91.9%</div> 
+              <span className='fieldText'>Field Accuracy</span>
               </div>
-            <div className="gridcard c1"> <div className='metrix'>91.9%</div> <span>field accuracy</span></div>
-            <div className="gridcard c2"><div className='metrix'>{'<1.8s'}</div><span>cycle time</span></div>
-            <div className="gridcard m1"><div className='metrix'>0.0</div><span>touch minutes</span></div>
-            <div className="gridcard m2"><div className='metrix'>6</div> <span>Pipeline stages</span></div>
-            <div className="gridcard metric">
-              <div className='StatusContainer'>
-                 <div className='innerStats'>
-                    <div>01</div>
-                    <div>02</div>
-                    <div>03</div>
-                </div>
+            <div className="gridcard c2 flex flex-col justify-end flex-end">
+              <div className='metrix'>{'<1.8s'}</div>
+              <span className='fieldText'>Cycle Time</span>
               </div>
+            <div className="gridcard m1 flex flex-col justify-end flex-end">
+              <div className='metrix'>0.0</div>
+              <span className='fieldText'>Touch Minutes</span>
+              </div>
+            <div className="gridcard flow flex items-center justify-center">
+              <div className="flowCard">INGEST</div>
+              <ArrowForward/>
+              <div className="flowCard">OCR</div>  
+              <ArrowForward/>
+              <div className="flowCard">PARSE</div>
+              <ArrowForward/>
+              <div className="flowCard">ROUTE</div>
+              <ArrowForward/>
+              <div className="flowCard">SEND</div>
+             </div>
+            <div className="gridcard stack flex items-center justify-center "> 
+
+              <div className="techStack">——LangGraph</div>
+              <div className="techStack">——LangChain</div>
+              <div className="techStack">——Python</div>
+              <div className="techStack">——Streamlit</div>
             </div>
-            <div className="gridcard flow">{'ingest -> ocr -> parse -> route -> send'}</div>
-            <div className="gridcard stack"> python , langgraph , langchain , streamlit</div>
-            <div className="gridcard proc">01 Project</div>
+            <div className="gridcard proc text-[50px]">01 Project</div>
         </div>
     </div>
    </>
   )
+}
+
+function ArrowForward(){
+  return(
+        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M6 17L11 12L6 7M13 17L18 12L13 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+ </svg>
+  );
 }
 
 export default ProjetBento;

@@ -1,57 +1,75 @@
 :root {
   --bg:          #0a0d0b;                     /* page background */
   --surface:     #10140f;                     /* card background */
-  --accent:      #7ee08a;                     /* the green */
-  --accent-dim:  rgba(126, 224, 138, 0.10);   /* green at 10% — the tint */
-  --border:      rgba(229, 29, 225, 0.14);   /* faint green hairline */
+                   /* the green */
+  --accent-dim:  rgba(219, 126, 224, 0.1);   /* green at 10% — the tint */
+  --border:      #c2410c;   /* faint green hairline */
 }
 .b-title {
-  background: linear-gradient(150deg, var(--accent-dim), var(--surface) 60%);
   border: 1px solid var(--border);
-
 }
 
 .Container{
-    background:
-    radial-gradient(ellipse 70% 120% at 10% 10%, rgba(223, 84, 221, 0.222), transparent 70%),
-    var(--surface);
-    font-family: "VT323",system-ui;
+    color: black;
+    background:url('../assets/veinPattern.png');
+    font-family: "Geist Mono", monospace;
     grid-auto-rows: minmax(190px, auto);
     grid-template-areas:
-  "tetle tetle c1     c2"
-  "tetle tetle metric metric"
-  "m1    m2    metric metric"
-  "flow  flow  stack  proc";
-    padding: 5px;
+  "tetle tetle c1    c2"
+  "tetle tetle flow flow"
+  "m1  stack stack proc" ;
+    padding: 20px;
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: repeat(4,1fr);
-    
 }
+
 .metrix{
-    font-size: 60px;
-    color:#7ee08a;
+    font-size: 40px;
+    color:#9d15af;
 }
-.gridcard span{
+.gridcard .fieldText{
+    font-family: 'VT323',system-ui;
     font-size: 30px;
-    color: rgb(167, 164, 164);
+    color: rgb(0, 0, 0);
 }
 .innerTetle label{
-    font-size: 55px;
+    font-size:45px;
 }
 .innerTetle p{
     font-size: 21.5px;
     text-wrap: wrap;
-    color:rgb(161, 158, 158);   
+    color:rgb(0, 0, 0);   
 }
 .gridcard{
+    background:white ;
     border-radius: 1px;
-    border: 1px solid var(--border);
-    background: rgba(224, 126, 209, 0.099); 
+    border: 5px solid rgb(0, 0, 0);
     padding: 20px;
+    box-shadow: 10px 10px ;
 }
-.LiveLinks button{
-  border: 1px solid var(--border);
+/* .gridcard:hover{
+    transition: 1s ease-in;
+     background:
+    radial-gradient(ellipse 80% 200% at 50% 10%, rgba(166, 70, 185, 0.322), transparent 70%);
+} */
+.flowCard{
+    
+    border: 2px solid black;
+    padding: 10px;
+    margin:10px;
+}
+.LiveLinks a{
+    font-family:monospace;
+    padding: 5px;
+    border: 3px solid black;
+    box-shadow: 6px 6px ;
+    font-size: 25px;
+}
+.techStack{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
 }
 .tetle{
     grid-area:tetle;
@@ -69,12 +87,10 @@
 .m1{
     grid-area: m1;
 }
-.m2{
-    grid-area: m2;
-}
+
 .flow{
     grid-area: flow;
 }
-.m5{
-    grid-area: m5;
+.stack{
+    grid-area: stack;
 }

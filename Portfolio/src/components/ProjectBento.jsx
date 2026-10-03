@@ -48,7 +48,7 @@ function ProjetBento() {
               <div className="techStack">——Python</div>
               <div className="techStack">——Streamlit</div>
             </div>
-            <div className="gridcard proc text-[45px] flex flex-col items-end justify-end font-extrabold">
+            <div className="gridcard proc text-[45px] flex flex-col items-end justify-end">
               <div className="Prjno">01</div>
               <div className="Prjtitle">Project</div>
             </div>

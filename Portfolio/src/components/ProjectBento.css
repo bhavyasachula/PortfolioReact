@@ -27,13 +27,13 @@
 
 .metrix{
     font-size: 40px;
-    color:#000000;
+   
 }
 .gridcard .fieldText{
 
     font-size: 30px;
     font-weight: 700;
-    color: rgb(0, 0, 0);
+
 }
 .innerTetle label{
     font-size:39px;
@@ -56,9 +56,8 @@
     transform: translate(-2px,-2px);
     box-shadow: 10px 10px;
 }
-
 /* .gridcard:hover{
-    transition: 1s ease-in;
+
      background:
     radial-gradient(ellipse 80% 200% at 50% 10%, rgba(166, 70, 185, 0.322), transparent 70%);
 } */

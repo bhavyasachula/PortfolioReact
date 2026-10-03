@@ -10,10 +10,11 @@
 }
 
 .Container{
+    margin-top: 20px;
     color: black;
-    background:url('../assets/veinPattern.png');
+    background: rgb(242, 218, 186);
     font-family: "Geist Mono", monospace;
-    grid-auto-rows: minmax(190px, auto);
+    grid-auto-rows: minmax(200px, auto);
     grid-template-areas:
   "tetle tetle c1    c2"
   "tetle tetle flow flow"
@@ -26,27 +27,38 @@
 
 .metrix{
     font-size: 40px;
-    color:#9d15af;
+    color:#000000;
 }
 .gridcard .fieldText{
-    font-family: 'VT323',system-ui;
+
     font-size: 30px;
+    font-weight: 700;
     color: rgb(0, 0, 0);
 }
 .innerTetle label{
-    font-size:45px;
-}
+    font-size:39px;
+    font-weight: 700;
+}   
 .innerTetle p{
+    font-family: syne;
     font-size: 21.5px;
     text-wrap: wrap;
     color:rgb(0, 0, 0);   
 }
 .gridcard{
-    background:white ;
     border-radius: 1px;
     border: 5px solid rgb(0, 0, 0);
     padding: 20px;
-    box-shadow: 10px 10px ;
+    box-shadow: 7px 7px 0 0 #000;
+    transition: 0.15s ease-in-out;
+}
+.gridcard:hover{
+    transform: translate(-2px,-2px);
+    box-shadow: 10px 10px;
+}
+.proc{
+    color:white;
+    background: #0a0d0b;
 }
 /* .gridcard:hover{
     transition: 1s ease-in;
@@ -54,19 +66,34 @@
     radial-gradient(ellipse 80% 200% at 50% 10%, rgba(166, 70, 185, 0.322), transparent 70%);
 } */
 .flowCard{
-    
+    font-size: 20px;
+    background: #ae08a0;
+    font-weight: 900;
     border: 2px solid black;
     padding: 10px;
     margin:10px;
 }
 .LiveLinks a{
-    font-family:monospace;
+      background: #FFD23F;
+      font-family: "syne";
+      font-weight: 700;
     padding: 5px;
     border: 3px solid black;
-    box-shadow: 6px 6px ;
+    box-shadow: 7px 7px;
     font-size: 25px;
+    transition: 0.15s ease-in-out;
 }
+.LiveLinks a:hover{
+  
+    transform: translate(-2px,-2px);
+    box-shadow: 10px 10px;
+}
+
 .techStack{
+
+    background: #FFD23F;
+    font-size: 20px;
+    font-weight: 900;
     border: 2px solid black;
     padding: 10px;
     margin: 10px;

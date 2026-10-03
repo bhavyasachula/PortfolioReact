@@ -18,7 +18,7 @@ function ProjetBento() {
               </div>
               </div>
            </div>
-            <div className="gridcard c1 flex flex-col justify-end flex-end "> 
+            <div className="gridcard c1 flex flex-col justify-end flex-end bg-black text-white"> 
               <div className='metrix'>91.9%</div> 
               <span className='fieldText'>Field Accuracy</span>
               </div>
@@ -48,7 +48,7 @@ function ProjetBento() {
               <div className="techStack">——Python</div>
               <div className="techStack">——Streamlit</div>
             </div>
-            <div className="gridcard proc text-[45px] flex flex-col items-end justify-end">
+            <div className="gridcard proc text-[45px] flex flex-col items-end justify-end bg-white">
               <div className="Prjno">01</div>
               <div className="Prjtitle">Project</div>
             </div>

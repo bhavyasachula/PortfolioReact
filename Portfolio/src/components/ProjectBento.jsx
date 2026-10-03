@@ -8,7 +8,7 @@ function ProjetBento() {
             <div className="gridcard tetle b-title bg-[#FF69B4]">
               <div className='flex flex-col justify-between h-full w-full p-[20px]'>
               <div className='innerTetle flex flex-col items-start'>
-                <span className='bg-[#FFD23F] p-1 self-start border-2 text-[25px]'>Featured Project</span>
+                <span className='ftpj bg-[#FFD23F] p-1 self-start border-2 text-[25px]'>Featured Project</span>
                <label className="" htmlFor="">Invoice Dispatcher Agent</label>
               <p>Agentic invoice routing — OCR extraction, LLM <br></br> classification, SMTP dispatch. Zero manual touch</p>
               </div>

@@ -14,7 +14,7 @@
     color: black;
     background: rgb(242, 218, 186);
     font-family: "Geist Mono", monospace;
-    grid-auto-rows: minmax(200px, auto);
+    grid-auto-rows: minmax(210px, auto);
     grid-template-areas:
   "tetle tetle c1    c2"
   "tetle tetle flow flow"
@@ -28,6 +28,9 @@
 .metrix{
     font-size: 40px;
    
+}
+.ftpj{
+    font-weight: 500;
 }
 .gridcard .fieldText{
 

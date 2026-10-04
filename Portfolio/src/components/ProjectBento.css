@@ -1,24 +1,34 @@
 :root {
-  --bg:          #0a0d0b;                     /* page background */
-  --surface:     #10140f;                     /* card background */
-                   /* the green */
-  --accent-dim:  rgba(219, 126, 224, 0.1);   /* green at 10% — the tint */
-  --border:      #c2410c;   /* faint green hairline */
+  --magenta:      #ca51dc;
+  --gold:         #e7ba49;
+
+  /* glass */
+  --glass-bg:     rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass-inner:  rgba(255, 255, 255, 0.20);
 }
+
 .b-title {
   border: 1px solid var(--border);
 }
 
-.Container{
+ .Container{
+  /* position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background:
+    radial-gradient(ellipse 50% 200% at 30% 10%, rgba(166, 70, 185, 0.322), transparent 70%),
+     radial-gradient(ellipse 80% 200% at 120% 60%, rgba(166, 70, 185, 0.322), transparent 70%);*/
     margin-top: 20px;
-    color: black;
-    background: rgb(242, 218, 186);
+    color: rgb(242, 246, 242); 
+   background: url('../assets/strandPurple.png');
+    /* background: white; */
     font-family: "Geist Mono", monospace;
     grid-auto-rows: minmax(210px, auto);
     grid-template-areas:
   "tetle tetle c1    c2"
   "tetle tetle flow flow"
-  "m1  stack stack proc" ;
+  "m1  stack stack stack" ;
     padding: 20px;
     display: grid;
     gap: 20px;
@@ -26,38 +36,54 @@
 }
 
 .metrix{
+    
     font-size: 40px;
-   
+  
 }
 .ftpj{
+      font-family: "Rubik Mono One", monospace;
     font-weight: 500;
 }
 .gridcard .fieldText{
-
-    font-size: 30px;
-    font-weight: 700;
-
+      font-family: "Rubik Mono One", monospace;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
 }
 .innerTetle label{
-    font-size:39px;
-    font-weight: 700;
-}   
+    margin-top:5px ;
+    font-family: "Rubik Mono One", monospace;
+    background: black;
+    font-size:30px;
+    font-weight: 500;
+  
+}  
 .innerTetle p{
     font-family: syne;
     font-size: 21.5px;
     text-wrap: wrap;
-    color:rgb(0, 0, 0);   
+
 }
 .gridcard{
-    border-radius: 1px;
-    border: 5px solid rgb(0, 0, 0);
-    padding: 20px;
-    box-shadow: 7px 7px 0 0 #000;
-    transition: 0.15s ease-in-out;
+   background: var(--glass-bg);
+  backdrop-filter: blur(26px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  border: 1px solid var(--glass-border);
+  border-radius: 7px;
+  /* ONE box-shadow. Both parts of the glass look, comma-separated. */
+  box-shadow:
+    8px 8px  rgba(0, 0, 0, 0.512),
+    inset 0 1px 0 var(--glass-inner);
+  padding: 20px;          /* one value, not two */
+  color: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  
 }
 .gridcard:hover{
-    transform: translate(-2px,-2px);
-    box-shadow: 10px 10px;
+    transform: translate(-3px,-3px);
+      box-shadow:
+    10px 10px  rgba(0, 0, 0, 0.512),
+    inset 0 1px 0 var(--glass-inner);
 }
 /* .gridcard:hover{
 
@@ -65,27 +91,30 @@
     radial-gradient(ellipse 80% 200% at 50% 10%, rgba(166, 70, 185, 0.322), transparent 70%);
 } */
 .flowCard{
+    color: black;
     font-size: 20px;
-    background: #ae08a0;
+    background: #FFD23F ;
     font-weight: 900;
-    border: 2px solid black;
+    border: 2px solid ;
     padding: 10px;
     margin:10px;
+  
 }
 .LiveLinks a{
       background: #FFD23F;
-      font-family: "syne";
-      font-weight: 700;
+       font-family: "Rubik Mono One", monospace;
+      /* font-weight: ; */
     padding: 5px;
+    color: black;
     border: 3px solid black;
-    box-shadow: 7px 7px;
-    font-size: 25px;
+    box-shadow: 7px 7px ;
+    font-size: 20px;
     transition: 0.15s ease-in-out;
 }
 .LiveLinks a:hover{
   
     transform: translate(-2px,-2px);
-    box-shadow: 10px 10px;
+    box-shadow: 9px 9px;
 }
 
 .techStack{
@@ -93,9 +122,10 @@
     background: #FFD23F;
     font-size: 20px;
     font-weight: 900;
-    border: 2px solid black;
+    border: 2px solid ;
     padding: 10px;
     margin: 10px;
+    color: black;
 }
 .tetle{
     grid-area:tetle;

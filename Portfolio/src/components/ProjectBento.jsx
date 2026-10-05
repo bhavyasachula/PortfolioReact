@@ -10,7 +10,7 @@ function ProjetBento() {
               <div className='innerTetle flex flex-col items-start'>
                 <span className='ftpj bg-[#FFD23F] p-[3px] self-start border-2 border-black text-black text-[15px]'>Featured Project</span>
                <label className="" htmlFor="">Invoice Dispatcher Agent</label>
-              <p>Agentic invoice routing — OCR extraction, LLM <br></br> classification, SMTP dispatch. Zero manual touch</p>
+              <p>Agentic invoice routing - OCR extraction, LLM <br></br> classification, SMTP dispatch. Zero manual touch</p>
               </div>
               <div className='LiveLinks flex gap-5 '>
                 <a href="https://github.com/bhavyasachula/" target="_blank" className=''>Repository</a>

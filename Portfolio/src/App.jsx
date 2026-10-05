@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
-// import ProjetBento from './components/ProjectBento.jsx';
+import ProjetBento from './components/ProjectBento.jsx';
 import TechStackBeam from './components/TechStackBeam.jsx';
 import myphoto from "./assets/LinkedinProfile.jpeg"
 // import Skills from './components/skills.jsx';
@@ -240,7 +240,7 @@ const imageLinks = [
       <div className='proHeading text-white w-[50%]'>{'{PROJECTS}'}</div>
     </div>
     {/* <Project data={invoiceDispatcherData}></Project> */}
-{/* <ProjetBento></ProjetBento> */}
+<ProjetBento></ProjetBento>
 
   <Contact></Contact>
  </>

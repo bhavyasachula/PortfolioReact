@@ -170,7 +170,7 @@ export default function TechStackBeam({ images, imagephoto}) {
   }, [nodes]);
 
   return (
-    <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
+    <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden select-none">
       <div ref={wrapRef} className="relative" style={{ width: SIZE, height: SIZE }}>
         <canvas
           ref={canvasRef}

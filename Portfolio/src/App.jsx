@@ -13,7 +13,7 @@ import pytorchlogo from "./assets/pytorchlog.png";
 import langsmithlogo from "./assets/pytorchlog.png";
 // import MicroSlats from './components/MicroSlats.jsx';
 import './App.css'
-import { FileTerminal } from 'lucide-react';
+import { FileTerminal, ImageOff } from 'lucide-react';
 import { Link } from 'react-scroll';
 import Contact from './components/Contact.jsx';
 import Project from './components/Project.jsx';

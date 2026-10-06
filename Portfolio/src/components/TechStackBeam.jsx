@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from "react";
 
-const SIZE = 860;
+const SIZE = 800;
 const C = SIZE / 2;
 const INNER_R = 190;
 const OUTER_R = 350;
@@ -193,9 +193,7 @@ export default function TechStackBeam({ images,name="Skills & Tools"}) {
         <div
           className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/5 bg-[#111111] text-center text-4xl font-[Nabla] tracking-wide text-white"
           style={{ left: C, top: C, width: CENTER, height: CENTER }}
-        
- >
-          {/* <img src={imagephoto} alt="" srcset="" className="rounded-full object-cover"/> */}
+         >
           {name}
         </div>
       </div>

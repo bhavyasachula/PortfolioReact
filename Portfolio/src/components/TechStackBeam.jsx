@@ -191,7 +191,7 @@ export default function TechStackBeam({ images,name="Skills & Tools"}) {
         ))}
 
         <div
-          className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0b0d1a] text-center text-4xl font-[Nabla] tracking-wide text-white"
+          className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/5 bg-[#111111] text-center text-4xl font-[Nabla] tracking-wide text-white"
           style={{ left: C, top: C, width: CENTER, height: CENTER }}
         
  >

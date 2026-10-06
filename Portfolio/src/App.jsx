@@ -236,7 +236,7 @@ const imageLinks = [
 
 
  {/* end grid skills */}
-    <div className='proheadOuter w-[100%] flex justify-center items-center' >
+    <div className='proheadOuter w-[100%] flex justify-center  items-center' >
       <div className='proHeading text-white w-[50%]'>{'{PROJECTS}'}</div>
     </div>
     {/* <Project data={invoiceDispatcherData}></Project> */}

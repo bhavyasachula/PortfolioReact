@@ -17,6 +17,8 @@ import { FileTerminal } from 'lucide-react';
 import { Link } from 'react-scroll';
 import Contact from './components/Contact.jsx';
 import Project from './components/Project.jsx';
+
+
 function App() {
   const invoiceDispatcherData = {
   title: "Invoice Dispatcher Agent",
@@ -38,6 +40,7 @@ function App() {
     { id: "06", label: "SMTP Dispatch", time: "200ms" },
   ],
 }
+
 const imageLinks = [
       "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
       reactlogo,
@@ -203,7 +206,7 @@ const imageLinks = [
           <span className="highlight">RAG workflows</span>, and full-stack
           apps ,Backend systems, API integrations,  database management.
         </span>
-
+  
         <br/>
         <br/>
         <span className="prompt">bhavya@portfolio~$:</span>
@@ -226,14 +229,11 @@ const imageLinks = [
 </svg>
 </div>
 
-<div className="section-header flex justify-center items-center w-[100]">
-  <span className="section-tag w-[52%]">{'{Skills & tools}'}</span>
-</div>
-  
   {/* <Caraousal></Caraousal> */}
-  <TechStackBeam images={imageLinks} imagephoto={myphoto}/>
+  <TechStackBeam images={imageLinks} imagephoto={myphoto}   />
  {/*new grid skills  */}
 {/* <Skills></Skills> */}
+
 
  {/* end grid skills */}
     <div className='proheadOuter w-[100%] flex justify-center items-center' >

@@ -5,8 +5,10 @@ const C = SIZE / 2;
 const INNER_R = 190;
 const OUTER_R = 350;
 const NODE = 64;
-const CENTER = 150;
-const DURATION = 2.8;
+const CENTER = 180;
+const DURATION = 3.6;
+const WAIT = 2; // seconds of pause between runs
+const CYCLE = DURATION + WAIT;
 
 const place = (items, radius, offset = 0) =>
   items.map((src, i) => {
@@ -27,16 +29,16 @@ function makeSprite(L, dpr) {
   const grad = () => {
     const g = s.createLinearGradient(PAD, 0, PAD + L, 0);
     g.addColorStop(0, "rgba(255,255,255,0)");
-    g.addColorStop(0.4, "#f5c9f3");
-    g.addColorStop(0.7, "#e8c7f5");
+    g.addColorStop(0.4, "#f8b9dd");
+    g.addColorStop(0.7, "#e8c7f5f6");
     g.addColorStop(1, "rgba(244,114,233,0)");
     return g;
   };
 
   // glow layer
   s.save();
-  s.filter = "blur(4px)";
-  s.globalAlpha = 0.7;
+  s.filter = "blur(0px)";
+  s.globalAlpha = 0.1;
   s.strokeStyle = grad();
   s.lineWidth = 6;
   s.beginPath();
@@ -57,7 +59,7 @@ function makeSprite(L, dpr) {
   return { c, PAD, H, L };
 }
 
-export default function TechStackBeam({ images, imagephoto}) {
+export default function TechStackBeam({ images,name="Skills & Tools"}) {
   const canvasRef = useRef(null);
   const wrapRef = useRef(null);
 
@@ -184,15 +186,17 @@ export default function TechStackBeam({ images, imagephoto}) {
             className="absolute z-10 flex items-center justify-center rounded-full bg-black/95 p-3 ring-1 ring-purple/20"
             style={{ width: NODE, height: NODE, left: n.x - NODE / 2, top: n.y - NODE / 2 }}
           >
-            <img src={n.src} alt="" decoding="async" className="h-full w-full object-contain" />
+            <img src={n.src} alt="" decoding="async" className="h-full rounded-md w-full object-contain" />
           </div>
         ))}
 
         <div
-          className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0b0d1a] text-center text-xl font-semibold tracking-wide text-white"
+          className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0b0d1a] text-center text-4xl font-[Nabla] tracking-wide text-white"
           style={{ left: C, top: C, width: CENTER, height: CENTER }}
-        >
-          <img src={imagephoto} alt="" srcset="" className="rounded-full object-cover"/>
+        
+ >
+          {/* <img src={imagephoto} alt="" srcset="" className="rounded-full object-cover"/> */}
+          {name}
         </div>
       </div>
     </div>

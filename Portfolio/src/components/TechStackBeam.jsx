@@ -6,7 +6,7 @@ const INNER_R = 190;
 const OUTER_R = 350;
 const NODE = 64;
 const CENTER = 180;
-const DURATION = 2.8;
+const DURATION = 3.5;
 const WAIT = 2; // seconds of pause between runs
 const CYCLE = DURATION + WAIT;
 
@@ -29,8 +29,8 @@ function makeSprite(L, dpr) {
   const grad = () => {
     const g = s.createLinearGradient(PAD, 0, PAD + L, 0);
     g.addColorStop(0, "rgba(254, 250, 248, 0)");
-    g.addColorStop(0.4, "#da0dfe");
-    g.addColorStop(0.7, "#d455f7");
+    g.addColorStop(0.4, "#e8c7f5f6");
+    g.addColorStop(0.7, "#f8b9dd");
     g.addColorStop(1, "rgba(255, 255, 255, 0)");
     return g;
   };

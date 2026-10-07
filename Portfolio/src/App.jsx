@@ -4,7 +4,7 @@ import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import ProjetBento from './components/ProjectBento.jsx';
 import TechStackBeam from './components/TechStackBeam.jsx';
-import myphoto from "./assets/LinkedinProfile.jpeg"
+import NewContact from "./components/NewContact.jsx"
 // import Skills from './components/skills.jsx';
 import strandspurple from './assets/svgpurplee.png'
 import reactlogo from "./assets/reactjslogo.png";
@@ -230,7 +230,7 @@ const imageLinks = [
 </div>
 
   {/* <Caraousal></Caraousal> */}
-  <TechStackBeam images={imageLinks} imagephoto={myphoto}   />
+  <TechStackBeam images={imageLinks}  id="TechStack" />   
  {/*new grid skills  */}
 {/* <Skills></Skills> */}
 
@@ -240,9 +240,11 @@ const imageLinks = [
       <div className='proHeading text-white w-[50%]'>{'{PROJECTS}'}</div>
     </div>
     {/* <Project data={invoiceDispatcherData}></Project> */}
-<ProjetBento></ProjetBento>
-
-  <Contact></Contact>
+<ProjetBento id="projects"></ProjetBento>
+  <div className='proheadOuter w-[100%] flex justify-center  mt-10 items-center' >
+      <div className='proHeading text-white w-[50%]'>{"{GET In Touch.}"}</div>
+    </div>
+  <NewContact></NewContact>
  </>
   )
 }

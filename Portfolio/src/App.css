@@ -14,6 +14,29 @@ html{
 #home,#about, #TechStack {
   scroll-margin-top: 100px; /* adjust to your nav's height + gap */
 }
+.bar{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 2px;                 /* thinner = more professional */
+  background-color: #d60fd9;   /* one warm accent instead of purple */
+  z-index: 40;
+  transform-origin: left;
+  animation: fill linear both; /* "both" avoids a flash at the start/end */
+  animation-timeline: scroll();
+} 
+
+.bar{
+  border: 1px solid purple ;
+  height: 10px;
+  mask: repeating-linear-gradient(90deg, #000 0 1px, transparent 10px 10px);
+  -webkit-mask: repeating-linear-gradient(90deg, #000 0 1px, transparent 10px 4px);
+  clip-path: inset(0 100% 0 0);   /* replaces transform-origin/scaleX */
+}
+@keyframes fill{
+  to{ clip-path: inset(0 0 0 0); }  /* remove the old transform keyframes */
+}
+
 
 body {
   font-family: cursive;

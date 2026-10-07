@@ -94,7 +94,8 @@ const imageLinks = [
 
   return (
    <>
-   
+   <div className="track"/>
+  <div className="bar fixed h-[4px] w-full"></div>  
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
   <Navbar></Navbar>
  <LightTunnel 

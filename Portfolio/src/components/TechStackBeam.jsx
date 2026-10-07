@@ -6,7 +6,7 @@ const INNER_R = 190;
 const OUTER_R = 350;
 const NODE = 64;
 const CENTER = 180;
-const DURATION = 3.6;
+const DURATION = 2.8;
 const WAIT = 2; // seconds of pause between runs
 const CYCLE = DURATION + WAIT;
 
@@ -28,17 +28,19 @@ function makeSprite(L, dpr) {
 
   const grad = () => {
     const g = s.createLinearGradient(PAD, 0, PAD + L, 0);
-    g.addColorStop(0, "rgba(255,255,255,0)");
-    g.addColorStop(0.4, "#f8b9dd");
-    g.addColorStop(0.7, "#e8c7f5f6");
-    g.addColorStop(1, "rgba(244,114,233,0)");
+    g.addColorStop(0, "rgba(254, 250, 248, 0)");
+    g.addColorStop(0.4, "#da0dfe");
+    g.addColorStop(0.7, "#d455f7");
+    g.addColorStop(1, "rgba(255, 255, 255, 0)");
     return g;
   };
 
+  //  g.addColorStop(0.4, "#f8b9dd");
+  //   g.addColorStop(0.7, "#e8c7f5f6");
   // glow layer
   s.save();
-  s.filter = "blur(0px)";
-  s.globalAlpha = 0.1;
+  s.filter = "blur(12px)";
+  s.globalAlpha = 0.9;
   s.strokeStyle = grad();
   s.lineWidth = 6;
   s.beginPath();
@@ -191,8 +193,9 @@ export default function TechStackBeam({ images,name="Skills & Tools"}) {
         ))}
 
         <div
-          className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/5 bg-[#111111] text-center text-4xl font-[Nabla] tracking-wide text-white"
+          className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/5 bg-[#0b0b0d] text-center text-4xl font-[Nabla] tracking-wide text-white"
           style={{ left: C, top: C, width: CENTER, height: CENTER }}
+          id="TechStack"
          >
           {name}
         </div>

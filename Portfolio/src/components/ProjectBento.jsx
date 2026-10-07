@@ -4,7 +4,7 @@ function ProjetBento() {
   return (
    <>
     <div className=''>
-        <div className='Container w-full text-white'>
+        <div className='Container w-full text-white' id='projects'>
             <div className="gridcard tetle b-title bg-[]">
               <div className='flex flex-col justify-between h-full w-full p-[20px]'>
               <div className='innerTetle flex flex-col items-start'>
@@ -41,7 +41,7 @@ function ProjetBento() {
               <ArrowForward/>
               <div className="flowCard">SEND</div>
              </div>
-            <div className="gridcard stack flex items-center justify-center bg-[]"> 
+            <div className="gridcard stack flex flex-wrap items-center justify-center bg-[]"> 
 
               <div className="techStack">——LangGraph</div>
               <div className="techStack">——LangChain</div>

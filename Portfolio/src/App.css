@@ -33,10 +33,10 @@ html{
   -webkit-mask: repeating-linear-gradient(90deg, #000 0 1px, transparent 10px 4px);
   clip-path: inset(0 100% 0 0);   /* replaces transform-origin/scaleX */
 }
+
 @keyframes fill{
   to{ clip-path: inset(0 0 0 0); }  /* remove the old transform keyframes */
 }
-
 
 body {
   font-family: cursive;
@@ -60,7 +60,7 @@ nav {
   top: 10px;
   transform: translateX(-50%);
   width: 90%;
-  max-width: 700px;
+  max-width: 990px;
   color: white;
   border-bottom: 1px solid rgba(168, 85, 247, 0.25);
   box-shadow:

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.jsx';
 import ProjetBento from './components/ProjectBento.jsx';
 import TechStackBeam from './components/TechStackBeam.jsx';
 import NewContact from "./components/NewContact.jsx"
+import About from './components/About.jsx';
 // import Skills from './components/skills.jsx';
 import strandspurple from './assets/svgpurplee.png'
 import reactlogo from "./assets/reactjslogo.png";
@@ -94,9 +95,9 @@ const imageLinks = [
 
   return (
    <>
-   <div className="track"/>
-  <div className="bar fixed h-[4px] w-full"></div>  
+  {/* <ScrollRuler /> */}
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
+    
   <Navbar></Navbar>
  <LightTunnel 
     cableColor="#da0dfe"
@@ -161,9 +162,9 @@ const imageLinks = [
   HI,I m BHAVYA
 </div> 
   </div>
-  <div className="about flex justify-center w-[100%]" id="about">    
-  <div className="section-tag w-[55%]">{'{About}'}</div>
-  <div
+{/* <div className="about flex justify-center w-[100%]" id="about">     */}
+   <div className="section-tag w-[100%]">{'{About}'}</div>
+  {/*<div
     className="terminal-frame"
     ref={frameRef}
     onMouseMove={handleMouseMove}
@@ -220,15 +221,17 @@ const imageLinks = [
         <span className="cursor">▍</span>
       </p>
     </div>
-  </div>
-</div>
-<div className="wave-section" >
+  </div> */}
+
+{/* </div> */}
+<About/>
+{/* <div className="wave-section" >
     <svg width="0" height="0" style={{ position: 'absolute' }}>
   <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
     <path d="M0.00000,0.60000L0.01285,0.61656C0.02562,0.63438,0.05139,0.66563,0.07708,0.66656C0.10257,0.66563,0.12847,0.63438,0.15417,0.58344C0.17951,0.53438,0.20486,0.46563,0.23056,0.46656C0.25639,0.46563,0.28194,0.53438,0.30764,0.48344C0.33333,0.43438,0.35903,0.26562,0.38472,0.25000C0.41028,0.23438,0.43611,0.36562,0.46181,0.45000C0.48715,0.53438,0.51250,0.56563,0.53819,0.61656C0.56410,0.66563,0.58958,0.73438,0.61528,0.66656C0.64104,0.60000,0.66667,0.40000,0.69236,0.30000C0.71792,0.20000,0.74375,0.20000,0.76944,0.25000C0.79486,0.30000,0.82083,0.40000,0.84583,0.46656C0.87181,0.53438,0.89722,0.56563,0.92292,0.53344C0.94875,0.50000,0.97431,0.40000,0.98750,0.35000L1.00000,0.30000L1.00000,0.00000L0.98715,0.00000C0.97437,0.00000,0.94861,0.00000,0.92292,0.00000C0.89743,0.00000,0.87153,0.00000,0.84583,0.00000C0.82049,0.00000,0.79514,0.00000,0.76944,0.00000C0.74361,0.00000,0.71806,0.00000,0.69236,0.00000C0.66667,0.00000,0.64097,0.00000,0.61528,0.00000C0.58972,0.00000,0.56389,0.00000,0.53819,0.00000C0.51285,0.00000,0.48750,0.00000,0.46181,0.00000C0.43590,0.00000,0.41042,0.00000,0.38472,0.00000C0.35896,0.00000,0.33333,0.00000,0.30764,0.00000C0.28208,0.00000,0.25625,0.00000,0.23056,0.00000C0.20514,0.00000,0.17917,0.00000,0.15417,0.00000C0.12819,0.00000,0.10278,0.00000,0.07708,0.00000C0.05125,0.00000,0.02569,0.00000,0.01250,0.00000L0.00000,0.00000Z" />
   </clipPath>
 </svg>
-</div>
+</div> */}
 
   {/* <Caraousal></Caraousal> */}
   <TechStackBeam images={imageLinks}  id="TechStack" />   
@@ -243,7 +246,7 @@ const imageLinks = [
     {/* <Project data={invoiceDispatcherData}></Project> */}
 <ProjetBento id="projects"></ProjetBento>
   <div className='proheadOuter w-[100%] flex justify-center  mt-10 items-center' >
-      <div className='proHeading text-white w-[50%]'>{"{GET In Touch.}"}</div>
+      <div className='proHeading text-white w-[50%]'>{"{Get In Touch.}"}</div>
     </div>
   <NewContact></NewContact>
  </>

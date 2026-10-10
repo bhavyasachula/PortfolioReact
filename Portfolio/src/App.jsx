@@ -19,6 +19,8 @@ import { Link } from 'react-scroll';
 import Contact from './components/Contact.jsx';
 import Project from './components/Project.jsx';
 
+// import ScrollRuler from "./components/ScrollRuler.jsx";
+
 
 function App() {
   const invoiceDispatcherData = {

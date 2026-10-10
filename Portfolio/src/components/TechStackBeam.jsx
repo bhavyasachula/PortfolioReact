@@ -39,8 +39,8 @@ function makeSprite(L, dpr) {
   //   g.addColorStop(0.7, "#e8c7f5f6");
   // glow layer
   s.save();
-  s.filter = "blur(12px)";
-  s.globalAlpha = 0.9;
+  s.filter = "blur(7px)";
+  s.globalAlpha = 0.4;
   s.strokeStyle = grad();
   s.lineWidth = 6;
   s.beginPath();

@@ -26,13 +26,7 @@ html{
   animation-timeline: scroll();
 } 
 
-.bar{
-  border: 1px solid purple ;
-  height: 10px;
-  mask: repeating-linear-gradient(90deg, #000 0 1px, transparent 10px 10px);
-  -webkit-mask: repeating-linear-gradient(90deg, #000 0 1px, transparent 10px 4px);
-  clip-path: inset(0 100% 0 0);   /* replaces transform-origin/scaleX */
-}
+
 
 @keyframes fill{
   to{ clip-path: inset(0 0 0 0); }  /* remove the old transform keyframes */
@@ -210,7 +204,7 @@ nav a {
 }
 
 .section-tag {
-  
+  text-align: center;
   font-family: "Nabla", system-ui;
   font-size: 40px;
   font-weight: 600;

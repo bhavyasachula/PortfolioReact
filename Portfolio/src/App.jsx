@@ -165,7 +165,7 @@ const imageLinks = [
 </div> 
   </div>
 {/* <div className="about flex justify-center w-[100%]" id="about">     */}
-   <div className="section-tag w-[100%]">{'{About}'}</div>
+  
   {/*<div
     className="terminal-frame"
     ref={frameRef}

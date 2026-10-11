@@ -149,10 +149,11 @@
 .stack{
     grid-area: stack;
 }
+
 .flow, .stack{
     overflow-x: auto;
 }
-/* add to ProjectBento.css */
+
 
 @media (max-width: 1024px) {
   .Container {
@@ -182,8 +183,10 @@
 
   .metrix { font-size: 28px; }
 
-  .innerTetle label { font-size: 15px; }
-  .innerTetle p { font-size: 16px; }
+
+.innerTetle label { font-size: 15px; }
+
+.innerTetle p { font-size: 16px; }
 
   .flowCard, .techStack {
     font-size: 14px;
@@ -193,4 +196,8 @@
 
   .LiveLinks { flex-wrap: wrap; gap: 10px; }
   .LiveLinks a { font-size: 14px; padding: 4px; }
+
 }
+
+
+

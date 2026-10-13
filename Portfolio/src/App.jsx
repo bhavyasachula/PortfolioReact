@@ -3,7 +3,6 @@ import ProjectScrollCov from "./components/ProjectScrollCov.jsx"
 import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
-import ProjetBento from './components/ProjectBento.jsx';
 import TechStackBeam from './components/TechStackBeam.jsx';
 import NewContact from "./components/NewContact.jsx"
 import About from './components/About.jsx';
@@ -18,9 +17,6 @@ import './App.css'
 import { FileTerminal, ImageOff } from 'lucide-react';
 import { Link } from 'react-scroll';
 import Contact from './components/Contact.jsx';
-import Project from './components/Project.jsx';
-import ProjectScrollStack from './components/ProjectScrollStack.jsx';
-import ProjectBento from './components/ProjectBento.jsx';
 import ScrollRuler from "./components/ScrollRuler.jsx";
 
 

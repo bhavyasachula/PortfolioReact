@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import ProjectScrollCov from "./components/ProjectScrollCov.jsx"
 import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
@@ -18,8 +19,9 @@ import { FileTerminal, ImageOff } from 'lucide-react';
 import { Link } from 'react-scroll';
 import Contact from './components/Contact.jsx';
 import Project from './components/Project.jsx';
-
-// import ScrollRuler from "./components/ScrollRuler.jsx";
+import ProjectScrollStack from './components/ProjectScrollStack.jsx';
+import ProjectBento from './components/ProjectBento.jsx';
+import ScrollRuler from "./components/ScrollRuler.jsx";
 
 
 function App() {
@@ -97,7 +99,7 @@ const imageLinks = [
 
   return (
    <>
-  {/* <ScrollRuler /> */}
+  <ScrollRuler />
   <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
     
   <Navbar></Navbar>
@@ -246,7 +248,9 @@ const imageLinks = [
       <div className='proHeading text-white w-[50%]'>{'{PROJECTS}'}</div>
     </div>
     {/* <Project data={invoiceDispatcherData}></Project> */}
-<ProjetBento id="projects"></ProjetBento>
+{/* <ProjectScrollStack></ProjectScrollStack> */}
+{/* <ProjectBento></ProjectBento> */}
+<ProjectScrollCov></ProjectScrollCov>
   <div className='proheadOuter w-[100%] flex justify-center  mt-10 items-center' >
       <div className='proHeading text-white w-[50%]'>{"{Get In Touch.}"}</div>
     </div>

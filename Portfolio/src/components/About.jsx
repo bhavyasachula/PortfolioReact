@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import DownloadButton from "./DownloadButton";
 const HEADLINE = "I BUILD FULL-STACK APPS AND AGENTIC WORKFLOWS";
 
 const EDUCATION = [
@@ -218,7 +218,7 @@ export default function About() {
             download
             className="text-white/80 hover:text-white underline underline-offset-4 decoration-white/30 hover:decoration-fuchsia-400 transition-colors"
           >
-            Resume (PDF) ↓
+           <DownloadButton></DownloadButton>
           </a>
         </div>
       </div>

@@ -158,6 +158,10 @@
 .card .row:last-child {
   border: 0;
 }
+.pins .card:hover {
+  background: rgba(40, 21, 43, 0.644);
+  transform: translateY(-1px);  
+}
 .card .k {
   color: #7a6e59;
   letter-spacing: 0.08em;
@@ -173,9 +177,7 @@
   flex-wrap: wrap;
 }
 .copy-btn {
-  font:
-    9.5px "Space Mono",
-    monospace;
+  font:9.5px "Space Mono", monospace;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 4px 10px;

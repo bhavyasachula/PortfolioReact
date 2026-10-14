@@ -39,7 +39,7 @@ html{
   align-items: center;
   border-radius: 14px;
   flex: 0 0 5em;
-  background: rgba(168, 85, 247, 0.06);
+  background: rgba(169, 85, 247, 0);
   /* border: 1px solid rgba(168, 85, 247, 0.2); */
   margin: 2px;
   height: 5em;
@@ -48,11 +48,11 @@ html{
   transition: all 0.3s ease;
 }
 
-.card:hover {
+.Group .card:hover {
   background: rgba(168, 85, 247, 0.15);
   border-color: rgba(168, 85, 247, 0.5);
   /* box-shadow: 0 0 24px rgba(168, 85, 247, 0.4); */
-  transform: translateY(-4px);
+  transform: translateY(-4px);  
 }
 
 .card img:hover {

@@ -420,7 +420,7 @@
   .hd { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .card, .yellow, .pink, .current, .scrap, .qr { transform: none; }
 }
-/* hard fix: card must stay in flow */
+
 .contact .pins > .card .paper {
   position: relative !important;
   top: auto !important;

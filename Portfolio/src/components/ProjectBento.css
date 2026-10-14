@@ -19,7 +19,8 @@
   background:
     radial-gradient(ellipse 50% 200% at 30% 10%, rgba(166, 70, 185, 0.322), transparent 70%),
      radial-gradient(ellipse 80% 200% at 120% 60%, rgba(166, 70, 185, 0.322), transparent 70%);*/
-    margin-top: 20px;
+    
+     margin-top: 20px;
     color: rgb(242, 246, 242); 
    background: url('../assets/strandPurple.png');
     /* background: white; */

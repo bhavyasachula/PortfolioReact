@@ -159,7 +159,6 @@
   border: 0;
 }
 .pins .card:hover {
-  background: rgba(40, 21, 43, 0.644);
   transform: translateY(-1px);  
 }
 .card .k {

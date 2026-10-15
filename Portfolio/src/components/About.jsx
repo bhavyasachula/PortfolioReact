@@ -34,7 +34,7 @@ const EDUCATION = [
 const BG = "#0b0b0d"; 
 const ACCENT = "#d946ef";
 const AMBER = "#fcd34d";
-const INK = "#f5f3ee";
+const INK = "#fcfcfc";
 
 // const FONTS = `
 // @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');

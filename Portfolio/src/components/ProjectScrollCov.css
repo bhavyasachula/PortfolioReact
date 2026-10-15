@@ -10,7 +10,7 @@
   --pss-border: rgba(255, 255, 255, 0.16);
   position: relative;
   color: #f2f6f2;
-  background: #0a0810;
+  background: #0b0b0d;
   font-family: "Geist Mono", monospace;
   isolation: isolate;
 }
@@ -19,9 +19,6 @@
 .project-scroll-stack *::after {
   box-sizing: border-box;
 }
-
-
-
 
 
 .project-scroll-stack .pss-stack-viewport {
@@ -105,7 +102,7 @@
   border: 1px solid var(--pss-glass-border);
   border-radius: 7px;
   box-shadow:
-    8px 8px rgba(0, 0, 0, 0.512),
+    7px 7px rgba(0, 0, 0, 0.512),
     inset 0 1px 0 var(--pss-glass-inner);
   padding: 20px;
   color: #fff;

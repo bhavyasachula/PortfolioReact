@@ -175,6 +175,13 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+.name {
+
+  bottom:0;
+  font-size:300px;
+  background: linear-gradient(to bottom, transparent, #100e0ef7);
+  
+}
 .copy-btn {
   font:9.5px "Space Mono", monospace;
   letter-spacing: 0.12em;

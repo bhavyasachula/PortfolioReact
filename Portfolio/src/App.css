@@ -7,10 +7,7 @@
 ::selection{
   background:rgb(135, 25, 135);
 }
-
-html{
-    scroll-behavior: smooth;
-}
+html, body { overflow-x: clip;  scroll-behavior: smooth;}
 #home,#about, #TechStack {
   scroll-margin-top: 100px; /* adjust to your nav's height + gap */
 }

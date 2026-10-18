@@ -31,7 +31,7 @@ const EDUCATION = [
   },
 ];
 
-const BG = "#0b0b0d"; 
+const BG = "#0b0b0d";
 const ACCENT = "#d946ef";
 const AMBER = "#fcd34d";
 const INK = "#fcfcfc";
@@ -67,7 +67,10 @@ export default function About() {
 
   // infinite kinetic loop
   useEffect(() => {
-    const id = setInterval(() => setStep((s) => (s + 1) % (WORDS.length + 1)), STEP_MS);
+    const id = setInterval(
+      () => setStep((s) => (s + 1) % (WORDS.length + 1)),
+      STEP_MS,
+    );
     return () => clearInterval(id);
   }, []);
 
@@ -86,7 +89,12 @@ export default function About() {
       const start = ys[0];
       const len = ys[ys.length - 1] - start;
       const fill = clamp(vh * 0.6 - rr.top - start, 0, len);
-      setGeo({ start, len, fill, active: ys.map((y) => y <= start + fill + 0.5) });
+      setGeo({
+        start,
+        len,
+        fill,
+        active: ys.map((y) => y <= start + fill + 0.5),
+      });
     };
     const onScroll = () => {
       if (!raf) raf = requestAnimationFrame(update);
@@ -112,16 +120,18 @@ export default function About() {
       style={{ background: BG, color: INK }}
     >
       <style>{FONTS}</style>
-        <div className="section-tag w-[100%]">{'{About}'}</div>
+      <div className="section-tag w-[100%]">{"{About}"}</div>
       {/* seam: soften the hero's bottom edge, add a hairline echoing the streaks */}
       <div
         className="pointer-events-none absolute inset-x-0 -top-32 h-32 z-10 w-full"
         style={{ background: `linear-gradient(to bottom, transparent, ${BG})` }}
       />
-     <div
-  className="pointer-events-none absolute inset-x-0 bottom-0 h-40"
-  style={{ background: "linear-gradient(to bottom, transparent, #0b0b0d)" }}
-/>
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-40"
+        style={{
+          background: "linear-gradient(to bottom, transparent, #0b0b0d)",
+        }}
+      />
 
       {/* Kinetic heading */}
       <h2 className="f-head max-w-7xl mx-auto text-center font-extrabold uppercase tracking-[-0.04em] leading-[0.95] text-[clamp(2.5rem,7vw,6.25rem)] mt-10 mb-24">
@@ -131,7 +141,10 @@ export default function About() {
             <span
               key={w}
               className="inline-block whitespace-nowrap mr-[0.25em]"
-              style={{ color: on ? INK : "#26262b", transition: "color .5s ease" }}
+              style={{
+                color: on ? INK : "#26262b",
+                transition: "color .5s ease",
+              }}
             >
               {word}
             </span>
@@ -155,28 +168,29 @@ export default function About() {
           const on = geo.active[i];
           const last = i === EDUCATION.length - 1;
           return (
-            <div
-              key={i}
-              className={`grid grid-cols-[24px_1fr] md:grid-cols-[220px_24px_1fr] gap-x-4 md:gap-x-6 py-10 border-t border-white/10 transition-opacity duration-500 ${
-                last ? "border-b" : ""
-              } ${on ? "opacity-100" : "opacity-40"}`}
-            >
+           <div
+  key={i}
+  className={`grid grid-cols-[24px_1fr] md:grid-cols-[220px_24px_1fr] gap-x-4 md:gap-x-6 py-10 `}
+>
               {/* year */}
               <div
-                className="f-head col-start-2 row-start-1 md:col-start-1 md:text-right text-4xl md:text-[2.75rem] font-bold tracking-tight leading-none pb-5 md:pb-0 transition-colors duration-500"
-                style={{ color: on ? (last ? AMBER : INK) : "#3a3a40" }}
-              >
-                {e.year}
-              </div>
+  className="f-head col-start-2 row-start-1 md:col-start-1 md:text-right text-4xl md:text-[2.75rem] font-bold tracking-tight leading-none pb-5 md:pb-0 transition-colors duration-500"
+  style={{ color: on ? (last ? AMBER : INK) : "#3a3a40" }}
+>
+  {e.year}
+</div>
 
               {/* dot */}
               <div className="col-start-1 row-start-1 row-span-2 md:col-start-2 md:row-span-1 flex justify-center items-start">
                 <span
                   ref={(el) => (dotRefs.current[i] = el)}
-                  className="block w-[11px] h-[11px] rounded-full border mt-[13px] md:mt-[17px] transition-colors duration-300"
+                  className="relative z-10 block w-[11px] h-[11px] rounded-full border mt-[13px] md:mt-[17px] transition-all duration-300"
                   style={{
                     background: on ? ACCENT : BG,
                     borderColor: on ? ACCENT : "rgba(255,255,255,0.25)",
+                    boxShadow: on
+                      ? `0 0 0 5px ${BG}, 0 0 16px ${ACCENT}99`
+                      : `0 0 0 5px ${BG}`,
                   }}
                 />
               </div>
@@ -192,7 +206,9 @@ export default function About() {
                   </h3>
                   <p className="mt-2 text-white/80">{e.school}</p>
                   <p className="f-mono mt-5 text-xs text-white/45">{e.meta}</p>
-                  <p className="mt-2 text-sm text-white/60 max-w-xl">{e.desc}</p>
+                  <p className="mt-2 text-sm text-white/60 max-w-xl">
+                    {e.desc}
+                  </p>
                 </div>
 
                 {e.score && (
@@ -218,7 +234,7 @@ export default function About() {
             download
             className="text-white/80 hover:text-white underline underline-offset-4 decoration-white/30 hover:decoration-fuchsia-400 transition-colors"
           >
-           <DownloadButton></DownloadButton>
+            <DownloadButton></DownloadButton>
           </a>
         </div>
       </div>

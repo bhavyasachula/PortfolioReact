@@ -131,6 +131,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <div className="name text-center w-full">BHAVYA</div>
     </section>
   );
 }

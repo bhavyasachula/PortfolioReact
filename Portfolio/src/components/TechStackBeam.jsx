@@ -9,6 +9,7 @@ const CENTER = 180;
 const DURATION = 3.5;
 const WAIT = 2; // seconds of pause between runs
 const CYCLE = DURATION + WAIT;
+const SPIN = 90; // seconds per full rotation (lower = faster)
 
 const place = (items, radius, offset = 0) =>
   items.map((src, i) => {
@@ -35,8 +36,6 @@ function makeSprite(L, dpr) {
     return g;
   };
 
-  //  g.addColorStop(0.4, "#f8b9dd");
-  //   g.addColorStop(0.7, "#e8c7f5f6");
   // glow layer
   s.save();
   s.filter = "blur(7px)";
@@ -61,7 +60,7 @@ function makeSprite(L, dpr) {
   return { c, PAD, H, L };
 }
 
-export default function TechStackBeam({ images,name="Skills & Tools"}) {
+export default function TechStackBeam({ images, name = "Skills & Tools" }) {
   const canvasRef = useRef(null);
   const wrapRef = useRef(null);
 
@@ -148,10 +147,13 @@ export default function TechStackBeam({ images,name="Skills & Tools"}) {
       draw(now);
       raf = requestAnimationFrame(loop);
     };
+    const setPlay = (on) => wrapRef.current?.style.setProperty("--ps", on ? "running" : "paused");
     const start = () => {
+      setPlay(true);
       if (!raf && visible && !document.hidden) raf = requestAnimationFrame(loop);
     };
     const stop = () => {
+      setPlay(false);
       cancelAnimationFrame(raf);
       raf = 0;
     };
@@ -173,9 +175,27 @@ export default function TechStackBeam({ images,name="Skills & Tools"}) {
     };
   }, [nodes]);
 
-  return (
-    <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden select-none">
-      <div ref={wrapRef} className="relative" style={{ width: SIZE, height: SIZE }}>
+ return (
+  <div className="w-full select-none overflow-x-clip">
+    <h2 className="pb-6 text-center font-[Nabla] text-4xl text-white md:hidden">{name}</h2>
+
+    <div className="relative w-full overflow-hidden" style={{ height: SIZE ,contain:"paint"}}>
+      <style>{`
+        @keyframes ts-spin { to { transform: rotate(360deg); } }
+        @keyframes ts-unspin { to { transform: rotate(-360deg); } }
+        .ts-spin { animation: ts-spin ${SPIN}s linear infinite; animation-play-state: var(--ps, running); }
+        .ts-unspin { animation: ts-unspin ${SPIN}s linear infinite; animation-play-state: var(--ps, running); }
+        .ts-pos { right: 0; margin-right: -${SIZE / 2}px; }
+        @media (min-width: 768px) {
+          .ts-pos { right: auto; left: 50%; margin-right: 0; margin-left: -${SIZE / 2}px; }
+        }
+      `}</style>
+
+      <div
+        ref={wrapRef}
+        className="ts-spin ts-pos absolute top-0"
+        style={{ width: SIZE, height: SIZE, willChange: "transform" }}
+      >
         <canvas
           ref={canvasRef}
           className="pointer-events-none absolute inset-0"
@@ -185,10 +205,10 @@ export default function TechStackBeam({ images,name="Skills & Tools"}) {
         {nodes.map((n, i) => (
           <div
             key={i}
-            className="absolute z-10 flex items-center justify-center rounded-full bg-black/95 p-3 ring-1 ring-purple/20"
+            className="ts-unspin absolute z-10 flex items-center justify-center rounded-full bg-black/95 p-3 ring-1 ring-purple/20"
             style={{ width: NODE, height: NODE, left: n.x - NODE / 2, top: n.y - NODE / 2 }}
           >
-            <img src={n.src} alt="" decoding="async" className="h-full rounded-md w-full object-contain" />
+            <img src={n.src} alt="" decoding="async" className="h-full w-full rounded-md object-contain" />
           </div>
         ))}
 
@@ -196,10 +216,11 @@ export default function TechStackBeam({ images,name="Skills & Tools"}) {
           className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/5 bg-[#0b0b0d] text-center text-4xl font-[Nabla] tracking-wide text-white"
           style={{ left: C, top: C, width: CENTER, height: CENTER }}
           id="TechStack"
-         >
-          {name}
+        >
+          <span className="ts-unspin hidden md:block">{name}</span>
         </div>
       </div>
     </div>
-  );
+  </div>
+);
 }

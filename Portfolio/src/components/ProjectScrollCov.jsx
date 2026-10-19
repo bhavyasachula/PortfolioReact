@@ -96,7 +96,6 @@ function ProjectCard({ project }) {
             <span className="pss-project-badge">
               {project.badge}
             </span>
-
             <h2>{project.title}</h2>
 
             <p>{project.description}</p>

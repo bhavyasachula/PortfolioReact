@@ -228,7 +228,7 @@ export default function About() {
 
         {/* footer */}
         <div className="f-mono mt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-white/45">
-          <span>Ahmedabad, India - IST +05:30</span>
+          <span>Ahmedabad, India <br />  IST (UTC +05:30)</span>
           <a
             href="/resumeSB.pdf"
             download

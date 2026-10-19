@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import ProjectScrollCov from "./components/ProjectScrollCov.jsx"
-import LightTunnel from './components/LightTunnel.jsx';
+// import LightTunnel from './components/LightTunnel.jsx';
 import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import TechStackBeam from './components/TechStackBeam.jsx';
@@ -12,7 +12,7 @@ import reactlogo from "./assets/reactjslogo.png";
 import nodejslogo from "./assets/nodejslogo.png";
 import pytorchlogo from "./assets/pytorchlog.png";
 import langsmithlogo from "./assets/pytorchlog.png";
-// import MicroSlats from './components/MicroSlats.jsx';
+import GhostFibers from './components/GhostFibers.jsx';
 import './App.css'
 import { FileTerminal, ImageOff } from 'lucide-react';
 import { Link } from 'react-scroll';
@@ -96,10 +96,10 @@ const imageLinks = [
   return (
    <>
   <ScrollRuler />
-  <div className="main" id="home" style={{ width: '100%', height: '870px', position: 'relative'  }}>
+  <div className="main" id="home" style={{ width: '100%', height: '850px', position: 'relative'  }}>
     
   <Navbar></Navbar>
- <LightTunnel 
+ {/* <LightTunnel 
     cableColor="#da0dfe"
     pulseColor="#A855F7"
     tunnelColor="#5227FF"
@@ -127,37 +127,47 @@ const imageLinks = [
     opacity={1}
     mouseInteraction
     mouseStrength={0.1}
-  />
-  
-   {/* <MicroSlats
-    preset="tide"
-    color="#A855F7"
-    glintColor="#ffffff"
-    backgroundColor="#120f17"
-    slatWidth={15}
-    slatHeight={35}
-    gap={3}
-    roundness={0.75}
-    interactive
-    cursorStrength={1}
-    cursorSize={40}
-    swirl={0}
-    trail={1.4}
-    lean={0}
-    intro
-    scale={1.3}
-    speed={0.5}
-    direction={262}
-    chop={0.2}
-    stretch={0.12}
-    glint={0.45}
-    contrast={1.1}
-    perspective={0.5}
-    fog={0.4}
-    introDuration={1.5}
-    paused={false}
-/> */}
+  /> */}
 
+
+
+  <GhostFibers
+    glowColor="#ff6a1a"
+    layers={3}
+    twist={0.75}
+    threads={72}
+    fiberStyle="dashes"
+    depthOfField={0.85}
+    hoverEffect="focus"
+    intro
+    mouseInteraction
+    lineColor="#ffffff"
+    secondaryColor="#d60fd9"
+    gradient="depth"
+    waves={0.7}
+    volume={1.5}
+    spread={0.9}
+    scale={0.8}
+    rotation={2}
+    perspective={0.65}
+    density={0.35}
+    thickness={1}
+    tips={0}
+    foldGlow={1}
+    speed={2}
+    flow={0.9}
+    rollSpeed={0.15}
+    focusDepth={0}
+    particles={0.9}
+    sparkle={1}
+    glow={0.8}
+    brightness={1}
+    vignette={0.3}
+    grain={0.06}
+    mouseStrength={1}
+    pulseOnClick
+    lightMode={false}
+/>
  <div className='HeroText select-none' >
   HI,I m BHAVYA
 </div> 

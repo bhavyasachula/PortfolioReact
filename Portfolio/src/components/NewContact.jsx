@@ -131,7 +131,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="name text-center w-full">BHAVYA</div>
+      <div className="name text-center w-full">
+    BHAVYA
+  <i />
+</div>
     </section>
   );
 }

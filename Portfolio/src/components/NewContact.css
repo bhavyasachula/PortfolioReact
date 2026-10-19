@@ -176,12 +176,45 @@
   flex-wrap: wrap;
 }
 .name {
-
-  bottom:0;
-  font-size:300px;
-  background: linear-gradient(to bottom, transparent, #100e0ef7);
-  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4%;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+  font-size: clamp(64px, 19vw, 340px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ededee;
 }
+
+.name i {
+  --b: 2px;
+  --from: 0%;
+  --to: 55%;
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(var(--b)) brightness(0.55);
+  -webkit-backdrop-filter: blur(var(--b)) brightness(0.55);
+  mask-image: linear-gradient(to bottom, transparent var(--from), #000 var(--to));
+  -webkit-mask-image: linear-gradient(to bottom, transparent var(--from), #000 var(--to));
+}
+
+/* soft fade of the letters themselves into the black bg, independent of the blur layer */
+.name::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, #0b0b0d 92%);
+  pointer-events: none;
+}
+
 .copy-btn {
   font:9.5px "Space Mono", monospace;
   letter-spacing: 0.12em;
@@ -351,6 +384,16 @@
     0 100%
   );
 }
+.contact {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.board {
+  z-index: 1; /* keeps cards above the name */
+}
+
 .scrap .l {
   color: #7a6e59;
 }
@@ -438,4 +481,13 @@
 .contact .pins > .card {
   height: auto;
   align-self: start;
+}
+@media (max-width: 1024px) {
+  .name { bottom: -2%; }
+}
+@media (max-width: 768px) {
+  .name { font-size: clamp(56px, 20vw, 180px); bottom: -1%; }
+}
+@media (max-width: 520px) {
+  .name { font-size: clamp(44px, 22vw, 120px); bottom: 0; }
 }

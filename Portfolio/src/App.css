@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'VALORANT';
+  /* If app.css is inside src/components/, you must go UP one folder using '../' */
+  src: url('./assets/fonts/ValorantFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Create the utility class manually since there is no config file */
+.font-valorant {
+  font-family: 'VALORANT', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   font-optical-sizing: auto;
@@ -59,6 +72,7 @@ nav {
     inset 0 1px 1px rgba(255, 255, 255, 0.2),
     inset 0 -1px 1px rgba(0, 0, 0, 0.3),
     0 8px 32px rgba(0, 0, 0, 0.5);
+    
   padding: 13px 14px;
   z-index: 40;
 }
@@ -466,8 +480,8 @@ nav a {
   .about { font-size: 24px; padding: 30px 16px; }
   .proHeading{font-size: 35px;}
   .liveDemoButton{font-size: 25px;}
-  .main{ height: 700px; }
 }
+
 
 getinTouch{
   background-color: #ad08a0;

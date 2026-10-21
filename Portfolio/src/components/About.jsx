@@ -132,22 +132,23 @@ export default function About() {
           background: "linear-gradient(to bottom, transparent, #0b0b0d)",
         }}
       />
+     
 
       {/* Kinetic heading */}
-      <h2 className="f-head max-w-7xl mx-auto text-center font-extrabold uppercase tracking-[-0.04em] leading-[0.95] text-[clamp(2.5rem,7vw,6.25rem)] mt-10 mb-24">
+      <h2 className="font-valorant text-red-900 max-w-7xl mx-auto text-center font-extrabold uppercase tracking-[-0.04em] leading-[0.95] text-[clamp(2.5rem,7vw,6.25rem)] mt-10 mb-24">
         {WORDS.map((word, w) => {
           const on = w === a || (step > 0 && w === b);
           return (
             <span
               key={w}
-              className="inline-block whitespace-nowrap mr-[0.25em]"
+              className="inline-block  whitespace-nowrap mr-[0.25em]"
               style={{
-                color: on ? INK : "#26262b",
-                transition: "color .5s ease",
+               color: on ? "#f50e40" : "#ffffff",
+                  transition: "color .5s ease",
               }}
             >
               {word}
-            </span>
+            </span> 
           );
         })}
       </h2>
@@ -198,7 +199,7 @@ export default function About() {
               {/* content */}
               <div className="col-start-2 row-start-2 md:col-start-3 md:row-start-1 flex items-start justify-between gap-8">
                 <div>
-                  <p className="f-mono text-[11px] tracking-[0.25em] uppercase text-white/45">
+                  <p className="font-valorant text-[11px] tracking-[0.25em] uppercase text-white/45">
                     {e.label}
                   </p>
                   <h3 className="f-head mt-3 text-2xl md:text-3xl font-semibold tracking-tight">

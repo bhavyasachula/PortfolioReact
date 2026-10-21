@@ -236,7 +236,7 @@ export default function ProjectScrollStack() {
   }, []);
 
   return (
-    <div className="project-scroll-stack ">
+    <div className="project-scroll-stack" id="projects">
       <section
         className="pss-projects"
         ref={sectionRef}

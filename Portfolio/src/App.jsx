@@ -257,9 +257,11 @@ const imageLinks = [
 {/* <ProjectScrollStack></ProjectScrollStack> */}
 {/* <ProjectBento></ProjectBento> */}
 <ProjectScrollCov></ProjectScrollCov>
+
   <div className='proheadOuter w-[100%] flex justify-center  mt-10 items-center' >
       <div className='proHeading text-white w-[50%]'>{"{Get In Touch.}"}</div>
     </div>
+ 
   <NewContact></NewContact>
  </>
   )

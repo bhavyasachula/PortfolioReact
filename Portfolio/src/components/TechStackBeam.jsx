@@ -60,7 +60,7 @@ function makeSprite(L, dpr) {
   return { c, PAD, H, L };
 }
 
-export default function TechStackBeam({ images, name = "Skills & Tools" }) {
+export default function TechStackBeam({ images, name = "{Skills & Tools}" }) {
   const canvasRef = useRef(null);
   const wrapRef = useRef(null);
 

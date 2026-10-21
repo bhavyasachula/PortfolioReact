@@ -131,7 +131,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="name text-center w-full">
+      <div className="font-valorant name text-red-500 text-center w-full">
     BHAVYA
   <i />
 </div>

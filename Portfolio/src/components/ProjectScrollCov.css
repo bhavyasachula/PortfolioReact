@@ -441,12 +441,17 @@
 @media (max-width: 640px) {
   .project-scroll-stack .pss-stack-viewport {
     align-items: flex-start;
-    overflow: hidden;
+    overflow: visible;
     padding-top: 65px;
+  }
+
+  .project-scroll-stack .pss-stack-inner {
+    overflow: visible;
   }
 
   .project-scroll-stack .pss-slide {
     align-items: flex-start;
+    overflow: visible;
   }
 
   .project-scroll-stack .pss-container {

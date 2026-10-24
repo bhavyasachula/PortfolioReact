@@ -221,16 +221,24 @@ export default function ProjectScrollStack() {
       animationFrame = window.requestAnimationFrame(frame);
     };
 
-    section.style.height = `${slides.length * 1.2 * 100}vh`;
+    const isMobile = window.matchMedia("(max-width: 640px)").matches;
+    // Give the final mobile card enough scroll distance to settle into view.
+    section.style.height = `${slides.length * (isMobile ? 1.5 : 1.2) * 100}vh`;
 
     fitCards();
     applyStack(0);
 
-    window.addEventListener("resize", fitCards);
+    const handleResize = () => {
+      fitCards();
+      const mobileNow = window.matchMedia("(max-width: 640px)").matches;
+      section.style.height = `${slides.length * (mobileNow ? 1.5 : 1.2) * 100}vh`;
+    };
+
+    window.addEventListener("resize", handleResize);
     animationFrame = window.requestAnimationFrame(frame);
 
     return () => {
-      window.removeEventListener("resize", fitCards);
+      window.removeEventListener("resize", handleResize);
       window.cancelAnimationFrame(animationFrame);
     };
   }, []);

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import qr from "../assets/qrCodeEmail.png"// save your base64 QR as qr.png
 import "./NewContact.css";
 

@@ -1,6 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Rubik+Mono+One&family=Syne:wght@400..800&family=Geist+Mono:wght@400..700&display=swap");
 
+/* ================= MAIN ================= */
 
 .project-scroll-stack {
   --pss-magenta: #ca51dc;
@@ -27,7 +28,7 @@
   box-sizing: border-box;
 }
 
-
+/* ================= STACK VIEWPORT ================= */
 
 .project-scroll-stack .pss-projects {
   position: relative;
@@ -39,6 +40,7 @@
   top: 0;
   width: 100%;
   height: 100vh;
+  height: 100svh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -60,7 +62,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
   will-change: transform, opacity;
 }
 
@@ -71,6 +73,7 @@
   flex: 1 1 100%;
 }
 
+/* ================= PROJECT GRID ================= */
 
 .project-scroll-stack .pss-container {
   width: 100%;
@@ -81,7 +84,9 @@
   border-radius: 10px;
 
   color: rgb(242, 246, 242);
-  background: url("../assets/strandPurple.png") center / cover no-repeat;
+
+  background: url("../assets/strandPurple.png")
+    center / cover no-repeat;
 
   font-family: "Geist Mono", monospace;
 
@@ -97,7 +102,7 @@
   gap: 20px;
 }
 
-
+/* ================= TITLE ================= */
 
 .project-scroll-stack .pss-tetle {
   grid-area: tetle;
@@ -149,6 +154,7 @@
   color: #f2f6f2;
 }
 
+/* ================= GRID CARDS ================= */
 
 .project-scroll-stack .pss-gridcard {
   min-width: 0;
@@ -174,7 +180,8 @@
 }
 
 .project-scroll-stack .pss-gridcard:hover {
-  transform: translateY(-2px,-2px);
+  transform: translate(-2px, -2px);
+
   box-shadow:
     10px 10px rgba(0, 0, 0, 0.512),
     inset 0 1px 0 var(--pss-glass-inner);
@@ -194,6 +201,8 @@
   min-width: 0;
   padding: 20px;
 }
+
+/* ================= METRICS ================= */
 
 .project-scroll-stack .pss-metric-card {
   display: flex;
@@ -225,6 +234,7 @@
   overflow-wrap: anywhere;
 }
 
+/* ================= FLOW ================= */
 
 .project-scroll-stack .pss-flow {
   grid-area: flow;
@@ -260,6 +270,7 @@
   flex: 0 0 auto;
 }
 
+/* ================= TECH STACK ================= */
 
 .project-scroll-stack .pss-stack {
   grid-area: stack;
@@ -278,7 +289,7 @@
   white-space: nowrap;
 }
 
-
+/* ================= LINKS ================= */
 
 .project-scroll-stack .pss-live-links {
   display: flex;
@@ -301,16 +312,14 @@
 }
 
 .project-scroll-stack .pss-live-links a:hover {
-  transform: translateY(-2px,-2px);
+  transform: translate(-2px, -2px);
   box-shadow: 9px 9px #000;
 }
 
-
+/* ================= TABLET ================= */
 
 @media (max-width: 1024px) {
   .project-scroll-stack .pss-container {
-    width: 100%;
-    max-width: 100%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
     grid-template-areas:
@@ -329,103 +338,167 @@
     max-width: 100%;
   }
 
-  .project-scroll-stack .pss-projects,
-  .project-scroll-stack .pss-stack-viewport,
-  .project-scroll-stack .pss-stack-inner {
-    width: 100%;
+  .project-scroll-stack .pss-stack-viewport {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0;
   }
 
-  .project-scroll-stack .pss-stack-viewport {
-    height: 100vh;
+  .project-scroll-stack .pss-stack-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .project-scroll-stack .pss-slide {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    padding: 0;
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
   }
 
-  .project-scroll-stack .pss-slide > .pss-container,
+  /* Full-width mobile container */
+  .project-scroll-stack .pss-slide > .pss-container {
+    width: 100%;
+    max-width: none;
+    flex: 1 1 100%;
+  }
+
   .project-scroll-stack .pss-container {
     width: 100%;
-    max-width: 100%;
+    max-width: none;
     min-width: 0;
     margin: 0;
-    padding: 12px;
-    gap: 12px;
+    padding: 10px;
+    gap: 9px;
 
-    grid-template-columns: minmax(0, 1fr);
-    grid-auto-rows: minmax(120px, auto);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(75px, auto);
 
     grid-template-areas:
-      "tetle"
-      "c1"
-      "c2"
-      "m1"
-      "flow"
-      "stack";
+      "tetle tetle"
+      "c1 c2"
+      "m1 m1"
+      "flow flow"
+      "stack stack";
   }
 
   .project-scroll-stack .pss-gridcard {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    padding: 12px;
+    padding: 10px;
   }
 
   .project-scroll-stack .pss-flexcol {
-    width: 100%;
     padding: 8px;
-    gap: 18px;
-  }
-
-  .project-scroll-stack .pss-metric {
-    font-size: 28px;
-  }
-
-  .project-scroll-stack .pss-field-text {
-    font-size: 18px;
+    gap: 14px;
   }
 
   .project-scroll-stack .pss-inner-title h2 {
-    font-size: 19px;
-    line-height: 1.4;
+    font-size: clamp(17px, 5vw, 22px);
+    line-height: 1.3;
   }
 
   .project-scroll-stack .pss-inner-title p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.35;
   }
 
   .project-scroll-stack .pss-project-badge {
-    font-size: 12px;
+    font-size: 11px;
+  }
+
+  .project-scroll-stack .pss-metric {
+    font-size: clamp(22px, 6vw, 30px);
+  }
+
+  .project-scroll-stack .pss-field-text {
+    font-size: clamp(12px, 3.5vw, 16px);
   }
 
   .project-scroll-stack .pss-flow {
-    overflow-x: auto;
+    overflow: hidden;
   }
 
-  .project-scroll-stack .pss-flow .pss-flexwrap {
-    flex-wrap: wrap;
-  }
-
-  .project-scroll-stack .pss-flow-card,
-  .project-scroll-stack .pss-tech-stack {
-    font-size: 14px;
+  .project-scroll-stack .pss-flow-card {
+    font-size: 12px;
     padding: 6px;
-    margin: 5px;
+    margin: 4px;
+  }
+
+  .project-scroll-stack .pss-arrow {
+    width: 15px;
+    height: 15px;
+  }
+
+  .project-scroll-stack .pss-tech-stack {
+    font-size: 12px;
+    padding: 7px;
+    margin: 4px;
   }
 
   .project-scroll-stack .pss-live-links {
     gap: 10px;
+    margin-top: 10px;
   }
 
   .project-scroll-stack .pss-live-links a {
-    font-size: 14px;
-    padding: 4px;
+    font-size: 12px;
+    padding: 5px;
+    border-width: 2px;
+    box-shadow: 4px 4px #000;
   }
 
   .project-scroll-stack .pss-dots {
     display: none;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 380px) {
+  .project-scroll-stack .pss-container {
+    padding: 8px;
+    gap: 7px;
+  }
+
+  .project-scroll-stack .pss-gridcard {
+    padding: 8px;
+  }
+
+  .project-scroll-stack .pss-flexcol {
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .project-scroll-stack .pss-inner-title p {
+    font-size: 13px;
+  }
+
+  .project-scroll-stack .pss-flow-card {
+    font-size: 10px;
+    padding: 5px;
+    margin: 3px;
+  }
+
+  .project-scroll-stack .pss-tech-stack {
+    font-size: 11px;
+    padding: 6px;
+    margin: 3px;
+  }
+
+  .project-scroll-stack .pss-live-links a {
+    font-size: 11px;
   }
 }
 
@@ -435,26 +508,5 @@
   .project-scroll-stack .pss-gridcard,
   .project-scroll-stack .pss-live-links a {
     transition: none;
-  }
-}
-
-@media (max-width: 640px) {
-  .project-scroll-stack .pss-stack-viewport {
-    align-items: flex-start;
-    overflow: visible;
-    padding-top: 65px;
-  }
-
-  .project-scroll-stack .pss-stack-inner {
-    overflow: visible;
-  }
-
-  .project-scroll-stack .pss-slide {
-    align-items: flex-start;
-    overflow: visible;
-  }
-
-  .project-scroll-stack .pss-container {
-    margin-top: 0;
   }
 }

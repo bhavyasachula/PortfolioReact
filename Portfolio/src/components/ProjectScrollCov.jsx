@@ -167,15 +167,26 @@ export default function ProjectScrollStack() {
 
     // Keep each project container at its natural, full width.
     const fitCards = () => {
-      slides.forEach((slide) => {
-        const card = slide.querySelector(".pss-container");
+  const viewportHeight = window.innerHeight;
+  const availableHeight = viewportHeight - 100;
 
-        if (!card) return;
+  slides.forEach((slide) => {
+    const card = slide.querySelector(".pss-container");
 
-        card.style.transform = "none";
-        card.style.transformOrigin = "center";
-      });
-    };
+    if (!card) return;
+
+    // Reset previous scaling before measuring
+    card.style.transform = "none";
+
+    const cardHeight = card.offsetHeight;
+
+    // Scale the card only when it doesn't fit
+    const scale = Math.min(1, availableHeight / cardHeight);
+
+    card.style.transform = `scale(${scale})`;
+    card.style.transformOrigin = "center center";
+  });
+};
 
     const applyStack = (progress) => {
       slides.forEach((slide, index) => {

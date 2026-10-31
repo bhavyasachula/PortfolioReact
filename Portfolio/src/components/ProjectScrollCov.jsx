@@ -166,21 +166,25 @@ export default function ProjectScrollStack() {
       Math.min(max, Math.max(min, value));
 
     // Keep each project container at its natural, full width.
-    const fitCards = () => {
-  const viewportHeight = window.innerHeight;
-  const availableHeight = viewportHeight - 100;
+const fitCards = () => {
+  const isMobile = window.matchMedia("(max-width: 640px)").matches;
 
   slides.forEach((slide) => {
     const card = slide.querySelector(".pss-container");
 
     if (!card) return;
 
-    // Reset previous scaling before measuring
+    // Desktop: use the full available width
+    if (!isMobile) {
+      card.style.transform = "none";
+      return;
+    }
+
+    // Mobile: scale only if necessary
+    const availableHeight = window.innerHeight - 100;
     card.style.transform = "none";
 
     const cardHeight = card.offsetHeight;
-
-    // Scale the card only when it doesn't fit
     const scale = Math.min(1, availableHeight / cardHeight);
 
     card.style.transform = `scale(${scale})`;
@@ -194,7 +198,7 @@ export default function ProjectScrollStack() {
         const receded = clamp(progress - index, 0, 1);
         const recededFurther = clamp(progress - index - 1, 0, 1);
 
-        const y = (1 - entering) * 100;
+        const y = (1 - entering) * 110;
         const px = -(28 * receded + 22 * recededFurther);
         const scale = 1 - 0.06 * receded - 0.05 * recededFurther;
         const opacity = 1 - 0.35 * recededFurther;

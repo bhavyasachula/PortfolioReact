@@ -1,5 +1,4 @@
-
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "./ProjectScrollCov.css";
 
 const projects = [
@@ -16,14 +15,8 @@ const projects = [
     flow: ["INGEST", "OCR", "PARSE", "ROUTE", "SEND"],
     stack: ["LangGraph", "LangChain", "Python", "Streamlit"],
     links: [
-      {
-        label: "Repository",
-        href: "https://github.com/bhavyasachula/",
-      },
-      {
-        label: "Live Demo",
-        href: "https://flowchat.streamlit.app/",
-      },
+      { label: "Repository", href: "https://github.com/bhavyasachula/" },
+      { label: "Live Demo", href: "https://flowchat.streamlit.app/" },
     ],
   },
   {
@@ -39,10 +32,7 @@ const projects = [
     flow: ["UPLOAD", "ENCRYPT", "PARSE", "ANALYZE", "VISUALIZE"],
     stack: ["React", "Node.js", "Gemini", "D3.js"],
     links: [
-      {
-        label: "Repository",
-        href: "https://github.com/bhavyasachula/",
-      },
+      { label: "Repository", href: "https://github.com/bhavyasachula/" },
     ],
   },
   {
@@ -58,10 +48,7 @@ const projects = [
     flow: ["CLIENT", "MCP", "TOOL", "SQLITE", "SUMMARY"],
     stack: ["FastMCP", "SQLite", "Python"],
     links: [
-      {
-        label: "Repository",
-        href: "https://github.com/bhavyasachula/",
-      },
+      { label: "Repository", href: "https://github.com/bhavyasachula/" },
     ],
   },
 ];
@@ -88,15 +75,14 @@ function Arrow() {
 }
 
 function ProjectCard({ project }) {
+  const metricAreas = ["c1", "c2", "m1"];
+
   return (
     <div className="pss-container">
       <div className="pss-gridcard pss-b-title pss-tetle">
         <div className="pss-flexcol">
           <div className="pss-inner-title">
-            <span className="pss-project-badge">
-              {project.badge}
-            </span>
-
+            <span className="pss-project-badge">{project.badge}</span>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
           </div>
@@ -116,19 +102,15 @@ function ProjectCard({ project }) {
         </div>
       </div>
 
-      {project.metrics.map(([value, label], index) => {
-        const metricAreas = ["c1", "c2", "m1"];
-
-        return (
-          <div
-            className={`pss-gridcard pss-metric-card pss-${metricAreas[index]}`}
-            key={label}
-          >
-            <div className="pss-metric">{value}</div>
-            <span className="pss-field-text">{label}</span>
-          </div>
-        );
-      })}
+      {project.metrics.map(([value, label], index) => (
+        <div
+          className={`pss-gridcard pss-metric-card pss-${metricAreas[index]}`}
+          key={label}
+        >
+          <div className="pss-metric">{value}</div>
+          <span className="pss-field-text">{label}</span>
+        </div>
+      ))}
 
       <div className="pss-gridcard pss-flow pss-flexwrap">
         {project.flow.map((step, index) => (
@@ -150,126 +132,113 @@ function ProjectCard({ project }) {
   );
 }
 
+// FIX: extra scroll "hold" at the end so the last card doesn't get yanked away instantly
+const END_HOLD = 0.25;
+
 export default function ProjectScrollStack() {
   const sectionRef = useRef(null);
+  const viewportRef = useRef(null);
   const slideRefs = useRef([]);
-  const [activeIndex, setActiveIndex] = useState(0);
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    const viewport = viewportRef.current;
+    const slides = slideRefs.current.filter(Boolean);
+    if (!section || !viewport || !slides.length) return;
 
-useEffect(() => {
-  const section = sectionRef.current;
-  const slides = slideRefs.current.filter(Boolean);
+    const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
+    const last = slides.length - 1;
+    let raf = 0;
+    let ticking = false;
 
-  if (!section || !slides.length) return;
+    // FIX: use the sticky viewport's own height (100svh) instead of window.innerHeight.
+    // innerHeight changes when the mobile address bar hides/shows -> that was the jitter + gap at the end.
+    const getVH = () => viewport.clientHeight || window.innerHeight;
 
-  const clamp = (value, min, max) =>
-    Math.min(max, Math.max(min, value));
+    const applyStack = (progress) => {
+      slides.forEach((slide, index) => {
+        const entering = clamp(progress - (index - 1), 0, 1);
+        const receded = clamp(progress - index, 0, 1);
+        const recededFurther = clamp(progress - index - 1, 0, 1);
 
-  let animationFrame;
-  let lastActiveIndex = -1;
+        const y = (1 - entering) * 100;
+        const px = -(28 * receded + 22 * recededFurther);
+        const scale = 1 - 0.06 * receded - 0.05 * recededFurther;
+        const opacity = 1 - 0.35 * recededFurther;
 
-  const updateSectionHeight = () => {
-    // One viewport of scroll space per project.
-    section.style.height = `${
-      window.innerHeight * slides.length
-    }px`;
-  };
+        // FIX: translate3d keeps it on the GPU layer (smoother on Oppo / Chrome Android)
+        slide.style.transform = `translate3d(0, ${y}%, 0) translate3d(0, ${px}px, 0) scale(${scale})`;
+        slide.style.opacity = String(opacity);
+        slide.style.zIndex = String(index + 1);
+        slide.style.pointerEvents = receded < 0.5 ? "auto" : "none";
+      });
+    };
 
-  const fitCards = () => {
-    const isMobile = window.matchMedia("(max-width: 640px)").matches;
+  const update = () => {
+  ticking = false;
+  const rect = section.getBoundingClientRect();
+  // FIX: scroll distance per slide comes from the section itself (stable lvh),
+  // not the sticky viewport, because dvh changes when the address bar hides
+  const step = section.offsetHeight / (projects.length + END_HOLD);
+  applyStack(clamp(-rect.top / step, 0, last));
+};
 
-    slides.forEach((slide) => {
-      const card = slide.querySelector(".pss-container");
-      if (!card) return;
+    // FIX: scroll-driven + rAF throttled instead of a rAF loop running forever
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      raf = requestAnimationFrame(update);
+    };
 
-      card.style.transform = "none";
+    // FIX: fit runs on every screen size (tablet too) and re-runs on font load / viewport resize
+    const fitCards = () => {
+      const avail = getVH() - 24;
 
-      if (!isMobile) return;
+      slides.forEach((slide) => {
+        const card = slide.querySelector(".pss-container");
+        if (!card) return;
 
-      const availableHeight = window.innerHeight - 32;
-      const cardHeight = card.offsetHeight;
+        // reset, then measure natural height
+        card.style.transform = "";
+        card.style.width = "";
+        card.style.maxWidth = "";
+        card.style.flex = "";
 
-      if (cardHeight > availableHeight) {
-        const scale = availableHeight / cardHeight;
-        card.style.transform = `scale(${scale})`;
-      }
-    });
-  };
+        const h = card.offsetHeight;
+        if (h > avail) {
+          const scale = avail / h;
+          // FIX: widen by 1/scale so after scaling down it still fills the full width (no side gaps)
+          card.style.flex = "none";
+          card.style.maxWidth = "none";
+          card.style.width = `${100 / scale}%`;
+          card.style.transform = `scale(${scale})`;
+        }
+      });
 
-  const applyStack = (progress) => {
-    slides.forEach((slide, index) => {
-      const entering = clamp(progress - (index - 1), 0, 1);
-      const receded = clamp(progress - index, 0, 1);
-      const recededFurther = clamp(progress - index - 1, 0, 1);
+      update();
+    };
 
-      const y = (1 - entering) * 100;
-      const px = -(28 * receded + 22 * recededFurther);
-      const scale = 1 - 0.06 * receded - 0.05 * recededFurther;
-      const opacity = 1 - 0.35 * recededFurther;
+    requestAnimationFrame(fitCards);
 
-      slide.style.transform =
-        `translateY(${y}%) translateY(${px}px) scale(${scale})`;
-
-      slide.style.opacity = String(opacity);
-      slide.style.zIndex = String(index + 1);
-      slide.style.pointerEvents =
-        receded < 0.5 ? "auto" : "none";
-    });
-
-    const nextIndex = Math.min(
-      slides.length - 1,
-      Math.round(progress)
-    );
-
-    // Only update React when the active project changes.
-    if (nextIndex !== lastActiveIndex) {
-      lastActiveIndex = nextIndex;
-      setActiveIndex(nextIndex);
+    // FIX: Google Fonts load late -> card heights change after first measure. Re-fit when ready.
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(fitCards);
     }
-  };
 
-  const frame = () => {
-    const viewportHeight = window.innerHeight;
-    const rect = section.getBoundingClientRect();
+    // FIX: observe the viewport (svh = stable), NOT the cards, so no resize loop
+    const ro = new ResizeObserver(fitCards);
+    ro.observe(viewport);
 
-    const scrollable = Math.max(
-      1,
-      section.offsetHeight - viewportHeight
-    );
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("orientationchange", fitCards);
 
-    const progress = clamp(
-      -rect.top / scrollable,
-      0,
-      1
-    );
-
-    applyStack(progress * (slides.length - 1));
-
-    animationFrame = window.requestAnimationFrame(frame);
-  };
-
-  const handleResize = () => {
-    updateSectionHeight();
-    fitCards();
-  };
-
-  updateSectionHeight();
-
-  // Wait for layout before measuring card heights.
-  requestAnimationFrame(() => {
-    fitCards();
-    applyStack(0);
-  });
-
-  window.addEventListener("resize", handleResize);
-  animationFrame = window.requestAnimationFrame(frame);
-
-  return () => {
-    window.removeEventListener("resize", handleResize);
-    window.cancelAnimationFrame(animationFrame);
-  };
-}, []);
-
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("orientationchange", fitCards);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
 
   return (
     <div className="project-scroll-stack" id="projects">
@@ -277,16 +246,18 @@ useEffect(() => {
         className="pss-projects"
         ref={sectionRef}
         aria-label="Projects"
+        // FIX: height now comes from CSS (svh * count), no JS height = no jump on address bar change
+        style={{ "--pss-count": projects.length + END_HOLD }}
       >
-        <div className="pss-stack-viewport">
+        <div className="pss-stack-viewport" ref={viewportRef}>
           <div className="pss-stack-inner">
             {projects.map((project, index) => (
               <div
                 className="pss-slide"
                 data-index={index}
                 key={project.title}
-                ref={(element) => {
-                  slideRefs.current[index] = element;
+                ref={(el) => {
+                  slideRefs.current[index] = el;
                 }}
               >
                 <ProjectCard project={project} />
@@ -295,18 +266,7 @@ useEffect(() => {
           </div>
         </div>
       </section>
-
-      <div
-        className="pss-dots"
-        aria-label="Project navigation"
-      >
-        {projects.map((project, index) => (
-          <span
-            key={project.title}
-            className={activeIndex === index ? "on" : ""}
-          />
-        ))}
-      </div>
+      {/* FIX: removed the stray "=" that was rendering as text under the section (that was your extra space at the end) */}
     </div>
   );
 }

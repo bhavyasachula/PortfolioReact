@@ -16,7 +16,6 @@ import GhostFibers from './components/GhostFibers.jsx';
 import './App.css'
 import { FileTerminal, ImageOff } from 'lucide-react';
 import { Link } from 'react-scroll';
-import Contact from './components/Contact.jsx';
 import ScrollRuler from "./components/ScrollRuler.jsx";
 
 
@@ -250,7 +249,7 @@ const imageLinks = [
 
 
  {/* end grid skills */}
-    <div className='proheadOuter w-[100%] flex justify-center  mt-15 items-center' >
+    <div className='proheadOuter w-[100%] flex justify-center mt-15 items-center' >
       <div className='proHeading text-white text-center w-[50%]'>{'{PROJECTS}'}</div>
     </div>
     {/* <Project data={invoiceDispatcherData}></Project> */}

@@ -96,8 +96,8 @@ function ProjectCard({ project }) {
             <span className="pss-project-badge">
               {project.badge}
             </span>
-            <h2>{project.title}</h2>
 
+            <h2>{project.title}</h2>
             <p>{project.description}</p>
           </div>
 
@@ -134,7 +134,6 @@ function ProjectCard({ project }) {
         {project.flow.map((step, index) => (
           <div className="pss-flow-step-wrap" key={step}>
             <div className="pss-flow-card">{step}</div>
-
             {index < project.flow.length - 1 && <Arrow />}
           </div>
         ))}
@@ -156,107 +155,121 @@ export default function ProjectScrollStack() {
   const slideRefs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  useEffect(() => {
-    const section = sectionRef.current;
-    const slides = slideRefs.current.filter(Boolean);
 
-    if (!section || !slides.length) return;
+useEffect(() => {
+  const section = sectionRef.current;
+  const slides = slideRefs.current.filter(Boolean);
 
-    const clamp = (value, min, max) =>
-      Math.min(max, Math.max(min, value));
+  if (!section || !slides.length) return;
 
-    // Keep each project container at its natural, full width.
-const fitCards = () => {
-  const isMobile = window.matchMedia("(max-width: 640px)").matches;
+  const clamp = (value, min, max) =>
+    Math.min(max, Math.max(min, value));
 
-  slides.forEach((slide) => {
-    const card = slide.querySelector(".pss-container");
+  let animationFrame;
+  let lastActiveIndex = -1;
 
-    if (!card) return;
+  const updateSectionHeight = () => {
+    // One viewport of scroll space per project.
+    section.style.height = `${
+      window.innerHeight * slides.length
+    }px`;
+  };
 
-    // Desktop: use the full available width
-    if (!isMobile) {
-      card.style.transform = "none";
-      return;
-    }
-
-    // Mobile: scale only if necessary
-    const availableHeight = window.innerHeight - 100;
-    card.style.transform = "none";
-
-    const cardHeight = card.offsetHeight;
-    const scale = Math.min(1, availableHeight / cardHeight);
-
-    card.style.transform = `scale(${scale})`;
-    card.style.transformOrigin = "center center";
-  });
-};
-
-    const applyStack = (progress) => {
-      slides.forEach((slide, index) => {
-        const entering = clamp(progress - (index - 1), 0, 1);
-        const receded = clamp(progress - index, 0, 1);
-        const recededFurther = clamp(progress - index - 1, 0, 1);
-
-        const y = (1 - entering) * 110;
-        const px = -(28 * receded + 22 * recededFurther);
-        const scale = 1 - 0.06 * receded - 0.05 * recededFurther;
-        const opacity = 1 - 0.35 * recededFurther;
-
-        // Scale the slide for the stack effect, not the card itself.
-        slide.style.transform =
-          `translateY(${y}%) translateY(${px}px) scale(${scale})`;
-
-        slide.style.opacity = String(opacity);
-        slide.style.zIndex = String(index + 1);
-        slide.style.pointerEvents =
-          1 - receded > 0.5 ? "auto" : "none";
-      });
-
-      setActiveIndex(
-        Math.min(slides.length - 1, Math.round(progress))
-      );
-    };
-
-    let animationFrame;
-
-    const frame = () => {
-      const viewportHeight = window.innerHeight;
-      const rect = section.getBoundingClientRect();
-      const scrollable = section.offsetHeight - viewportHeight;
-
-      const progress = clamp(
-        -rect.top / (scrollable || 1),
-        0,
-        1
-      );
-
-      applyStack(progress * (slides.length - 1));
-
-      animationFrame = window.requestAnimationFrame(frame);
-    };
-
+  const fitCards = () => {
     const isMobile = window.matchMedia("(max-width: 640px)").matches;
-    // Give the final mobile card enough scroll distance to settle into view.
-    section.style.height = `${slides.length * (isMobile ? 1.5 : 1.2) * 100}vh`;
 
+    slides.forEach((slide) => {
+      const card = slide.querySelector(".pss-container");
+      if (!card) return;
+
+      card.style.transform = "none";
+
+      if (!isMobile) return;
+
+      const availableHeight = window.innerHeight - 32;
+      const cardHeight = card.offsetHeight;
+
+      if (cardHeight > availableHeight) {
+        const scale = availableHeight / cardHeight;
+        card.style.transform = `scale(${scale})`;
+      }
+    });
+  };
+
+  const applyStack = (progress) => {
+    slides.forEach((slide, index) => {
+      const entering = clamp(progress - (index - 1), 0, 1);
+      const receded = clamp(progress - index, 0, 1);
+      const recededFurther = clamp(progress - index - 1, 0, 1);
+
+      const y = (1 - entering) * 100;
+      const px = -(28 * receded + 22 * recededFurther);
+      const scale = 1 - 0.06 * receded - 0.05 * recededFurther;
+      const opacity = 1 - 0.35 * recededFurther;
+
+      slide.style.transform =
+        `translateY(${y}%) translateY(${px}px) scale(${scale})`;
+
+      slide.style.opacity = String(opacity);
+      slide.style.zIndex = String(index + 1);
+      slide.style.pointerEvents =
+        receded < 0.5 ? "auto" : "none";
+    });
+
+    const nextIndex = Math.min(
+      slides.length - 1,
+      Math.round(progress)
+    );
+
+    // Only update React when the active project changes.
+    if (nextIndex !== lastActiveIndex) {
+      lastActiveIndex = nextIndex;
+      setActiveIndex(nextIndex);
+    }
+  };
+
+  const frame = () => {
+    const viewportHeight = window.innerHeight;
+    const rect = section.getBoundingClientRect();
+
+    const scrollable = Math.max(
+      1,
+      section.offsetHeight - viewportHeight
+    );
+
+    const progress = clamp(
+      -rect.top / scrollable,
+      0,
+      1
+    );
+
+    applyStack(progress * (slides.length - 1));
+
+    animationFrame = window.requestAnimationFrame(frame);
+  };
+
+  const handleResize = () => {
+    updateSectionHeight();
+    fitCards();
+  };
+
+  updateSectionHeight();
+
+  // Wait for layout before measuring card heights.
+  requestAnimationFrame(() => {
     fitCards();
     applyStack(0);
+  });
 
-    const handleResize = () => {
-      fitCards();
-      const mobileNow = window.matchMedia("(max-width: 640px)").matches;
-      section.style.height = `${slides.length * (mobileNow ? 1.5 : 1.2) * 100}vh`;
-    };
+  window.addEventListener("resize", handleResize);
+  animationFrame = window.requestAnimationFrame(frame);
 
-    window.addEventListener("resize", handleResize);
-    animationFrame = window.requestAnimationFrame(frame);
+  return () => {
+    window.removeEventListener("resize", handleResize);
+    window.cancelAnimationFrame(animationFrame);
+  };
+}, []);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.cancelAnimationFrame(animationFrame);
-    };
-  }, []);
 
   return (
     <div className="project-scroll-stack" id="projects">
@@ -283,7 +296,10 @@ const fitCards = () => {
         </div>
       </section>
 
-      <div className="pss-dots" aria-label="Project navigation">
+      <div
+        className="pss-dots"
+        aria-label="Project navigation"
+      >
         {projects.map((project, index) => (
           <span
             key={project.title}

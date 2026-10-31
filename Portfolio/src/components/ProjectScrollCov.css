@@ -82,17 +82,23 @@
   margin: 0;
   padding: 20px;
   border-radius: 10px;
+
   color: rgb(242, 246, 242);
+
   background: url("../assets/strandPurple.png")
     center / cover no-repeat;
+
   font-family: "Geist Mono", monospace;
+
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-rows: minmax(210px, auto);
+
   grid-template-areas:
     "tetle tetle c1 c2"
     "tetle tetle flow flow"
     "m1 stack stack stack";
+
   gap: 20px;
 }
 
@@ -356,20 +362,21 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 
-  /* Full-width mobile container */
   .project-scroll-stack .pss-slide > .pss-container {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
+    min-width: 0;
     flex: 1 1 100%;
+    margin: 0;
   }
 
   .project-scroll-stack .pss-container {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
     min-width: 0;
     margin: 0;
     padding: 10px;
@@ -502,5 +509,29 @@
   .project-scroll-stack .pss-gridcard,
   .project-scroll-stack .pss-live-links a {
     transition: none;
+  }
+}
+@media (max-width: 640px) {
+  .project-scroll-stack .pss-stack-viewport {
+    height: 100vh;
+    height: 100svh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .project-scroll-stack .pss-stack-inner {
+    height: 100%;
+  }
+
+  .project-scroll-stack .pss-slide {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-scroll-stack .pss-container {
+    transform-origin: center center;
+    margin: 0;
   }
 }

@@ -342,6 +342,7 @@
   }
 
   .project-scroll-stack .pss-slide > .pss-container {
+    height: 90vh;
     flex: 0 0 auto;
     width: 100%;
     margin: 0;

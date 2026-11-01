@@ -25,15 +25,13 @@ const projects = [
     description:
       "Privacy-first bank statement analyzer — session-only in-memory processing, Gemini insights, D3 charts",
     metrics: [
-      ["0", "Data Stored"],
-      ["RC4", "Encryption"],
-      ["JWT", "RBAC Auth"],
+      ["In-Memory", "Zero DB Storage"],
+      ["JWT+RBAC", "Role-Based Auth"],
+      ["Gemini", "AI Insights"],
     ],
     flow: ["UPLOAD", "ENCRYPT", "PARSE", "ANALYZE", "VISUALIZE"],
     stack: ["React", "Node.js", "Gemini", "D3.js"],
-    links: [
-      { label: "Repository", href: "https://github.com/bhavyasachula/" },
-    ],
+    links: [{ label: "Repository", href: "https://github.com/bhavyasachula/" }],
   },
   {
     badge: "Project",
@@ -42,14 +40,12 @@ const projects = [
       "Local expense tracker exposed as an MCP server — CRUD tools, category filters, date-range summaries for any LLM client",
     metrics: [
       ["CRUD", "MCP Tools"],
-      ["SQLite", "Local Store"],
-      ["Filter", "By Category"],
+      ["By Date", "Range Summaries"],
+      ["By Category", "Filtered Queries"],
     ],
     flow: ["CLIENT", "MCP", "TOOL", "SQLITE", "SUMMARY"],
     stack: ["FastMCP", "SQLite", "Python"],
-    links: [
-      { label: "Repository", href: "https://github.com/bhavyasachula/" },
-    ],
+    links: [{ label: "Repository", href: "https://github.com/bhavyasachula/" }],
   },
 ];
 
@@ -174,14 +170,14 @@ export default function ProjectScrollStack() {
       });
     };
 
-  const update = () => {
-  ticking = false;
-  const rect = section.getBoundingClientRect();
-  // FIX: scroll distance per slide comes from the section itself (stable lvh),
-  // not the sticky viewport, because dvh changes when the address bar hides
-  const step = section.offsetHeight / (projects.length + END_HOLD);
-  applyStack(clamp(-rect.top / step, 0, last));
-};
+    const update = () => {
+      ticking = false;
+      const rect = section.getBoundingClientRect();
+      // FIX: scroll distance per slide comes from the section itself (stable lvh),
+      // not the sticky viewport, because dvh changes when the address bar hides
+      const step = section.offsetHeight / (projects.length + END_HOLD);
+      applyStack(clamp(-rect.top / step, 0, last));
+    };
 
     // FIX: scroll-driven + rAF throttled instead of a rAF loop running forever
     const onScroll = () => {

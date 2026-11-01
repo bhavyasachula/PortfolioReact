@@ -176,10 +176,10 @@ export default function TechStackBeam({ images, name = "{Skills & Tools}" }) {
   }, [nodes]);
 
  return (
-  <div className="w-full select-none overflow-x-clip">
+  <section className="w-full select-none overflow-x-clip">
     <h2 className="pb-6 text-center font-[Nabla] text-4xl text-white md:hidden">{name}</h2>
 
-    <div className="relative w-full overflow-hidden" style={{ height: SIZE ,contain:"paint"}}>
+    <div className="relative w-full overflow-hidden" style={{ height: SIZE, contain: "paint" }}>
       <style>{`
         @keyframes ts-spin { to { transform: rotate(360deg); } }
         @keyframes ts-unspin { to { transform: rotate(-360deg); } }
@@ -191,36 +191,41 @@ export default function TechStackBeam({ images, name = "{Skills & Tools}" }) {
         }
       `}</style>
 
+      {/* static frame: positions the wheel, does NOT rotate */}
       <div
         ref={wrapRef}
-        className="ts-spin ts-pos absolute top-0"
-        style={{ width: SIZE, height: SIZE, willChange: "transform" }}
+        className="ts-pos absolute top-0"
+        style={{ width: SIZE, height: SIZE }}
       >
-        <canvas
-          ref={canvasRef}
-          className="pointer-events-none absolute inset-0"
-          style={{ width: SIZE, height: SIZE }}
-        />
+        {/* rotating layer: lines + logos only */}
+        <div className="ts-spin absolute inset-0" style={{ willChange: "transform" }}>
+          <canvas
+            ref={canvasRef}
+            className="pointer-events-none absolute inset-0"
+            style={{ width: SIZE, height: SIZE }}
+          />
 
-        {nodes.map((n, i) => (
-          <div
-            key={i}
-            className="ts-unspin absolute z-10 flex items-center justify-center rounded-full bg-black/95 p-3 ring-1 ring-purple/20"
-            style={{ width: NODE, height: NODE, left: n.x - NODE / 2, top: n.y - NODE / 2 }}
-          >
-            <img src={n.src} alt="" decoding="async" className="h-full w-full rounded-md object-contain" />
-          </div>
-        ))}
+          {nodes.map((n, i) => (
+            <div
+              key={i}
+              className="ts-unspin absolute z-10 flex items-center justify-center rounded-full bg-black/95 p-3 ring-1 ring-purple/20"
+              style={{ width: NODE, height: NODE, left: n.x - NODE / 2, top: n.y - NODE / 2 }}
+            >
+              <img src={n.src} alt="" decoding="async" className="h-full w-full rounded-md object-contain" />
+            </div>
+          ))}
+        </div>
 
+        {/* center circle: static, no rotation, no counter-spin needed */}
         <div
           className="absolute z-20 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/5 bg-[#0b0b0d] text-center text-4xl font-[Nabla] tracking-wide text-white"
           style={{ left: C, top: C, width: CENTER, height: CENTER }}
           id="TechStack"
         >
-          <span className="ts-unspin hidden md:block">{name}</span>
+          <span className="hidden md:block">{name}</span>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 }

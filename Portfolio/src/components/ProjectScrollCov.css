@@ -157,11 +157,11 @@
 /* ================= GRID CARDS ================= */
 
 .project-scroll-stack .pss-gridcard {
-  position: relative;
-  isolation: isolate;
   min-width: 0;
   max-width: 100%;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--pss-glass-bg);
+  backdrop-filter: blur(26px) saturate(150%);
+  -webkit-backdrop-filter: blur(26px) saturate(150%);
   border: 1px solid var(--pss-glass-border);
   border-radius: 7px;
   box-shadow:
@@ -172,17 +172,6 @@
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
-}
-
-.project-scroll-stack .pss-gridcard::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: inherit;
-  pointer-events: none; 
-  backdrop-filter: blur(26px) saturate(150%);
-  -webkit-backdrop-filter: blur(26px) saturate(150%);
 }
 
 /* FIX: hover only on devices that actually hover (no stuck hover on touch) */
@@ -196,6 +185,11 @@
 }
 
 /* FIX: WebViews / browsers without backdrop-filter get a darker solid glass instead of near-transparent */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .project-scroll-stack .pss-gridcard {
+    background: rgba(20, 10, 32, 0.6);
+  }
+}
 
 .project-scroll-stack .pss-b-title {
   border: 1px solid var(--pss-border);
@@ -487,9 +481,4 @@
   .project-scroll-stack .pss-live-links a {
     transition: none;
   }
-}
-
-.project-scroll-stack .pss-gridcard::before {
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
 }

@@ -157,11 +157,11 @@
 /* ================= GRID CARDS ================= */
 
 .project-scroll-stack .pss-gridcard {
+  position: relative;
+  isolation: isolate;
   min-width: 0;
   max-width: 100%;
-  background: var(--pss-glass-bg);
-  backdrop-filter: blur(26px) saturate(150%);
-  -webkit-backdrop-filter: blur(26px) saturate(150%);
+  background: rgba(24, 8, 36, 0.45);
   border: 1px solid var(--pss-glass-border);
   border-radius: 7px;
   box-shadow:
@@ -172,6 +172,17 @@
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
+}
+
+.project-scroll-stack .pss-gridcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
 }
 
 /* FIX: hover only on devices that actually hover (no stuck hover on touch) */
@@ -361,13 +372,10 @@
   }
 
   .project-scroll-stack .pss-gridcard {
-    padding: 10px;
-    /* FIX: lighter blur on mobile. 26px x ~18 cards kills mid-range Android GPUs and the effect drops */
-    backdrop-filter: blur(12px) saturate(140%);
-    -webkit-backdrop-filter: blur(12px) saturate(140%);
-    box-shadow:
-      4px 4px rgba(0, 0, 0, 0.512),
-      inset 0 1px 0 var(--pss-glass-inner);
+   padding: 10px;
+  box-shadow:
+    4px 4px rgba(0, 0, 0, 0.512),
+    inset 0 1px 0 var(--pss-glass-inner);
   }
 
   .project-scroll-stack .pss-flexcol {

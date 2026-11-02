@@ -161,7 +161,8 @@ export default function ProjectScrollStack() {
         const px = -(28 * receded + 22 * recededFurther);
         const scale = 1 - 0.06 * receded - 0.05 * recededFurther;
         const opacity = 1 - 0.35 * recededFurther;
-
+// skip rendering slides that aren't on screen (kills their blur cost)
+        slide.style.visibility = index > 0 && entering === 0 ? "hidden" : "visible";
         // FIX: translate3d keeps it on the GPU layer (smoother on Oppo / Chrome Android)
         slide.style.transform = `translate3d(0, ${y}%, 0) translate3d(0, ${px}px, 0) scale(${scale})`;
         slide.style.opacity = String(opacity);

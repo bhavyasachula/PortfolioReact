@@ -18,7 +18,7 @@ import './App.css'
 import { FileTerminal, ImageOff } from 'lucide-react';
 import { Link } from 'react-scroll';
 import ScrollRuler from "./components/ScrollRuler.jsx";
-
+import Certificates from './components/Certificates.jsx';
 
 function App() {
   const invoiceDispatcherData = {
@@ -181,12 +181,16 @@ const imageLinks = [
       <div className='proHeading text-white text-center w-[50%]'>{'{PROJECTS}'}</div>
     </div>
 
-<ProjectScrollCov></ProjectScrollCov>
 
+<ProjectScrollCov></ProjectScrollCov>
+<div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
+      <div className='proHeading text-white text-center w-[70%]'>{"{Certificates.}"}</div>
+    </div>
+ <Certificates></Certificates>
   <div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
       <div className='proHeading text-white text-center w-[70%]'>{"{Get In Touch.}"}</div>
     </div>
- 
+
   <NewContact></NewContact>
  </>
   )

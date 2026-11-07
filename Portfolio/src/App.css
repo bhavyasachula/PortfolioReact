@@ -531,6 +531,12 @@ nav a {
   .proheadOuter{margin-top: 0;}
 }
 
+.cardds{
+  
+  background-image: url('./assets/usableimgForPort.jpg');
+  background-size:cover;     
+  background-repeat: no-repeat; 
+}
 
 getinTouch{
   background-color: #ad08a0;

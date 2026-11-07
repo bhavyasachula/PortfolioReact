@@ -1,6 +1,6 @@
 /* src/components/Certificates.css */
 .cert-section {
-
+  
   padding: 7rem 0 8rem;
   overflow: hidden;
 }
@@ -24,7 +24,8 @@
 
 /* your card style */
 .cardds {
-  background-image: url('../assets/usableimgForPort.jpg');
+  display: block;
+  background-image: url('../assets/usableimgForPort.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -132,4 +133,7 @@
 }
 .cert-card:hover .cert-glare {
   transform: translate(100%, 100%);
+}
+@media (max-width: 640px) {
+  .cardds{width: 90%;}
 }

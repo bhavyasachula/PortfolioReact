@@ -15,7 +15,9 @@ function Navbar() {
     { to: "about", label: "About" },
     { to: "TechStack", label: "Tech Stack" },
     { to: "projects", label: "Work" },
+     { to: "certificates", label:"Certs"},
     { to: "contact", label: "Let's Talk" },
+   
   ];
 
   function goTo(id) {

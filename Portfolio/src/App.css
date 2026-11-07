@@ -87,7 +87,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 96px);
-  max-width: 600px;
+  max-width: 680px;
   padding: 10px 14px;
   background: var(--nav-bg);
                   /* old border was breaking the wings */

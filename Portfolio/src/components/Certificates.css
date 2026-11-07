@@ -47,7 +47,7 @@
 .cert-card:hover {
   transform: translateY(-10px);
   border-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 30px 80px -15px rgba(168, 85, 247, 0.75);
+  box-shadow: 0 30px 80px -15px rgba(236, 36, 226, 0.75);
 }
 
 .cert-shade {

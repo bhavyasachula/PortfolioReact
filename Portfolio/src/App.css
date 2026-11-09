@@ -76,8 +76,7 @@ nav {
   z-index: 40;
 }
 .navbar {
-  --nav-bg: #040204;            /* lighter than page bg so wings show */
-
+  --nav-bg: #040204;          
   font-family: "Nabla", system-ui;
   display: flex;
   justify-content: space-between;
@@ -90,14 +89,12 @@ nav {
   max-width: 680px;
   padding: 10px 14px;
   background: var(--nav-bg);
-                  /* old border was breaking the wings */
-  box-shadow: none;             /* old shadow gone */
+  box-shadow: none;             
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   border-radius: 0 0 24px 24px;
   color: #fff;
   z-index: 40;
-
    filter:
     drop-shadow(0 2px 0 #f27fe72a)
     

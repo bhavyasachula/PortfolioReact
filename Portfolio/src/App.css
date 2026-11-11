@@ -175,7 +175,7 @@ nav a {
 }
 
 .reel-link:hover{
-  background: rgb(135, 25, 135);
+  
 }
 .desktop-links li:last-child .reel-link{
   border: 1px solid rgb(138, 6, 136);
@@ -193,7 +193,6 @@ nav a {
 .desktop-links li:last-child .reel-link:hover{
   transform: scale(1.01);
 }
-
 
 .desktop-links li:last-child .reel-link:hover .reel-inner {
   transform: translateY(0);

@@ -9,7 +9,7 @@ export default function GithubActivity() {
       <GitHubContributionGraph
         username="bhavyasachula"
         theme={{
-            bgColor:"#0b0b0d",
+          bgColor:"#0b0b0d",
           textColor: "#a1a1aa",
           inactiveTextColor: "#52525b",
           cellLevel0: "#161b22",

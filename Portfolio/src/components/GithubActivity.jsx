@@ -9,16 +9,16 @@ export default function GithubActivity() {
       <GitHubContributionGraph
         username="bhavyasachula"
         theme={{
-   
+            bgColor:"#0b0b0d",
           textColor: "#a1a1aa",
           inactiveTextColor: "#52525b",
           cellLevel0: "#161b22",
           cellLevel1: "#4f0f40",
-          cellLevel2: "#84216c",
-          cellLevel3: "#a62680",
-          cellLevel4: "#d3389d",
-          cellSize: 15,
-          cellGap: 6,
+          cellLevel2: "#88236f",
+          cellLevel3: "#b62d8d",
+          cellLevel4: "#fb44b8",
+          cellSize: 21,
+          cellGap: 4,
           cellRadius: 2,
           cellBorderColor: "transparent",
           cellOutlineColor: "transparent",

@@ -93,7 +93,7 @@
   font-size: clamp(1.6rem, 3vw, 2.8rem);
   font-weight: 900;
   line-height: 1.05;
-   font-family: "limelight";
+  font-family: "limelight";
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color:rgb(226, 31, 31);
@@ -107,7 +107,6 @@
   font-family: ui-monospace, monospace;
   font-size: 0.8rem;
   letter-spacing: 0.15em;
-  
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
 }

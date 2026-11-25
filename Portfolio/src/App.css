@@ -1,3 +1,5 @@
+/* background: linear-gradient(159deg, #B91372 0%, #6B0F1A 100%); */
+
 @font-face {
   font-family: 'VALORANT';
   /* If app.css is inside src/components/, you must go UP one folder using '../' */
@@ -191,10 +193,12 @@ nav a {
   transform: scale(1.04);  
 }
 .desktop-links li:last-child .reel-link:hover{
+  
   transform: scale(1.01);
 }
 
 .desktop-links li:last-child .reel-link:hover .reel-inner {
+  
   transform: translateY(0);
 }
 

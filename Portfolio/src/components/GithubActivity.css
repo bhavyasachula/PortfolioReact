@@ -1,0 +1,25 @@
+
+.github-activity {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 12px;
+  background: #0b0b0d;
+  overflow-x: auto;
+}
+
+/* Keep the graph centered without stretching its cells */
+.github-activity .ghContributionGraph {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #0b0b0d !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Prevent the graph from being distorted */
+.github-activity .ghContributionGraph * {
+  box-sizing: border-box;
+}

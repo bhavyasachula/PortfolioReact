@@ -6,6 +6,7 @@ import Caraousal from './components/Caraousal.jsx';
 import Navbar from './components/Navbar.jsx';
 import TechStackBeam from './components/TechStackBeam.jsx';
 import NewContact from "./components/NewContact.jsx"
+import GithubActivity from "./components/GithubActivity.jsx"
 import About from './components/About.jsx';
 // import Skills from './components/skills.jsx';
 import strandspurple from './assets/svgpurplee.png'
@@ -181,7 +182,7 @@ const imageLinks = [
       <div className='proHeading text-white text-center w-[50%]'>{'{PROJECTS}'}</div>
     </div>
 
-
+<GithubActivity></GithubActivity>
 <ProjectScrollCov></ProjectScrollCov>
 <div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
       <div className='proHeading text-white text-center w-[70%]'>{"{Certificates.}"}</div>

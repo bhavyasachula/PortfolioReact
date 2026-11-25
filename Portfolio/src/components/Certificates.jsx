@@ -3,7 +3,8 @@ import "./Certificates.css";
 
 const certs = [
   { title: "Agentic AI Foundations Associate ", issuer: "Oracle", year: "2026", link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=ECD4794291FF3FAE42047E4FF296EB650C263326CD25284C8E7433C36CB104E5" },
-  { title: "AWS Cloud Practitioner", issuer: "Amazon", year: "2021", link: "#" },
+  { title: "AWS Cloud Practitioner", issuer: "Amazon", year: "2021", link: "" },
+  // { title: "Claude Code in Action", issuer: "Anthropic ", year: "2026", link: "" },
 ];
 
 export default function Certificates() {

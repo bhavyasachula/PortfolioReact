@@ -175,19 +175,20 @@ const imageLinks = [
   </div>
 
 <About/>
-
   <TechStackBeam images={imageLinks}  id="TechStack" />   
+
 
     <div className='proheadOuter w-[100%] flex justify-center mt-15 items-center' >
       <div className='proHeading text-white text-center w-[50%]'>{'{PROJECTS}'}</div>
     </div>
 
-<GithubActivity></GithubActivity>
+
 <ProjectScrollCov></ProjectScrollCov>
 <div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
-      <div className='proHeading text-white text-center w-[70%]'>{"{Certificates.}"}</div>
+      <div className='proHeading text-white text-center w-[70%]'>{"{Certificates & Contributions}"}</div>
     </div>
  <Certificates></Certificates>
+ <GithubActivity></GithubActivity>
   <div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
       <div className='proHeading text-white text-center w-[70%]'>{"{Get In Touch.}"}</div>
     </div>

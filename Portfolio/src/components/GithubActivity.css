@@ -1,23 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap");
 
-.github-activity {
+.activity-section {
+  min-height: 100vh;
+  padding: 100px 24px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  background: #0b0b0d;
-  overflow-x: auto;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 
-/* Keep the graph centered without stretching its cells */
+.activity-graph-wrap {
+  position: relative;
+  max-width: 100%;
+}
+
+/* ghost word centered on the graph */
+.activity-ghost {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: "Nabla", monospace; 
+  font-size: clamp(6rem, 22vw, 22rem);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(251, 68, 184, 0.14);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.github-activity {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 16px 0;
+  scrollbar-width: none;
+}
+.github-activity::-webkit-scrollbar { display: none; }
+
+.github-activity-inner {
+  width: max-content;
+  margin: 0 auto;
+}
+
 .github-activity .ghContributionGraph {
-  
-  background: #0b0b0d !important;
+  background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
 }
+.github-activity .ghContributionGraph * { box-sizing: border-box; }
 
-/* Prevent the graph from being distorted */
-.github-activity .ghContributionGraph * {
-  box-sizing: border-box;
+/* count below the graph */
+.activity-count {
+  position: relative;
+  z-index: 1;
+  margin: 48px 0 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #71717a;
+}
+.activity-count b {
+  color: #f4f4f5;
+  font-weight: 600;
+  font-size: 1.6em;
+  letter-spacing: -0.02em;
+  margin-right: 6px;
+}
+
+@media (max-width: 760px) {
+  .activity-section { padding: 80px 12px; }
 }

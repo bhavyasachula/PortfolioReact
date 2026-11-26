@@ -24,7 +24,7 @@
 
 .cardds {
   display: block;
-  background-image: url('../assets/usableimgForPort.webp');
+  background-image: url('../assets/usableimgForPort.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,7 +74,7 @@
   font-weight: 900;
   line-height: 0.9;
   color: transparent;
-  -webkit-text-stroke: 4px rgba(244, 10, 25, 0.923);
+  -webkit-text-stroke: 4px rgba(0, 0, 0, 0.923);
 }
 
 .cert-year {

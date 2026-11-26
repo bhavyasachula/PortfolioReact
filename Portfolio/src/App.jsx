@@ -185,14 +185,17 @@ const imageLinks = [
 
 <ProjectScrollCov></ProjectScrollCov>
 <div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
-      <div className='proHeading text-white text-center w-[70%]'>{"{Certificates & Contributions}"}</div>
+      <div className='proHeading text-white text-center w-[70%]'>{"{Contributions}"}</div>
+    </div>
+ <GithubActivity></GithubActivity>
+
+<div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
+      <div className='proHeading text-white text-center w-[70%]'>{"{Certificates}"}</div>
     </div>
  <Certificates></Certificates>
- <GithubActivity></GithubActivity>
   <div className='proheadOuter w-[100%] flex justify-center mt-4 items-center'>
       <div className='proHeading text-white text-center w-[70%]'>{"{Get In Touch.}"}</div>
     </div>
-
   <NewContact></NewContact>
  </>
   )

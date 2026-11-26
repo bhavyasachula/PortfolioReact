@@ -65,8 +65,8 @@
   position: relative;
   z-index: 1;
   margin: 48px 0 0;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.8rem;
+  font-family: "syne", monospace;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #71717a;

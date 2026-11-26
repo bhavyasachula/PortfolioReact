@@ -5,7 +5,7 @@ import "./GithubActivity.css";
 
 const USER = "bhavyasachula";
 const CELL = 21;
-const GAP = 5;
+const GAP = 4;
 const STEP_MS = 20;
 
 const isBright = (el) => {
@@ -135,7 +135,7 @@ export default function GithubActivity() {
                 bgColor: "transparent",
                 textColor: "#a1a1aa",
                 inactiveTextColor: "#52525b",
-                cellLevel0: "#161b22",
+                cellLevel0: "#281526",
                 cellLevel1: "#4f0f40",
                 cellLevel2: "#88236f",
                 cellLevel3: "#b62d8d",

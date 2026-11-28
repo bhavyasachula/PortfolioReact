@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/fiber": "^9.7.0",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
     "@react-three/postprocessing": "^3.1.0",
     "framer-motion": "^14.1.0",
     "github-contrib-graph": "^3.1.1",

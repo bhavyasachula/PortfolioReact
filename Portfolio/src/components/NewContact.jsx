@@ -12,7 +12,7 @@ const info = [
 const links = [
   ["GitHub", "github.com/bhavyasachula", "@bhavyasachula"],
   ["LinkedIn", "linkedin.com/in/bhavyasachula", "/in/bhavyasachula"],
-  ["X / Twitter", "x.com/bhavyasachula", "@bhavyasachula"],
+  ["X / Twitter", "x.com/SachulaBhavya", "@bhavyasachula"],
   ["LeetCode", "leetcode.com/SabkaBaaap", "/bhavyasachula"],
 ];
 const now = [
